@@ -1,0 +1,200 @@
+$sliderViewport = 980px
+$sliderViewportMedium = 784px
+$sliderViewportSmall = 568px
+$sliderViewportXsmall = 400px
+$sliderViewportXXsmall = 288px
+
+.testimonials
+  padding: 80px 0 54px 0
+  background: url('images/testimonials_bg.png') center no-repeat
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    background: url('images/testimonials_bg@2x.png') center no-repeat
+    background-size: cover
+
+  +respond-to($medium)
+    padding: 80px 0 48px 0
+    background: url('images/testimonials_bg_1024.png') center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/testimonials_bg_1024@2x.png') center no-repeat
+      background-size: cover
+
+  +respond-to($small)
+    padding: 56px 0 20px 0
+    background: url('images/testimonials_bg_768.png') center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/testimonials_bg_768@2x.png') center no-repeat
+      background-size: cover
+
+.testimonials__wrapper
+  @extend .container
+
+.testimonials__list-wrapper
+  position: relative
+  width: $sliderViewport
+  margin: 0 auto
+  margin-top: 32px
+  +respond-to($medium)
+    width: $sliderViewportMedium
+
+  +respond-to($small)
+    width: $sliderViewportSmall
+
+  +respond-to($xsmall)
+    width: $sliderViewportXsmall
+
+  +respond-to($xsmall-iphone)
+    width: $sliderViewportXXsmall
+
+.testimonials__slides-list-wrapper
+  position: relative
+  width: $sliderViewport
+  overflow: hidden
+  +respond-to($medium)
+    width: $sliderViewportMedium
+
+  +respond-to($small)
+    width: $sliderViewportSmall
+
+  +respond-to($xsmall)
+    width: $sliderViewportXsmall
+    margin-left: auto
+    margin-right: auto
+
+  +respond-to($xsmall-iphone)
+    width: $sliderViewportXXsmall
+
+.testimonials__slides-list
+  width: $sliderViewport * 3
+  position: relative
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  // height: 330px
+  transition: .25s
+  overflow: hidden
+  +respond-to($medium)
+    width: $sliderViewportMedium * 3
+
+  +respond-to($small)
+    width: $sliderViewportSmall * 3
+
+  +respond-to($xsmall)
+    width: $sliderViewportXsmall * 3
+    margin-left: auto
+    margin-right: auto
+
+  +respond-to($xsmall-iphone)
+    width: $sliderViewportXXsmall * 3
+
+.testimonials__list-item
+  width: $sliderViewport
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+  // position: absolute
+  // top: 0
+  // left: 0
+  // &:nth-child(2)
+  //   left: $sliderViewport
+
+  // &:nth-child(3)
+  //   left: $sliderViewport * 2
+
+  +respond-to($medium)
+    width: $sliderViewportMedium
+
+
+  +respond-to($small)
+    width: $sliderViewportSmall
+
+
+  +respond-to($xsmall)
+    width: $sliderViewportXsmall
+    margin-left: auto
+    margin-right: auto
+
+  +respond-to($xsmall-iphone)
+    width: $sliderViewportXXsmall
+
+.testimonials__list-item-img
+  margin-bottom: 16px
+
+.testimonials__list-item-title
+  font-size: 20px
+  color: #FFFFFF
+  text-align: center
+  line-height: 32px
+  font-weight: 700
+  margin-bottom: 16px
+  text-align: center
+
+.testimonials__list-item-text
+  font-size: 16px
+  line-height: 28px
+  font-weight: 400
+  color: #ffffff
+  text-align: center
+  margin-bottom: 24px
+  // max-height: 112px
+  // overflow: hidden
+  // +respond-to($medium)
+  //   max-height: 112px
+
+  // +respond-to($small)
+  //   max-height: 168px
+
+  // +respond-to($xsmall)
+  //   max-height: 312px
+
+.testimonials__list-item-author
+  font-size: 16px
+  line-height: 16px
+  font-weight: 400
+  color: #ffffff
+  text-align: center
+  margin-bottom: 48px
+
+.testimonials__pointers
+  display: flex
+  width: 40px
+  box-sizing: border-box
+  margin: 0 auto
+
+.testimonials__pointers-item
+  width: 8px
+  height: 8px
+  border: 1px solid #ffffff
+  margin-right: 8px
+  box-sizing: border-box
+  border-radius: 50%
+  &:last-child
+    margin-right: 0
+
+.testimonials__pointers-item--active
+  background: #ffffff
+
+.testimonials__list-controls
+  position: absolute
+  width: 32px
+  height: 18px
+  background: none
+  border: none
+  outline: none
+  cursor: pointer
+
+  +respond-to($xsmall)
+    display: none
+
+.testimonials__list-controls--inactive
+  opacity: 0.4
+
+.testimonials__list-controls--left
+  top: 50%
+  left: -73px
+  transform: rotate(180deg)
+
+.testimonials__list-controls--right
+  top: 50%
+  right: -73px

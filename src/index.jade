@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href="https://fonts.googleapis.com/css?family=Roboto:900" rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,600,700', rel='stylesheet')
+    link(inline='', rel='stylesheet', type='text/css', href='style.min.css')
+    title Enhancify
+
+  body
+    include ./partials/_header.jade
+    include ./partials/_media.jade
+    .section
+      include ./partials/_how-it-works.jade
+
+    .section
+      include ./partials/_testimonials.jade
+
+    .section
+      include ./partials/_budget.jade
+
+    .section
+      include ./partials/_personal-loan.jade
+
+    .section
+      include ./partials/_get-renovation.jade
+
+    .section
+      include ./partials/_best-option.jade
+
+    footer
+      include ./partials/_footer.jade
+
+    //- script(type='text/javascript', src='js/script.min.js')
+    script(type='text/javascript', src='js/jquery-1.11.1.min.js')
+    script(type='text/javascript', src='js/throttle.js')
+    script(type='text/javascript', src='js/local.js')

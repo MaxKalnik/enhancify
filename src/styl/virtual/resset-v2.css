@@ -1,0 +1,85 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li, form, label, caption, table, tbody, tfoot, thead, tr, th, td {
+  margin: 0;padding: 0;border: 0;}
+img {border: 0; vertical-align: middle;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+/* tables still need 'cellspacing=0' in the markup */
+/*table {border-collapse: inherit;border-spacing: 0;} */
+
+/* html5 */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary { display: block; }
+audio,canvas,video {display: inline-block; }
+figure {margin: 0;}
+
+ul,li{list-style:none;}
+/*************************************************/
+a{text-decoration: none}
+/* Utils */
+.clear{clear: both;}
+
+
+.hide{
+  display: none;
+  display: none!important;
+}
+.hidden{
+  opacity:0;
+}
+.visible{
+  opacity:1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.modal-backdrop {
+  opacity: .1;
+  background: #fff;
+}
+.modal-backdrop {
+  background-color: #ffffff;
+}
+.modal-backdrop {
+  position: fixed;
+  z-index: 1040;
+  background-color: #000;
+}
+ .modal-backdrop {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal-backdrop .fa-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -24px 0 0 -24px;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+.fa {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa, .fa-stack {
+  display: inline-block;
+}

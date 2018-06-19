@@ -1,0 +1,112 @@
+.personal-loan
+  padding-top: 60px
+  padding-bottom: 85px
+
+  +respond-to($medium)
+    padding-bottom: 45px
+
+  +respond-to($small)
+    padding-bottom 72px
+
+  +respond-to($xsmall)
+    padding-bottom: 44px
+
+.personal-loan__list-link-icon
+  width: 64px
+  height: 64px
+
+.personal-loan__list-link:hover
+  background-color: F5FCF5
+
+.personal-loan__list-link:active
+  background-color: F5FCF5
+  transform: scale(0.95)
+
+.personal-loan__wrapper
+  @extend .container
+
+.personal-loan__upper-text
+  @extend .main-text
+  margin-top: 24px
+  text-align: center
+
+  +respond-from($xsmall)
+    margin-top: 16px
+
+.personal-loan__list
+  display: flex
+  flex-wrap: wrap
+  margin-top: 48px
+
+  +respond-to($small)
+    margin-top 32px
+
+  +respond-to($xsmall)
+    width: 440px
+    margin-left: auto
+    margin-right: auto
+    margin-top 24px
+
+  +respond-to(490px)
+    width: 290px
+
+  +respond-to($xxsmall)
+    width: 100%
+
+.personal-loan__list-item
+  margin-right: 28px
+  margin-bottom: 32px
+  +respond-from($small)
+    &:nth-child(4n)
+      margin-right: 0
+
+  +respond-to($medium)
+    margin-right: 16px
+
+  +respond-range(490px, $xsmall)
+    &:nth-child(3n)
+      margin-right: 0
+
+  +respond-to(490px)
+    &:nth-child(2n)
+      margin-right: 0
+
+.personal-loan__list-link
+  display: flex
+  width: 264px
+  height: 178px
+  flex-direction: column
+  align-items: center
+  padding: 32px 24px
+  border: 1px solid #E9EDF0
+  border-radius: 3px
+  transition: .25s
+  box-sizing: border-box
+  &:hover
+    background: #F5FCF5
+    color: #68BA62
+    border: 1px solid #B3DCB0
+
+  &:active
+    transform: scale(0.98)
+
+  +respond-to($medium)
+    width: 222px
+
+  +respond-to($small)
+    width: 164px
+
+  +respond-to($xsmall)
+    width: 136px
+
+.personal-loan__list-link-icon
+  width: 64px
+  height: 64px
+  margin-bottom: 24px
+
+.personal-loan__list-link-text
+  font-size: 16px
+  color: #525F66
+  text-align: center
+  line-height: 24px
+  font-weight: 400

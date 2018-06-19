@@ -1,0 +1,26 @@
+$xxsmall = 321px
+$xsmall-iphone = 568px
+$xsmall = 768px
+$small = 1024px
+$medium = 1440px
+$large = 1920px
+
+respond-to($media)
+  @media only screen and (max-width: $media - 1px)
+    {block}
+
+respond-from($media)
+  @media only screen and (min-width: $media)
+    {block}
+
+respond-range($media-in, $media-ul)
+  @media only screen and (min-width: $media-in) and (max-width: $media-ul - 1px)
+    {block}
+
+respond-to-retina
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
+    {block}
+
+respond-to-retina-one
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    {block}

@@ -1,0 +1,209 @@
+$headerNavHeight = 80px
+
+.header__content
+  position: relative
+  background: url('images/pic_main.png') center no-repat
+  height: 885px
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  flex-direction: column
+  margin-top: $headerNavHeight
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    background: url('images/pic_main@2x.png') center no-repat
+    background-size: cover
+
+  +respond-to($medium)
+    background: url('images/pic_main_1024.png') center no-repat
+    height: 868px
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/pic_main_1024@2x.png') center no-repat
+      background-size: cover
+
+  +respond-to($small)
+    background: url('images/pic_main_768.png') center no-repat
+    height: 648px
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/pic_main_768@2x.png') center no-repat
+      background-size: cover
+
+  +respond-to($xsmall)
+    background: url('images/pic_main_768.png') center no-repat
+    height: 648px
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/pic_main_768@2x.png') center no-repat
+      background-size: cover
+
+  +respond-to($xxsmall)
+    background: url('images/pic_main_320.png') center no-repat
+    height: 592px
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/pic_main_320@2x.png') center no-repat
+      background-size: cover
+
+.header__content--active
+  +respond-to($small)
+    .header__content-top-wrapper
+      position: absolute
+      top: -($headerNavHeight)
+
+.header__content-top-wrapper
+  width: 100%
+  box-shadow: 0 1px 8px 0 rgba(82,95,102,0.10)
+  position: fixed
+  top: 0
+  background: rgba(255,255,255, 0.95)
+  z-index: 99
+  +respond-to($small)
+    position: absolute
+    top: -($headerNavHeight)
+
+.header__content-top
+  display: flex
+  height: $headerNavHeight
+  align-items: center
+  @extend .container
+
+.header__main
+  @extend .container
+  padding-top: 134px
+  display: flex
+  flex-direction: column
+  align-items: center
+  z-index: 1
+  +respond-to($medium)
+    padding-top: 96px
+
+.header__title
+  text-align: center
+  margin-bottom: 16px
+
+.header__under-title
+  text-align: center
+  font-size: 24px
+  line-height: 32px
+  font-weight: 600
+  color: #293033
+  margin-bottom: 44px
+
+.header__main-link
+  font-family: 'Roboto'
+  font-size: 32px
+  line-height: 32px
+  font-weight: 900
+  background: -webkit-linear-gradient(-45deg, #4d4d4d, #000000)
+  -webkit-text-fill-color: transparent
+  -webkit-background-clip: text
+
+  +respond-to($small)
+    font-size: 28px
+
+  +respond-to($small)
+    font-size: 24px
+
+.header__main-logo
+  margin-right: 40px
+  +respond-to($medium)
+    margin-right: 24px
+
+.header__btn
+  @extend .btn-with-lock
+  display: inline-block
+
+.header__features
+  @extend .container
+  margin-top: auto
+  margin-bottom: 48px
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  z-index: 2
+
+  +respond-to($xsmall)
+    flex-direction: column
+    margin-bottom: 24px
+    align-items: center
+
+.header__features-item
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  +respond-to($small)
+    width: 192px
+
+  +respond-to($xsmall)
+    width: 100%
+    justify-content: flex-start
+    margin-bottom: 16px
+    flex-direction: row
+    align-items: center
+    &:last-child
+      margin-bottom: 0
+
+.header__features-item-text
+  font-size: 16px
+  line-height: 24px
+  font-weight: 400
+  color: #ffffff
+  text-align: center
+
+  +respond-to($xsmall)
+    text-align: left
+
+.header__features-icon
+  width: 56px
+  height: 56px
+  margin-bottom: 16px
+
+  +respond-to($xsmall)
+    width: 48px
+    height: 48px
+    margin-right: 16px
+    margin-bottom: 0
+
+.header__contacts
+  margin-left: auto
+  position: static
+
+.header__contacts--menu-active
+  +respond-to($small)
+    position: absolute
+    top: 38px
+    right: 32px
+    z-index: 3
+
+  +respond-to($xsmall)
+    top: 20px
+    right: 16px
+    .header__contacts-tel-link
+      display: block
+      margin-right: 0
+      &:before
+        top: 3px
+
+    .header__contacts-btn-get-started
+      display: none
+
+.header__contacts-tel-link
+  @extend .tel-btn
+  margin-right: 32px
+  +respond-to($medium)
+    margin-right: 24px
+
+  +respond-to($xsmall)
+    display: none
+
+.header__contacts-btn-get-started
+  @extend .green-btn
+  display: inline-block
+  +respond-to($xsmall)
+    padding: 8px 16px
+
+.header__mask
+  position: absolute
+  bottom: 0
+  height: 430px
+  width: 100%
+  opacity: 0.51
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 53%, rgba(0,0,0,0.62) 63%, rgba(0,0,0,0.67) 77%, rgba(0,0,0,0.72) 89%, #000000 100%)

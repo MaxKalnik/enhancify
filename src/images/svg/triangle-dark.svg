@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Headers" transform="translate(-361.000000, -321.000000)" fill="#F5FAFC">
+            <g id="Group-3" transform="translate(270.000000, 323.000000)">
+                <g id="triangle" transform="translate(91.000000, 0.000000)">
+                    <path d="M5,-0.833333333 L9,4.5 L1,4.5 L5,-0.833333333 Z" id="Triangle" stroke="#D2DCE1"></path>
+                    <rect id="Rectangle-4" x="0" y="4" width="10" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

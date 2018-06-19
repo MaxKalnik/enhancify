@@ -1,0 +1,58 @@
+.best-option
+  padding: 48px 0
+  background: #F5FAFC
+
+  +respond-to($small)
+    padding: 32px 0
+
+.best-option__wrapper
+  @extend .container
+  display: flex
+  justify-content: space-between
+
+  +respond-to($small)
+    flex-direction: column
+
+.best-option__text-content
+  margin-top: 7px
+  +respond-to($small)
+    margin-bottom: 24px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.best-option__user-wrapper
+  +respond-to($small)
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.best-option__text
+  color: #525F66
+  font-size: 18px
+  line-height: 32px
+  font-weight: 300
+  +respond-to($small)
+    text-align: center
+
+  +respond-to($xsmall)
+    text-align: left
+
+.best-option__btn
+  @extend .btn-with-lock
+  width: 353px
+  margin-bottom: 12px
+  display: inline-block
+  padding: 12px 63px
+
+  +respond-to($xsmall)
+    width: 288px
+    padding: 12px 28px
+
+.best-option__btn-wrapper-text
+  font-size: 14px
+  color: #8FA7B3
+  text-align: center
+  line-height: 24px
+  font-weight: 300
+  font-style: italic

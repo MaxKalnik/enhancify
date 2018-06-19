@@ -1,0 +1,111 @@
+.budget
+  padding: 80px 0 116px 0
+  background: #F5FAFC
+
+  +respond-to($small)
+    padding: 64px 0 116px 0
+
+.budget__wrapper
+  @extend .container
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.budget__list
+  width: 100%
+  display: flex
+  justify-content: space-between
+  margin-top: 44px
+  margin-bottom: 48px
+
+  +respond-to($small)
+    flex-direction: column
+    margin-bottom: 32px
+
+.budget__list-item
+  position: relative
+  width: 360px
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 32px 24px
+  background: #ffffff
+  box-shadow: 0 18px 32px 0 rgba(156,173,173,0.20)
+  border-radius: 6px
+  box-sizing: border-box
+
+  +respond-to($medium)
+    width: 296px
+
+  +respond-to($small)
+    width: 100%
+    padding: 24px
+    padding-left: 118px
+    margin-bottom: 16px
+    align-items: flex-start
+    &:last-child
+      margin-bottom: 0
+
+  +respond-to($xsmall)
+    align-items center
+    padding 16px
+    flex-direction row
+    flex-wrap wrap
+
+.budget__list-item-icon
+  width: 64px
+  height: 64px
+  margin-bottom: 24px
+  +respond-to($small)
+    position: absolute
+    left: 24px
+    top: 50%
+    transform: translateY(-50%)
+    margin-bottom: 12px
+
+  +respond-to($xsmall)
+    position: static
+    width: 48px
+    height 48px
+    transform: none
+
+.budget__list-item-title
+  font-size: 20px
+  position: relative
+  font-weight: 700
+  color: #293033
+  text-align: center
+  line-height: 32px
+  margin-bottom: 12px
+  +respond-to($small)
+    text-align: left
+    margin-bottom: 8px
+  +respond-to($xsmall)
+    width: calc(100% - 64px)
+    margin-left: 16px
+    margin-bottom: 12px
+
+.budget__list-item-text
+  @extend .main-text
+  color: #525F66
+  text-align: center
+  +respond-to($small)
+    text-align: left
+
+.budget__btn
+  @extend .btn-with-lock
+  display: inline-block
+  padding: 12px 84px
+  width: 294px
+  margin: 0 auto
+  img
+    top: 15px
+
+  +respond-to($medium)
+    img
+      top: 25px
+
+  +respond-to($xsmall)
+    img
+      left: 0
+      top: 75px

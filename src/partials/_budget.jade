@@ -1,0 +1,39 @@
+include ./_svg-mixins
+
+.budget
+  .budget__wrapper
+    h2.section__title
+      | What’s in your budget?
+
+    ul.budget__list
+      li.budget__list-item
+        +loan_options_svg
+        .budget__list-item-title
+          | Compare loan options
+
+        .budget__list-item-text
+          | Get matched with your best options based on your situation and needs.
+
+      li.budget__list-item
+        +load_rates_svg
+        .budget__list-item-title
+          | Check loan rates
+
+        .budget__list-item-text
+          | Use our calculator and design your loan around your wallet.
+
+      li.budget__list-item
+        +preapproved_lender_svg
+        .budget__list-item-title
+          | Get pre-approved by the lender
+
+        .budget__list-item-text
+          | Apply to the lender, lock in your rate & terms and receive the funds in a week or less.
+
+    a.budget__btn
+      +ic_lock_svg
+      | Get Matched
+
+      picture
+        source(media='(max-width: 767px)', srcset="images/svg/wont_affect_320.svg")
+        img(src="images/svg/wont_affect.svg")

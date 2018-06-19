@@ -1,0 +1,58 @@
+.media__wrapper
+  background: #F5FAFC
+
+.media__items
+  @extend .container
+  display: flex
+  height: 130px
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  box-sizing: border-box
+
+  +respond-to($xsmall)
+    height: 58px
+
+.media__logo-item--cnbc
+  width: 59px
+  height: 44px
+
+  +respond-to($xsmall)
+    width: 33px
+    height: 25px
+
+.media__logo-item--ms
+  width: 48px
+  height: 48px
+
+  +respond-to($xsmall)
+    width: 27px
+    height: 27px
+
+.media__logo-item--today
+  width: 63px
+  height: 48px
+
+  +respond-to($xsmall)
+    width: 35px
+    height: 27px
+
+.media__logo-item--cnn
+  width: 84px
+  height: 40px
+
+  +respond-to($xsmall)
+    width: 47px
+    height: 22px
+
+.media__logo-item--msnbc
+  width: 213px
+  height: 24px
+
+  +respond-to($small)
+    width: 154px
+    height: 17px
+
+  +respond-to($xsmall)
+    width: 86px
+    height: 10px

@@ -1,0 +1,117 @@
+.tel-btn
+  position: relative
+  padding-left: 28px
+  color: #282828
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+  cursor: pointer
+  &:before
+    content: ''
+    width: 16px
+    height: 16px
+    position: absolute
+    top: 0
+    left: 0
+    background: url('images/icons/ic_phone.svg') center no-repeat
+
+.green-btn
+  border: 1px solid #68ba62
+  padding: 12px 32px
+  font-size: 14px
+  line-height: 24px
+  font-weight: 600
+  color: #68ba62
+  border-radius: 3px
+  cursor: pointer
+  transition: .25s
+  text-align: center
+  &:hover
+    background: #0ACC48
+    border: 1px solid transparent
+    color: #ffffff
+
+  &:active
+    background: #17B548
+    border: 1px solid transparent
+    color: #ffffff
+
+  &--disabled
+    color: #B8C5CC
+    border: 1px solid #B8C5CC
+    background: #F5FAFC
+
+.green-btn-filled
+  border: 1px solid #AEDAAB
+  padding: 12px 32px
+  font-size: 14px
+  line-height: 24px
+  font-weight: 600
+  color: #17B548
+  border-radius: 3px
+  background: #f5fcf5
+  transition: .25s
+  cursor: pointer
+  &:hover
+    border: 1px solid #17B548
+
+  &:active
+    border: 1px solid #089936
+    background: #E8F5F2
+
+  &--disabled
+    color: #F1F7F9
+    border: 1px solid #B8C5CC
+    background: #F5FAFC
+
+.btn-with-lock
+  width: 376px
+  box-sizing: border-box
+  position: relative
+  background: #17B548
+  color: #ffffff
+  font-size: 18px
+  line-height: 32px
+  font-weight: 700
+  padding: 16px 128px
+  border-radius: 4px
+  cursor: pointer
+  text-align: center
+  transition: .25s
+  svg
+    margin-right: 10px
+    position: relative
+    top: 1px
+
+  &:hover
+    background #0ACC48
+
+  &:active
+    background: #17B548
+
+  &--disabled
+    color: #DAE2E6
+    background: #B8C5CC
+    #lock-svg-main
+      fill: #CED8DD
+  img
+    position: absolute
+    right: -150px
+    top: 25px
+
+  +respond-to($xsmall)
+    width: 288px
+    padding: 16px 68px
+    font-size: 16px
+    img
+      left: 0
+      top: 75px
+
+.main-text
+  font-size: 16px
+  line-height: 28px
+  font-weight: 400
+
+.equalize
+  position: relative
+  top -1px

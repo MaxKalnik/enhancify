@@ -1,0 +1,120 @@
+.get-renovation
+  position: relative
+  padding: 80px 0
+  background-image: radial-gradient(48% 50%, #2390F6 52%, #1386F2 100%)
+  background-image: linear-gradient(90deg, #295AA3 0%, #1C418C 100%)
+
+  height: 344px
+  box-sizing: border-box
+
+  +respond-to($small)
+    height: 294px
+    padding: 48px 0 46px 0
+
+  +respond-to($xsmall)
+    height: 642px
+    display: flex
+    flex-direction: column
+    padding: 32px 0 280px 0
+    box-sizing: border-box
+    overflow: hidden
+
+.get-renovation__expert
+  @extend .container
+  position: relative
+  padding-left: 500px
+  box-sizing: border-box
+
+  +respond-to($medium)
+    padding-left: 360px
+
+  +respond-to($small)
+    padding-left: 300px
+
+  +respond-to($xsmall)
+    padding-left: 0
+    display: flex
+    flex-direction: column
+
+.get-renovation__expert-user
+  display: flex
+  +respond-to($xsmall)
+    flex-direction: column
+
+.get-renovation__upper-text
+  @extend .main-text
+  color: #ffffff
+  margin-top: 8px
+  margin-bottom: 24px
+
+  +respond-to($xsmall)
+    margin: 16px 0
+
+.get-renovation__expert-img
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 756px
+  height: auto
+
+  +respond-to($medium)
+    width: 676px
+    left: -70px
+
+  +respond-to($small)
+    width: 576px
+
+  +respond-to($xsmall)
+    width: 486px
+    left: 20%
+    bottom: 0
+    transform: translate(-20%)
+
+.get-renovation__email-input
+  width: 62%
+  background: #ffffff
+  border-radius: 3px
+  padding: 16px 20px
+  box-sizing: border-box
+  border: none
+  outline: none
+  @extend .main-text
+  color: #8FA7B3
+  line-height: 24px
+  margin-right: 24px
+
+  +respond-to($small)
+    width: 50%
+    font-size: 14px
+    line-height: 24px
+
+  +respond-to($xsmall)
+    width: 100%
+    margin-bottom: 12px
+
+.get-renovation__btn
+  @extend .main-text
+  line-height: 24px
+  display: inline-block
+  color: #ffffff
+  border: 1px solid rgba(255,242,242, .5)
+  padding: 15px 48px
+  border-radius: 3px
+  transition: .25s
+  cursor: pointer
+  &:hover
+    background: #ffffff
+    color: #1C428B
+    border: 1px solid transparent
+
+  +respond-to($medium)
+    padding: 15px 32px
+
+  +respond-to($small)
+    font-size: 14px
+    line-height: 24px
+
+  +respond-to($xsmall)
+    font-size: 14px
+    line-height: 24px
+    text-align: center

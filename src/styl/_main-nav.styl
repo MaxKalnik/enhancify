@@ -1,0 +1,249 @@
+.main-nav
+  +respond-to($small)
+    position: absolute
+    display: none
+
+.main-nav--opened
+  +respond-to($small)
+    position: absolute
+    width: calc(100% - 32px)
+    left: 16px
+    display: block
+    top: 24px
+    z-index: 2
+    box-shadow: 0 10px 30px 0 rgba(10,73,102,0.18)
+    border-radius: 4px
+
+  +respond-to($xsmall)
+    width: 100%
+    left: 0
+    top: 0
+
+.main-nav__toggle.main-nav__toggle--opened
+  display: none
+  +respond-to($small)
+    position: absolute
+    display: block
+    top: 38px
+    left: 28px
+    z-index: 3
+    &:before
+      position: absolute
+      left: 0
+      top: 7px
+      content: ''
+      height: 2px
+      width: 18px
+      background: #8FA7B3
+      transform: rotate(45deg)
+      box-shadow: none
+      transition: transform .25s
+      opacity: 1
+
+    &:after
+      position: absolute
+      left: 0
+      top: 7px
+      content: ''
+      height: 2px
+      width: 18px
+      background: #8FA7B3
+      transform: rotate(-45deg)
+      box-shadow: none
+      transition: transform .25s
+
+  +respond-to($xsmall)
+    top: 23px
+    left: 16px
+
+.main-nav__toggle
+  position: relative
+  display: none
+  width: 16px
+  height: 15px
+  background: none
+  outline: none
+  border:none
+  padding: 0
+  margin-right: 20px
+  box-sizing: border-box
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    background: #8FA7B3
+    box-shadow: 0 6px #8fa7b3, 0 12px #8fa7b3
+    height: 3px
+    width: 100%
+    border-radius: 20px
+    opacity: 0
+
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    background: #8FA7B3
+    box-shadow: 0 6px #8fa7b3, 0 12px #8fa7b3
+    height: 3px
+    width: 100%
+    border-radius: 20px
+
+  +respond-to($small)
+    display: block
+
+  +respond-to($xsmall)
+    margin-right: 16px
+
+.main-nav__list
+  display: flex
+  +respond-to($small)
+    flex-direction: column
+    padding: 76px 0 0 0
+    width: 100%
+    background: #ffffff
+    border-radius: 4px
+
+  +respond-to($xsmall)
+    padding: 64px 0 108px 0
+
+.main-nav__list-item
+  margin-right: 24px
+  &:last-child
+    margin-right: 0
+
+  +respond-to($medium)
+    margin-right: 16px
+    &:last-child
+      margin-right: 0
+
+  +respond-to($small)
+    margin-right: 0
+
+.main-nav__list-item--hovered
+  position: relative
+  padding-right: 20px
+  +respond-from($small)
+    &:hover > .main-nav__sub-list
+      opacity: 1
+      display: block
+
+  +respond-to($small)
+    padding-right: 0
+
+.main-nav__list-item--hovered
+  .main-nav__list-link
+    &:after
+      content: ''
+      position: absolute
+      width: 12px
+      height: 12px
+      right: 0
+      top: 4px
+      background: url('images/icons/ic_expand.svg') center no-repeat
+
+    +respond-to($small)
+      &:after
+        width: 16px
+        height: 16px
+        right: 16px
+        top: 22px
+
+.main-nav__list-link
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  color: #293033
+  padding: 20px 0
+  cursor: pointer
+
+  +respond-to($small)
+    display: block
+    padding: 16px
+    border-bottom: 1px solid #DBE5E9
+
+.main-nav__list-link--first
+  +respond-to($small)
+    &:first-child
+      border-top: 1px solid #dbe5e9
+
+.main-nav__sub-list
+  position: absolute
+  display: none
+  opacity: 0
+  top: 40px
+  left: 50%
+  transform: translateX(-50%)
+  transition: .25s
+  width: 192px
+  border: 1px solid #C6D3D9
+  border-radius: 3px
+  box-sizing: border-box
+  z-index: 1
+  &:before
+    content: ''
+    width: 10px
+    height: 7px
+    position: absolute
+    top: -6px
+    left: 50%
+    transform: translateX(-50%)
+    background: url(images/svg/triangle.svg)
+
+  +respond-to($small)
+    width: 100%
+    border:none
+    transform: none
+    position: static
+    display: block
+    max-height: 0
+    opacity: 1
+    overflow: hidden
+    transition: .25s ease-out
+    &:before
+      display: none
+
+.main-nav__sub-list--active
+  +respond-to($small)
+    border-bottom: 1px solid #dbe5e9
+    opacity: 1
+    max-height: 1000px
+
+.main-nav__sub-list-link
+  display: block
+  font-size: 14px
+  color: #525F66
+  line-height: 32px
+  font-weight: 300
+  padding: 8px 16px
+  background: #ffffff
+  border-bottom: 1px solid #F1F4F5
+  transition: .25s
+  &:hover
+    font-weight: 600
+    background: #F1F8FF
+
+  +respond-to($small)
+    padding: 10px 16px
+    padding-left: 32px
+    border-bottom: 1px solid #dbe5e9
+
+.main-nav__sub-list-item:last-child .main-nav__sub-list-link
+  border-bottom: none
+
+.main-nav__contacts-btn-get-started
+  display: none
+  @extend .green-btn
+  padding: 8px 16px
+  margin-top: 24px
+  text-align: center
+  width: calc(100% - 52px)
+  margin-left: auto
+  margin-right: auto
+
+  +respond-to($xsmall)
+    display: inline-block

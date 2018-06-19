@@ -1,0 +1,138 @@
+.how-it-works
+  width: 100%
+  background-color: #ffffff
+  background-image: url('images/how_it_works_left_bg.png'), url('images/how_it_works_right_bg.png')
+  background-repeat: no-repeat
+  background-position: 0 100%, 100% 77px
+  background-size: 128px 257px, 130px 311px
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    background-color: #ffffff
+    background-image: url('images/how_it_works_left_bg@2x.png'), url('images/how_it_works_right_bg@2x.png')
+    background-repeat: no-repeat
+    background-position: 0 100%, 100% 77px
+    background-size: 128px 257px, 130px 311px
+
+  +respond-to($medium)
+    background-color: #ffffff
+    background-image: url('images/how_it_works_left_bg.png'), url('images/how_it_works_right_bg.png')
+    background-repeat: no-repeat
+    background-position: -76px 100%, calc(100% + 59px) 77px
+    background-size: 128px 257px, 130px 311px
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background-color: #ffffff
+      background-image: url('images/how_it_works_left_bg@2x.png'), url('images/how_it_works_right_bg@2x.png')
+      background-repeat: no-repeat
+      background-position: -76px 100%, calc(100% + 59px) 77px
+      background-size: 128px 257px, 130px 311px
+
+  +respond-to($small)
+    background-color: #ffffff
+    background-image: url('images/how_it_works_left_bg.png'), url('images/how_it_works_right_bg.png')
+    background-repeat: no-repeat
+    background-position: -22px 100%, calc(100% + 24px) 227px
+    background-size: 68px 137px, 82px 197px
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background-color: #ffffff
+      background-image: url('images/how_it_works_left_bg@2x.png'), url('images/how_it_works_right_bg@2x.png')
+      background-repeat: no-repeat
+      background-position: -22px 100%, calc(100% + 24px) 227px
+      background-size: 68px 137px, 82px 197px
+
+  +respond-to($xsmall)
+    background: #ffffff
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: #ffffff
+
+.how-it-works__item-icon
+  width: 64px
+  height: 64px
+
+  +respond-to($xsmall)
+    width: 48px
+    height: 48px
+
+.how-it-works__wrapper
+  @extend .container
+  padding: 80px 0
+  +respond-to($medium)
+    padding: 80px 0 52px 0
+
+  +respond-to($small)
+    width: 696px
+    padding: 48px 0
+
+  +respond-to($xsmall)
+    width: calc(100% - 32px)
+    padding: 32px 0
+
+.how-it-works__list
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 48px
+  align-items: flex-start
+
+  +respond-to($small)
+    flex-direction: column
+
+.how-it-works__item
+  position: relative
+  width: 360px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+  +respond-to($medium)
+    width: 286px
+
+  +respond-to($small)
+    width: 100%
+    padding-left: 84px
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 32px
+    &:last-child
+      margin-bottom: 0
+
+  +respond-to($xsmall)
+    padding-left: 0
+
+.how-it-works__item-icon
+  margin-bottom: 24px
+
+  +respond-to($small)
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+
+  +respond-to($xsmall)
+    top: -6px
+    transform: none
+
+.how-it-works__item-subtitle
+  font-size: 20px
+  color: #293033
+  text-align: center
+  line-height: 32px
+  font-weight: 700
+  margin-bottom: 16px
+  +respond-to($small)
+    text-align: left
+    margin-bottom: 8px
+
+  +respond-to($xsmall)
+    font-size: 18px
+    line-height:24px
+    padding-left: 64px
+    margin-bottom: 28px
+
+.how-it-works__item-text
+  font-size: 16px
+  color: #525F66
+  text-align: center
+  line-height: 28px
+  font-weight: 400
+  +respond-to($small)
+    text-align: left

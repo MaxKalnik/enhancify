@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_expand</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-Header" transform="translate(-379.000000, -38.000000)">
+            <g id="Content">
+                <g transform="translate(333.000000, 28.000000)">
+                    <g id="menu_items">
+                        <g id="ic_expand" transform="translate(46.000000, 7.000000)">
+                            <rect id="baseline" x="0" y="0" width="12" height="12"></rect>
+                            <path d="M10.9587386,3.193 L5.99586722,8.44010526 L1.03299585,3.19236842 C0.796381743,2.94226316 0.413626556,2.94226316 0.177012448,3.19236842 C-0.0590041494,3.44247368 -0.0590041494,3.84768421 0.177012448,4.09778947 L5.56760166,9.79763158 C5.80361826,10.0477368 6.18697095,10.0477368 6.42298755,9.79763158 L11.8135768,4.09784211 C12.0495934,3.84773684 12.0495934,3.44189474 11.8135768,3.19178947 C11.5781577,2.94289474 11.1947552,2.94289474 10.9587386,3.193 Z" id="Expand_More" fill-opacity="0.5" fill="#525F66" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
