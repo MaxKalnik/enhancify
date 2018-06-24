@@ -1,0 +1,161 @@
+$gradientBlue = linear-gradient(135deg, #026BD4 0%, #47C2FF 100%)
+$darkBlue = #0F66B1
+
+.analytics
+  background: #fff
+  padding: 64px 0 48px 0
+
+  +respond-to($medium)
+    padding: 80px 0 48px 0
+
+  +respond-to($small)
+    padding: 64px 0 40px 0
+
+  +respond-to($xsmall)
+    padding: 32px 0 24px 0
+
+.analytics__wrapper
+  @extend .container
+
+.analytics__content
+  position: relative
+  width: 100%
+  margin-top: 48px
+  padding-right: 50%
+  box-sizing: border-box
+
+  +respond-to($small)
+    margin-top: 32px
+
+  +respond-to($xsmall)
+    padding-right: 0
+    margin-top: 24px
+
+.analytics__item
+  margin-bottom: 32px
+  border-bottom: 1px solid rgba(#4c7b93, .15)
+
+  &:last-child
+    margin-bottom: 0
+    border-bottom: none
+
+  +respond-to($small)
+    margin-bottom: 24px
+
+  +respond-to($xsmall)
+    margin-bottom: 15px
+    max-height: 73px
+    overflow-y: hidden
+    transition max-height 1.25s
+
+.analytics__item-title
+  display: block
+  position: relative
+  cursor: pointer
+  padding-right: 32px
+  margin-bottom 24px
+  &:after
+    content:""
+    width: 12px
+    height: 12px
+    position: absolute
+    top: 6px
+    right: 0
+    background: url('images/icons/ic_expand.svg') center no-repeat
+    transform: rotate(-90deg)
+
+    +respond-to($xsmall)
+      transform: rotate(0)
+      transition: .25s
+
+  &:hover
+    .analytics__item-title-text
+      border-bottom: 1px solid transparent
+
+.analytics__item-title-text
+  position: relative
+  font-size: 18px
+  line-height: 24px
+  font-weight: 500
+  color: #188dfc
+  border-bottom: 1px dotted rgba(#188dfc, .2)
+  display: inline
+  cursor: pointer
+
+.analytics__item-img
+  display: block
+  width: 496px
+  height 352px
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  opacity: 0
+  transition: .25s
+
+  +respond-to($medium)
+    width 443px
+    height 352px
+
+  +respond-to($small)
+    width 338px
+    height 355px
+
+  +respond-to($xsmall)
+    width 288px
+    height auto
+    opacity: 0
+    transform: scale(0)
+    padding: 24px 0
+    position: static
+    margin-left: auto
+    margin-right: auto
+    display: none
+    transition: scale 1.25s
+    transform-origin: center center
+
+.analytics__item-text
+  max-height: 0
+  opacity: 0
+  font-size: 16px
+  line-height: 28px
+  a
+    font-size: 16px
+    line-height: 28px
+    padding: 4px 8px
+
+.analytics__item--active
+  +respond-to($xsmall)
+    max-height: 1000px
+
+  .analytics__item-content
+    text-custom($gradientBlue, $darkBlue)
+    padding: 24px
+    +respond-to($small)
+      padding: 16px
+
+    .analytics__item-title-text
+      color: #ffffff
+
+    .analytics__item-title
+      background: none
+      margin-bottom: 12px
+      &:after
+        display: none
+
+  .analytics__item-img
+    opacity: 1
+    +respond-to($xsmall)
+      transform: none
+      display: block
+      transform: scale(1)
+
+  .analytics__item-text
+    max-height: 56px
+    opacity: 1
+    +respond-to($xsmall)
+      max-height: 84px
+
+  +respond-to($xsmall)
+    .analytics__item-title
+      display: block

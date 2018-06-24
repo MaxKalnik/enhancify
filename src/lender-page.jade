@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href="https://fonts.googleapis.com/css?family=Roboto:900" rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,600,700', rel='stylesheet')
+    link(inline='', rel='stylesheet', type='text/css', href='lender-page.index.min.css')
+    title Enhancify Lender
+
+  body
+    .header__content.header__content--short
+      include ./partials/_header-top.jade
+
+    .section
+      include ./partials/_lender-page-upper.jade
+
+    .section.section--main
+      .section__main-wrapper.section__main-wrapper--affiliate
+        include ./partials/_lender-page-form.jade
+        include ./partials/_lender-page-side.jade
+
+    .section
+      include ./partials/_get-renovation.jade
+
+    .section
+      include ./partials/_best-option.jade
+
+    footer
+      include ./partials/_footer.jade
+
+    script(type='text/javascript', src='js/script.min.js')

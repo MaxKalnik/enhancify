@@ -1,0 +1,221 @@
+include ./_svg-mixins
+
+form.form(action='', method='POST')
+  fieldset.form__fieldset.form__fieldset--info
+    h2.form__fieldset-title
+      +loan_info_svg
+      | Loan Information
+
+    button.form__fieldset-ad-btn(type='button')
+      | Advertiser Disclosure
+
+    .form__fieldset-wrapper
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+        label.form__fieldset-label(for='loan-amount')
+          | Loan Amount Requested
+
+        .range
+          input.form__fieldset-input-range.range__input(name='loan-amount')
+          input.range__slider(data-from="2000", data-max="61000", data-min="1000", data-step="100")
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+        label.form__fieldset-label(for='loan-purpose')
+          | Loan Purpose
+
+        select.form__fieldset-select(name='loan-purpose' data-placeholder='Select Use of Funds')
+          option(value='1') Option 1
+          option(value='2') Option 2
+          option(value='3') Option 3
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+        label.form__fieldset-label(for='cc-debt-amount')
+          | Credit Card Debt Amount
+
+        select.form__fieldset-select(name='cc-debt-amount' data-placeholder='None')
+          option(value='1') Option 1
+          option(value='2') Option 2
+          option(value='3') Option 3
+          option(value='4') Option 4
+          option(value='5') Option 5
+
+  fieldset.form__fieldset.form__fieldset--your-info
+    h2.form__fieldset-title
+      +your_info_svg
+      | Your Information
+
+    .form__fieldset-wrapper
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='first-name')
+          | First Name
+
+        input.form__fieldset-input(type='text', name='first-name', id='first-name' placeholder='Enter your first name')
+        .form__fieldset-input-warning
+          | Enter first name
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='last-name')
+          | Last Name
+
+        input.form__fieldset-input(type='text', id='last-name' name='last-name', placeholder='Enter your last name')
+        .form__fieldset-input-warning
+          | Enter last name
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='email')
+          | Email
+
+        input.form__fieldset-input(type='email', id='email' name='email', placeholder='example@mail.com')
+        .form__fieldset-input-warning
+          | Invalid email
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='phone')
+          | Contact Phone
+
+        input.form__fieldset-input(type='tel', id='phone', name='phone', placeholder='+1-800-900-9664')
+        .form__fieldset-input-warning
+          | Invalid phone number
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='street-address')
+          | Street Address
+
+        input.form__fieldset-input(type='text', id='street-address', name='street-address', placeholder='Enter your street address')
+        .form__fieldset-input-warning
+          | Invalid Street Address
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='city')
+          | City
+
+        input.form__fieldset-input(type='text', id='city' name='city', placeholder='Enter your city name')
+        .form__fieldset-input-warning
+          | Unknown city
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='state')
+          | State/Region
+
+        select.form__fieldset-select(name='state', id='state', data-placeholder='Select State')
+          option(value='Alabama') Alabama
+          option(value='Alaska') Alaska
+          option(value='Arizona') Arizona
+          option(value='Arkansas') Arkansas
+          option(value='California') California
+          option(value='Colorado') Colorado
+          option(value='Connecticut') Connecticut
+          option(value='Delaware') Delaware
+          option(value='District of Columbia') District of Columbia
+          option(value='Florida') Florida
+          option(value='Georgia') Georgia
+          option(value='Guam') Guam
+          option(value='Hawaii') Hawaii
+          option(value='Idaho') Idaho
+          option(value='Illinois') Illinois
+          option(value='Indiana') Indiana
+          option(value='Iowa') Iowa
+          option(value='Kansas') Kansas
+          option(value='Kentucky') Kentucky
+          option(value='Louisiana') Louisiana
+          option(value='Maine') Maine
+          option(value='Maryland') Maryland
+          option(value='Massachusetts') Massachusetts
+          option(value='Michigan') Michigan
+          option(value='Minnesota') Minnesota
+          option(value='Mississippi') Mississippi
+          option(value='Missouri') Missouri
+          option(value='Montana') Montana
+          option(value='Nebraska') Nebraska
+          option(value='Nevada') Nevada
+          option(value='New Hampshire') New Hampshire
+          option(value='New Jersey') New Jersey
+          option(value='New Mexico') New Mexico
+          option(value='New York') New York
+          option(value='North Carolina') North Carolina
+          option(value='North Dakota') North Dakota
+          option(value='Northern Marianas Islands') Northern Marianas Islands
+          option(value='Ohio') Ohio
+          option(value='Oklahoma') Oklahoma
+          option(value='Oregon') Oregon
+          option(value='Pennsylvania') Pennsylvania
+          option(value='Puerto Rico') Puerto Rico
+          option(value='Rhode Island') Rhode Island
+          option(value='South Carolina') South Carolina
+          option(value='South Dakota') South Dakota
+          option(value='Tennessee') Tennessee
+          option(value='Texas') Texas
+          option(value='Utah') Utah
+          option(value='Vermont') Vermont
+          option(value='Virginia') Virginia
+          option(value='Virgin Islands') Virgin Islands
+          option(value='Washington') Washington
+          option(value='West Virginia') West Virginia
+          option(value='Wisconsin') Wisconsin
+          option(value='Wyoming') Wyoming
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='postal-code')
+          | Postal / Zip Code
+
+        input.form__fieldset-input(type='text', id='postal-code', name='postal-code', placeholder='12141')
+        .form__fieldset-input-warning
+          | Invalid value
+
+
+  fieldset.form__fieldset.form__fieldset--income
+    h2.form__fieldset-title
+      +income_info_svg
+      | Income Information
+
+    .form__fieldset-wrapper
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='gross-annual-income')
+          | Gross Annual Income?
+
+        select.form__fieldset-select(name='gross-annual-income', id='gross-annual-income' data-placeholder='$90,000 to $99,999')
+          option(value='1' selected) $90,000 to $99,999
+          option(value='2') Option 2
+          option(value='3') Option 3
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='own-rent')
+          | Do you Own or Rent?
+
+        select.form__fieldset-select(name='own-rent', id='own-rent', data-placeholder='Rent')
+          option(value='1' selected) Rent
+          option(value='2') Own
+
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+        label.form__fieldset-label(for='bankruptcy')
+          | Ever filed for Bankruptcy?
+
+        select.form__fieldset-select(name='bankruptcy', id='bankruptcy', data-placeholder='Yes, discharged over 1 year ago')
+          option(value='1' selected) Yes, discharged over 1 year ago
+          option(value='2') No
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+        label.form__fieldset-label.form__fieldset-label--checkbox(for='agreement')
+          | By clicking on, “See My Options” button, I agree to the following and consent to the electronic communications agreement listed 
+          a.form__fieldset-label-link(href='') here
+          | .
+          input.form__fieldset-checkbox(type='checkbox', id='agreement')
+          span.form__fieldset-checkmark
+
+      button.form__submit-btn
+        +ic_lock_svg
+        | See My Options
+
+      p.form__terms-of-use
+        span.reg *
+        | I certify I am at least 18 years of age and accept the Company's 
+        a.form__terms-of-use-link(href='') Terms of Use
+        | , 
+        a.form__terms-of-use-link(href='') Disclosure
+        |  and 
+        a.form__terms-of-use-link(href='') Privacy Policy
+        | , and give the Company and its approved partners and affiliates express written consent to contact me about related offers via email, text message, and by phone at the number above, including by automated dialer, even if the telephone number is currently listed on any internal, corporate, state or federal Do-Not-Call list. Furthermore, I understand this consent is not a condition of receiving services from either the Company, Affiliates or its Partners.
+
+  p.form__under-text
+    | We use bank-grade 256-bit encryption. 
+    a.form__under-text-link(href='') Check Security policy

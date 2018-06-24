@@ -1,0 +1,59 @@
+include ./_svg-mixins
+
+.our-story
+  .our-story__wrapper
+    h2.section__title
+      | Our Story
+
+    .our-story__people
+      .our-story__people-item
+        img.our-story__people-img(src='images/roman.png', srcset='images/roman@2x.png')
+        .our-story__people-text-wrap
+          p.our-story__people-text.our-story__people-text--name
+            | Roman Shteyn
+
+          p.our-story__people-text
+            | Co-founder
+
+      .our-story__people-item
+        img.our-story__people-img(src='images/mindy.png', srcset='images/mindy@2x.png')
+        .our-story__people-text-wrap
+          p.our-story__people-text.our-story__people-text--name
+            | Mindy Reznikov
+
+          p.our-story__people-text
+            | Co-founder
+
+      .our-story__people-item
+        img.our-story__people-img(src='images/vlad.png', srcset='images/vlad@2x.png')
+        .our-story__people-text-wrap
+          p.our-story__people-text.our-story__people-text--name
+            | Vlad Tyschuk
+
+          p.our-story__people-text
+            | Co-founder
+
+    .our-story__text-container
+      .our-story__text-wrap
+        p.our-story__text
+          | Our co-founders, Vlad Tyschuk, Roman Shteyn and Mindy Reznikov started Enhancify.com from a common belief that your finances is not just a way to maintain your credit, but it’s also a way to build a solid financial foundation for the future.
+
+        p.our-story__text
+          | We’re bridging the gap between the consumer and the lender. By using the power and ease of the internet, along with our proprietary technology, we’re making the process to find and apply to the best lender faster and easier.
+
+      .our-story__text-wrap.our-story__text-wrap--mission
+        p.our-story__text.our-story__text--title
+          | Our Mission
+
+        p.our-story__text
+          | Our network is comprised of the top-rated banks and online lenders in today’s marketing place offering unsecured loans. We want you to worry about more important things, like where you want to go on your next vacation or which room you want to remodel first, not how you’re going to pay for it!
+
+    p.our-story__under-text
+      | Whether you need money to payoff your debt or just take a vacation, Enhancify.com can help Regardless of your credit situation!
+
+     a.our-story__btn
+      +ic_lock_svg
+      | Get Started
+      picture
+        source(media='(max-width: 767px)', srcset="images/svg/wont_affect_320_2.svg")
+        img(src="images/svg/wont_affect.svg")

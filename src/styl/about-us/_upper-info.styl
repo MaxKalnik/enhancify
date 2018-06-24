@@ -1,0 +1,74 @@
+$gradientGreen = linear-gradient(-134deg, #17B548 0%, #108534 100%);
+$darkGreen = #107F32;
+
+.upper-info
+  background: #f5fAfc
+
+.upper-info__wrapper
+  @extend .container
+  padding-bottom: 80px
+  box-sizing: border-box
+  +respond-to($medium)
+    padding-bottom: 80px
+
+  +respond-to($small)
+    padding-bottom: 64px
+
+.upper-info__content
+  display: flex
+  +respond-to($xsmall)
+    flex-direction column
+
+.upper-info__content-item
+  width: 50%
+  box-shadow: 0 18px 32px 0 rgba(156,173,173,0.20)
+  padding: 48px
+  position relative
+  margin-top: -80px
+  background: #fff
+  box-sizing: border-box
+
+  +respond-to($medium)
+    margin-top: -66px
+
+  +respond-to($small)
+    padding: 24px
+
+  +respond-to($xsmall)
+    width: 100%
+    padding: 16px
+    &:not(:first-child)
+      margin-top: 0
+
+  &:first-child
+    border-radius: 6px 0 0 6px
+
+    +respond-to($xsmall)
+      border-radius: 6px 6px 0 0
+
+  &:nth-child(2)
+    padding-bottom: 38px
+    .upper-info__content-text
+      margin-bottom: 22px
+      &:last-child
+        margin-bottom: 0
+
+    +respond-to($xsmall)
+      border-radius: 0 0 6px 6px
+      box-shadow: 0 -8px 32px 0 rgba(156,173,173,0.20)
+
+.upper-info__content-text
+  margin-bottom: 32px
+  font-size: 18px
+  line-height: 32px
+  font-weight: 400
+  color: #525f66
+  &:last-child
+    margin-bottom: 0
+
+  +respond-to($xsmall)
+    font-size: 16px
+    line-height: 28px
+
+.upper-info__content-text--custom-green
+  text-custom($gradientGreen, $darkGreen)

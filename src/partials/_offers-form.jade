@@ -1,0 +1,49 @@
+include ./_svg-mixins
+
+form.form.form--offers(action='', method='POST')
+  fieldset.form__fieldset.form__fieldset--full.form__fieldset--offers
+    h2.form__fieldset-title.form__fieldset-title--small
+      | Refine Results
+
+    button.form__fieldset-ad-btn(type='button')
+      | Advertiser Disclosure
+
+    .form__fieldset-wrapper
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-loan
+        label.form__fieldset-label.form__fieldset-label--with-hint(for='loan-amount')
+          | Loan Amount Requested
+          button.form__fieldset-label-hint-btn(type='button')
+
+            span.form__fieldset-hint
+              | Some useful information
+
+        .range
+          input.form__fieldset-input-range.range__input(name='loan-amount')
+          input.range__slider(data-from="2000", data-max="61000", data-min="1000", data-step="100")
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-income
+        label.form__fieldset-label.form__fieldset-label--with-hint(for='annual-income')
+          | Your Annual Income
+          button.form__fieldset-label-hint-btn(type='button')
+
+            span.form__fieldset-hint
+              | Some useful information about annual income
+
+        .range
+          input.form__fieldset-input-range.range__input(name='annual-income')
+          input.range__slider(data-from="60000", data-max="120000", data-min="1000", data-step="1000")
+
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-score
+        label.form__fieldset-label.form__fieldset-label--with-hint(for='credit-score')
+          | Credit Score
+          button.form__fieldset-label-hint-btn(type='button')
+
+            span.form__fieldset-hint
+              | Some useful information about credit score
+
+        select.form__fieldset-select(name='credit-score')
+          option(value='1' selected) Good (680 - 719)
+          option(value='2') Excellent
+          option(value='3') Normal
+          option(value='4') Bad

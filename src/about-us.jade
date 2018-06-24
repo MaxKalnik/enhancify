@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href="https://fonts.googleapis.com/css?family=Roboto:900" rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,600,700', rel='stylesheet')
+    link(inline='', rel='stylesheet', type='text/css', href='about-us.index.min.css')
+    title Enhancify Abouts Us
+
+  body
+    .header__content.header__content--short
+      include ./partials/_header-top.jade
+
+    .section
+      include ./partials/_about-us-upper.jade
+
+    .section
+      include ./partials/_upper-info.jade
+
+    .section
+      include ./partials/_analytics.jade
+
+    .section
+      include ./partials/_our-story.jade
+
+    .section
+      include ./partials/_map.jade
+
+    footer
+      include ./partials/_footer.jade
+
+    script(type='text/javascript', src='js/script.min.js')
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAv2l5KdFwcp5pqwd5SzuoJNwjcGCnkI88&callback=initMap')

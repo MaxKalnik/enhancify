@@ -1,0 +1,274 @@
+.main-steps
+  background #f5fafc
+
+.main-steps__wrapper
+  display flex
+  flex-direction column
+  align-items center
+  @extend .container
+  padding 64px 0 113px 0
+
+  +respond-to($medium)
+    padding 64px 0 170px 0
+
+  +respond-to($small)
+    padding 48px 0 125px 0
+
+  +respond-to($xsmall)
+    padding 32px 0 86px 0
+
+.main-steps__items
+  margin 48px 0 80px 0
+
+  +respond-to($medium)
+    margin 64px 0
+
+  +respond-to($small)
+    margin 48px 0
+
+  +respond-to($xsmall)
+    margin 48px 0 32px 0
+
+.main-steps__item
+  width 100%
+  position relative
+  background: #fff
+  box-shadow: 0 18px 32px 0 rgba(156,173,173,0.20)
+  border-radius: 6px
+  margin-bottom 80px
+  padding 48px
+  box-sizing border-box
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  &:last-child
+    margin-bottom 0
+
+  +respond-to($medium)
+    margin-bottom 64px
+    padding 48px
+    &:last-child
+      margin-bottom 0
+
+  +respond-to($small)
+    margin-bottom 42px
+    padding 24px
+    &:last-child
+      margin-bottom 0
+
+  +respond-to($xsmall)
+    margin-bottom 40px
+    padding 16px
+    &:last-child
+      margin-bottom 0
+
+  &:nth-child(odd)
+    padding-left 474px
+    +respond-to($medium)
+      padding-left 328px
+
+    +respond-to($small)
+      padding-left 264px
+
+    +respond-to($xsmall)
+      padding-left 16px
+      .main-steps__item-title
+        padding-left 95px
+
+  &:nth-child(even)
+    padding-right 474px
+    +respond-to($medium)
+      padding-right 328px
+
+    +respond-to($small)
+      padding-right 264px
+
+    +respond-to($xsmall)
+      padding-right 16px
+      .main-steps__item-title
+        padding-right 95px
+
+.main-steps__item--first
+  height 382px
+  +respond-to($medium)
+    height 366px
+
+  +respond-to($small)
+    height 360px
+
+  +respond-to($xsmall)
+    height auto
+
+.main-steps__item--second
+  height 382px
+  +respond-to($medium)
+    height 372px
+
+  +respond-to($small)
+    height 360px
+
+  +respond-to($xsmall)
+    height auto
+
+.main-steps__item--third
+  height 464px
+  +respond-to($medium)
+    height 412px
+
+  +respond-to($small)
+    height 496px
+
+  +respond-to($xsmall)
+    height auto
+
+.main-steps__item--last
+  height 416px
+  +respond-to($medium)
+    height 352px
+
+  +respond-to($small)
+    height 360px
+
+  +respond-to($xsmall)
+    height auto
+
+.main-steps__item-img
+  position absolute
+  width 320px
+  height 456px
+  +respond-to($medium)
+    width 235px
+    height 320px
+
+  +respond-to($small)
+    width 206px
+    height 280px
+
+  +respond-to($xsmall)
+    width 91px
+    height 124px
+
+.main-steps__item-img--one
+  width 221px
+  height 436px
+  top -39px
+  left 103px
+  +respond-to($medium)
+    width 162px
+    height 320px
+    top -14px
+    left 86px
+
+  +respond-to($small)
+    width 142px
+    height 280px
+    left 70px
+    top 59px
+
+  +respond-to($xsmall)
+    width 63px
+    height 124px
+    top -4px
+    left 30px
+
+.main-steps__item-img--two
+  width 320px
+  height 436px
+  right 43px
+  top -31px
+  +respond-to($medium)
+    width 235px
+    height 320px
+    right 81px
+    top -20px
+
+  +respond-to($small)
+    width 206px
+    height 280px
+    right 30px
+    top 50px
+
+  +respond-to($xsmall)
+    width 91px
+    height 124px
+    right 14px
+    top -12px
+
+.main-steps__item-img--three
+  width 318px
+  height 436px
+  left 103px
+  top 43px
+  +respond-to($medium)
+    width 233px
+    height 320px
+    left 74px
+    top 60px
+
+  +respond-to($small)
+    width 204px
+    height 280px
+    left 52px
+    top 128px
+
+  +respond-to($xsmall)
+    width 90px
+    height 124px
+    left 23px
+    top -10px
+
+.main-steps__item-img--dollar
+  width 334px
+  height 454px
+  right 52px
+  top -50px
+  +respond-to($medium)
+    width 235px
+    height 320px
+    right 42px
+    top 20px
+
+  +respond-to($small)
+    width 206px
+    height 280px
+    right 10px
+    top 64px
+
+  +respond-to($xsmall)
+    width 91px
+    height 124px
+    right 15px
+    top -18px
+
+.main-steps__item-title
+  font-weight 700
+  font-size: 30px
+  color: #293033
+  line-height: 40px
+  margin-bottom 24px
+
+  +respond-to($xsmall)
+    margin-top 24px
+    font-size 24px
+    line-height 32px
+    margin-bottom 40px
+
+.main-steps__item-text
+  font-weight 400
+  font-size: 16px
+  color: #525f66
+  line-height: 28px
+  margin-bottom 28px
+  &:last-child
+    margin-bottom 0
+
+.main-steps__item-link
+  @extend .link
+
+.main-steps__btn
+  @extend .btn-with-lock
+  +respond-to($xsmall)
+    img
+      left 50%
+      transform translateX(-50%)

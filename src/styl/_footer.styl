@@ -2,6 +2,11 @@
   padding: 48px 0
   background: #F5FAFC
   border-top: 1px solid #D6E0E5
+  +respond-to($small)
+    padding: 32px 0
+
+  +respond-to($xsmall)
+    padding: 24px 0
 
 .footer__wrapper
   @extend .container
@@ -10,14 +15,21 @@
   +respond-to($small)
     margin-bottom: 32px
 
-  +respond-to($small)
+  +respond-to($xsmall)
     margin-bottom: 24px
 
 .footer__columns
   display: flex
   flex-direction: row
+  justify-content: space-between
+  margin-right 152px
+
+  +respond-to($medium)
+    margin-right: 36px
+
   +respond-to($small)
     justify-content: space-between
+    margin-right 0
 
   +respond-to($xsmall)
     flex-wrap wrap
@@ -43,7 +55,7 @@
 
 .footer__columns-list-item--select
   margin-bottom: 16px
-  +respond-to($xsmall)
+  +respond-to($medium)
     margin-bottom: 0
 
 .footer__columns-list-link--tel
@@ -109,6 +121,10 @@
     order: 2
 
 .footer__columns-list--last
+  width 30%
+  +respond-to($small)
+    width 30%
+
   +respond-to($xsmall)
     width: 100%
     order: 4

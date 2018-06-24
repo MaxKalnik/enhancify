@@ -47,13 +47,43 @@ $headerNavHeight = 80px
       position: absolute
       top: -($headerNavHeight)
 
+.header__content--short
+  background: none
+  height: 0
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    background: none
+
+  +respond-to($medium)
+    background: none
+    height: 0
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: none
+
+  +respond-to($small)
+    background: none
+    height: 0
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: none
+
+  +respond-to($xsmall)
+    background: none
+    height: 0
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: none
+
+  +respond-to($xxsmall)
+    background: none
+    height: 0
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: none
+
 .header__content-top-wrapper
   width: 100%
   box-shadow: 0 1px 8px 0 rgba(82,95,102,0.10)
   position: fixed
   top: 0
   background: rgba(255,255,255, 0.95)
-  z-index: 99
+  z-index: 3
   +respond-to($small)
     position: absolute
     top: -($headerNavHeight)
@@ -74,9 +104,22 @@ $headerNavHeight = 80px
   +respond-to($medium)
     padding-top: 96px
 
+  +respond-to($small)
+    padding-top: 72px
+
+  +respond-to($xsmall)
+    padding-top: 32px
+
 .header__title
   text-align: center
   margin-bottom: 16px
+  font-size: 58px
+  color: #282828
+  text-align: center
+  line-height: 64px
+  +respond-to($small)
+    font-size: 40px
+    line-height: 48px
 
 .header__under-title
   text-align: center
@@ -85,6 +128,13 @@ $headerNavHeight = 80px
   font-weight: 600
   color: #293033
   margin-bottom: 44px
+  +respond-to($small)
+    margin-bottom: 32px
+
+  +respond-to($xsmall)
+    margin-bottom: 24px
+    font-size: 18px
+    line-height: 24px
 
 .header__main-link
   font-family: 'Roboto'
@@ -207,3 +257,8 @@ $headerNavHeight = 80px
   width: 100%
   opacity: 0.51
   background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 53%, rgba(0,0,0,0.62) 63%, rgba(0,0,0,0.67) 77%, rgba(0,0,0,0.72) 89%, #000000 100%)
+
+.header__contacts-btn-get-started--scroll
+  background: #0ACC48
+  border: 1px solid transparent
+  color: #ffffff

@@ -1,0 +1,37 @@
+include ./_svg-mixins
+
+.partnership-join
+  .partnership-join__wrapper
+    h2.section__title
+      | Haven’t joined yet? Learn more below
+
+    .partnership-join__list
+      .partnership-join__item
+        +application_svg
+        h3.partnership-join__item-subtitle
+          | Create an Account
+
+        p.partnership-join__item-text
+          |  Create an online account and customize your cobranded financing page. We’ll assign you to a dedicated account specialist who will contact you to answer any questions you may have.
+
+      .partnership-join__item
+        +certificate_svg
+        h3.partnership-join__item-subtitle
+          | Your Customers Get Matched
+
+        p.partnership-join__item-text
+          | Your customers will be matched with an average of 4-5 lenders within seconds - without it affecting their credit. Once the customer applies to the lender, they receive a response within minutes.
+
+      .partnership-join__item
+        +approved_svg
+        h3.partnership-join__item-subtitle
+          | Get Approved & Funded
+
+        p.partnership-join__item-text
+          | Once approved, either you or the customer can have the funds wired into a bank account as soon as the next business day.
+
+    a.partnership-join__btn
+      | Get Set up in 5 minutes or Less
+      picture
+        source(media='(max-width: 767px)', srcset="images/svg/our_process_320.svg")
+        img(src="images/svg/our_process.svg")

@@ -1,0 +1,152 @@
+.our-story
+  background: #f5fafc
+  padding: 80px 0 85px 0
+  +respond-to($medium)
+    padding: 85px 0 80px 0
+
+  +respond-to($small)
+    padding: 64px 0 80px 0
+
+  +respond-to($xsmall)
+    padding: 32px 0 86px 0
+
+.our-story__wrapper
+  @extend .container
+
+.our-story__people
+  display flex
+  justify-content space-around
+  margin-bottom 64px
+  margin-top 48px
+
+  +respond-to($medium)
+    margin-bottom 67px
+    margin-top 45px
+
+  +respond-to($small)
+    margin-bottom 48px
+    margin-top 32px
+    justify-content space-between
+
+  +respond-to($xsmall)
+    margin-bottom 29px
+    margin-top 29px
+    flex-direction column
+
+.our-story__people-img
+  width: 220px
+  height: 234px
+
+  +respond-to($small)
+    width 198px
+    height auto
+
+.our-story__people-text
+  font-size: 16px
+  color: #293033
+  letter-spacing: 0
+  font-weight: 400
+  color: #8fa7b3
+  font-size 14px
+  line-height 17px
+
+.our-story__people-text--name
+  font-weight 500
+  font-size 16px
+  line-height 23px
+  color: #293033
+  margin-bottom: 8px
+
+.our-story__people-item
+  position relative
+
+  +respond-to($xsmall)
+    width 198px
+    margin-left auto
+    margin-right auto
+    margin-bottom 10px
+    &:last-child
+      margin-bottom 0
+
+.our-story__people-text-wrap
+  position absolute
+  width 156px
+  display: inline-block
+  background: #fff
+  padding: 16px
+  border-radius: 6px
+  box-shadow: 0 18px 32px 0 rgba(156,173,173,0.20)
+  bottom 0
+  right -36px
+  box-sizing border-box
+
+  +respond-to($small)
+    right -20px
+
+.our-story__text-container
+  display: flex
+  justify-content space-between
+  margin-bottom 96px
+
+  +respond-to($medium)
+    margin-bottom 64px
+
+  +respond-to($small)
+    margin-bottom 32px
+
+  +respond-to($xsmall)
+    flex-direction column
+    margin-bottom 26px
+
+.our-story__text-wrap
+  width calc(50% - 32px)
+
+  +respond-to($medium)
+    width calc(50% - 16px)
+
+  +respond-to($xsmall)
+    width 100%
+
+.our-story__text
+  margin-bottom 32px
+  font-size: 18px
+  color: #525F66
+  line-height: 32px
+  &:last-child
+    margin-bottom 0
+
+.our-story__text--title
+  margin-bottom 16px
+  font-weight 500
+
+.our-story__text-wrap--mission
+  padding 32px
+  border 1px solid #d8ecfc
+  border-radius 6px
+  box-sizing border-box
+
+  +respond-to($xsmall)
+    padding 16px
+    margin-top 24px
+
+.our-story__under-text
+  font-size: 18px
+  color: #525F66
+  text-align: center
+  line-height: 32px
+  font-style italic
+  font-weight 300
+  margin-bottom 32px
+
+  +respond-to($xsmall)
+    margin-bottom 24px
+
+.our-story__btn
+  @extend .btn-with-lock
+  display block
+  margin-left auto
+  margin-right auto
+  img
+    +respond-to($xsmall)
+      left: 50%
+      transform translateX(-50%)

@@ -1,0 +1,91 @@
+include ./_svg-mixins
+
+.ui-kit
+  .ui-kit__wrapper
+    .ui-kit__btns
+      .ui-kit__row
+        button.btn-big
+          +ic_lock_svg
+          | Submit a Request
+
+        button.btn-big.btn-big--disabled
+          +ic_lock_svg
+          | Submit a Request
+
+      .ui-kit__row
+        button.btn-middle
+          | Get Matched
+
+        button.btn-middle.btn-middle--disabled
+          | Get Matched
+
+      .ui-kit__row
+        button.btn-outline
+          | Get Started
+
+        button.btn-outline.btn-outline--disabled
+          | Get Started
+
+      .ui-kit__row
+        button.btn-filled
+          | Get Started
+
+        button.btn-filled.btn-filled--disabled
+          | Get Started
+
+    .ui-kit__inputs
+      .ui-kit__row.ui-kit__row--inputs
+        .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+          label.form__fieldset-label(for='first-name')
+            | Contact Name
+
+          input.form__fieldset-input(type='text', name='first-name', id='first-name' placeholder='Enter your first name')
+          .form__fieldset-input-warning
+            | Enter the contact name
+
+        .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+          label.form__fieldset-label(for='first-name')
+            | Contact Name
+
+          input.form__fieldset-input.form__fieldset-input--invalid(type='text', name='first-name', id='first-name' placeholder='Enter your first name')
+          .form__fieldset-input-warning
+            | Enter the contact name
+
+      .ui-kit__row
+        .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+          label.form__fieldset-label(for='cc-debt-amount')
+            | Subject
+
+          select.form__fieldset-select(name='cc-debt-amount' data-placeholder='Choose your option')
+            option(value='1') Finance Questions
+            option(value='2' selected) Trouble logging into your account
+            option(value='3') Sales Questions
+            option(value='4') Parnership Questions
+
+      .ui-kit__row
+        .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+          label.form__fieldset-label(for='loan-amount')
+            | What is average price per job?
+
+          .range
+            input.form__fieldset-input-range.range__input(name='loan-amount')
+            input.range__slider(data-from="2000", data-max="61000", data-min="1000", data-step="100")
+
+      .ui-kit__row.ui-kit__row--checkbox
+        .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+          label.form__fieldset-label.form__fieldset-label--checkbox(for='agreement')
+            | What is average price per job?
+
+            input.form__fieldset-checkbox(type='checkbox', id='agreement')
+            span.form__fieldset-checkmark
+
+        .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+          label.form__fieldset-label.form__fieldset-label--checkbox(for='custom')
+            | What is average price per job?
+
+            input.form__fieldset-checkbox(type='checkbox', id='custom')
+            span.form__fieldset-checkmark.form__fieldset-checkmark--green
+
+      .ui-kit__row
+        button.open-dialog
+          | Open Popup Dialog

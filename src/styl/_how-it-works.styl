@@ -43,6 +43,10 @@
     @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
       background: #ffffff
 
+.how-it-works--refer-earn
+  background #fff
+  background-image none
+
 .how-it-works__item-icon
   width: 64px
   height: 64px
@@ -65,6 +69,17 @@
     width: calc(100% - 32px)
     padding: 32px 0
 
+.how-it-works__wrapper--refer-earn
+  padding: 64px 0 150px
+  +respond-to($medium)
+    padding: 64px 0 122px 0
+
+  +respond-to($small)
+    padding: 48px 0 84px 0
+
+  +respond-to($xsmall)
+    padding: 32px 0
+
 .how-it-works__list
   display: flex
   flex-direction: row
@@ -74,6 +89,10 @@
 
   +respond-to($small)
     flex-direction: column
+    margin-top: 32px
+
+  +respond-to($xsmall)
+    margin-top: 24px
 
 .how-it-works__item
   position: relative

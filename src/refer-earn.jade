@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href="https://fonts.googleapis.com/css?family=Roboto:900" rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,600,700', rel='stylesheet')
+    link(inline='', rel='stylesheet', type='text/css', href='refer-earn.index.min.css')
+    title Refer & Earn
+
+  body
+    .header__content.header__content--short
+      include ./partials/_header-top.jade
+
+    .section
+      include ./partials/_refer-earn-upper.jade
+
+    .section
+      include ./partials/_refer-earn-info.jade
+
+    .section
+      include ./partials/_refer-earn-how-it-works.jade
+
+    .section
+      include ./partials/_get-renovation.jade
+
+    footer
+      include ./partials/_footer.jade
+
+
+    script(type='text/javascript', src='js/script.min.js')

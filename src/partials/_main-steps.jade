@@ -1,0 +1,63 @@
+include ./_svg-mixins
+
+.main-steps
+  .main-steps__wrapper
+    h2.section__title
+      | How it Works
+
+    .main-steps__items
+      .main-steps__item.main-steps__item--first
+        picture
+          source(media='(max-width: 767px)', srcset="images/numbers/num_one_mob.png, images/numbers/num_one_mob@2x.png 2x")
+          img.main-steps__item-img.main-steps__item-img--one(src="images/numbers/num_one.png", srcset="images/numbers/num_one@2x.png 2x")
+
+        h3.main-steps__item-title
+          | Fill out our form
+
+        p.main-steps__item-text
+          | Just fill out our form and submit your information to us. That’s it.  There is no fee or obligation to proceed with any of the options we provide. Plus, all of your information is safe and secure — we use a SSL (Secure Sockets Layer) to establish an encrypted link so everything you provide to us remains private.
+
+      .main-steps__item.main-steps__item--second
+        picture
+          source(media='(max-width: 767px)', srcset="images/numbers/num_two_mob.png, images/numbers/num_two_mob@2x.png 2x")
+          img.main-steps__item-img.main-steps__item-img--two(src="images/numbers/num_two.png", srcset="images/numbers/num_two@2x.png 2x")
+
+        h3.main-steps__item-title
+          | Get Matched
+
+        p.main-steps__item-text
+          | Our proprietary technology does all the work. With the Information you submitted to us and our network of top rated lenders in today’s marketplace, we’re able to search and compare your best options offering unsecured loans. We do all the work!
+
+      .main-steps__item.main-steps__item--third
+        picture
+          source(media='(max-width: 767px)', srcset="images/numbers/num_three_mob.png, images/numbers/num_three_mob@2x.png 2x")
+          img.main-steps__item-img.main-steps__item-img--three(src="images/numbers/num_three.png", srcset="images/numbers/num_three@2x.png 2x")
+
+        h3.main-steps__item-title
+          | View Options & Apply
+
+        p.main-steps__item-text
+          | Based on our years of experience, the options we’ve identified are options we’ve determined to give you the best chance of obtaining the money you are searching for. On top of that, we’ve made things even easier for you by listing your options in order. As a bonus, we don’t pull your credit and most, if not all of the lenders in our network only do a soft credit inquiry.
+
+        p.main-steps__item-text
+          | So, just click on the ‘Apply Now’ button next to one, two or all of the options and submit your information on the lenders website. 
+          a.main-steps__item-link(href="") Learn more
+          |  about a hard inquiry vs. a soft inquiry on your credit report.
+
+      .main-steps__item.main-steps__item--last
+        picture
+          source(media='(max-width: 767px)', srcset="images/numbers/dollar_sign_mob.png, images/numbers/dollar_sign_mob@2x.png 2x")
+          img.main-steps__item-img.main-steps__item-img--dollar(src="images/numbers/dollar_sign.png", srcset="images/numbers/dollar_sign@2x.png 2x")
+
+        h3.main-steps__item-title
+          | Get Funded
+
+        p.main-steps__item-text
+          | We realize your time is valuable and want to get money as quickly as possible. Our network of lenders can usually get the money wired directly into your bank account within 1 to 5 business days once you’ve been approved. Keep in mind, every lender’s funding process is different, so be sure to check with each lender on their funding time.
+
+    a.main-steps__btn
+      +ic_lock_svg
+      | Get Started
+      picture
+        source(media='(max-width: 767px)', srcset="images/svg/wont_affect_320_2.svg")
+        img(src="images/svg/wont_affect.svg")

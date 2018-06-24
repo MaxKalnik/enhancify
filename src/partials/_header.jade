@@ -1,118 +1,7 @@
 include ./_svg-mixins
 
 .header__content
-  .header__content-top-wrapper
-    .header__content-top
-      button.main-nav__toggle(type='button')
-      .header__main-logo
-        a.header__main-link(href="/")
-          | Enhancify
-
-      .main-nav
-        ul.main-nav__list
-          li.main-nav__list-item.main-nav__list-item--hovered
-            span.main-nav__list-link.main-nav__list-link--first(href="")
-              | Loans
-
-            ul.main-nav__sub-list
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Home Improvements
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Roofing
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Bathrooms
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Kitchens
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Swimming Pools
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Basements
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | HVAC
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Plumbing
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Windows
-
-          li.main-nav__list-item.main-nav__list-item--hovered
-            span.main-nav__list-link(href="")
-              | Partnerships
-
-            ul.main-nav__sub-list
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Home Improvements
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Roofing
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Bathrooms
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Kitchens
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Swimming Pools
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Basements
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | HVAC
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Plumbing
-
-              li.main-nav__sub-list-item
-                a.main-nav__sub-list-link(href="")
-                  | Windows
-
-          li.main-nav__list-item
-            a.main-nav__list-link(href="")
-              | About Us
-
-          li.main-nav__list-item
-            a.main-nav__list-link(href="")
-              | Contact Us
-
-          li.main-nav__list-item
-            a.main-nav__list-link(href="")
-              | Refer & Earn
-
-          a.main-nav__contacts-btn-get-started(href="#")
-            | Get Started
-
-      .header__contacts
-        a.header__contacts-tel-link(href="tel: 1-800-900-9664")
-          | 1-800-900-9664
-
-        a.header__contacts-btn-get-started(href="#")
-          | Get Started
+  include ./_header-top.jade
 
   .header__main
     h1.header__title
@@ -125,7 +14,7 @@ include ./_svg-mixins
       +ic_lock_svg
       | Get Started
       picture
-        source(media='(max-width: 768px)', srcset="images/svg/wont_affect_320.svg")
+        source(media='(max-width: 767px)', srcset="images/svg/wont_affect_320.svg")
         img(src="images/svg/wont_affect.svg")
 
   ul.header__features

@@ -1,0 +1,654 @@
+.form
+  position: relative
+  margin-top: -122px
+
+  +respond-to($medium)
+    margin-top: -130px
+
+  +respond-to($small)
+    margin-top: -128px
+
+  +respond-to($xsmall)
+    margin-bottom: 44px
+
+.form--offers
+  margin-top: -82px
+  margin-bottom: 32px
+
+  +respond-to($medium)
+    margin-top: -84px
+
+  +respond-to($small)
+    margin-top: -80px
+
+  +respond-to($xsmall)
+    margin-top: -72px
+    margin-bottom: 24px
+
+.form--partnership
+  margin-top: -152px
+  margin-bottom: 41px
+
+  +respond-to($medium)
+    margin-top: -132px
+    margin-bottom: 48px
+
+  +respond-to($small)
+    margin-top: -80px
+    margin-bottom: 32px
+
+  +respond-to($xsmall)
+    margin-top: -80px
+    margin-bottom: 24px
+
+.form--affiliate
+  margin-top: -152px
+  margin-bottom: 111px
+
+  +respond-to($medium)
+    margin-top: -132px
+    margin-bottom: 118px
+
+  +respond-to($small)
+    margin-top: -80px
+    margin-bottom: 48px
+
+  +respond-to($xsmall)
+    margin-top: -80px
+    margin-bottom: 24px
+
+.form--lender
+  margin-top: -122px
+  margin-bottom: 111px
+
+  +respond-to($medium)
+    margin-top: -105px
+    margin-bottom: 118px
+
+  +respond-to($small)
+    margin-top: -75px
+    margin-bottom: 48px
+
+  +respond-to($xsmall)
+    margin-top: -75px
+    margin-bottom: 24px
+
+.form--contact
+  margin-top: -176px
+  margin-bottom: 111px
+
+  +respond-to($medium)
+    margin-top: -175px
+    margin-bottom: 148px
+
+  +respond-to($small)
+    margin-top: -75px
+    margin-bottom: 32px
+
+  +respond-to($xsmall)
+    margin-top: -75px
+    margin-bottom: 24px
+
+.form--login
+  margin-top 0
+  margin-bottom 48px
+
+  +respond-to($medium)
+    margin-top: 0
+    margin-bottom 48px
+
+  +respond-to($small)
+    margin-top: 0
+    margin-bottom 48px
+
+  +respond-to($xsmall)
+    margin-top: 0
+    margin-bottom 48px
+
+.form__fieldset
+  position: relative
+  width: 848px
+  background: #fff
+  box-shadow: 0 18px 32px 0 rgba(156,173,173,0.20)
+  border-radius: 6px
+  margin-bottom: 40px
+  padding: 32px
+  box-sizing: border-box
+  &:last-of-type
+    margin-bottom: 0
+
+  +respond-to($medium)
+    width 644px
+
+  +respond-to($small)
+    width 480px
+    padding: 32px 24px 24px 24px
+
+  +respond-to($xsmall)
+    width 100%
+    padding 24px
+
+.form__fieldset--info
+  padding-bottom: 40px
+
+  +respond-to($xsmall)
+    padding-bottom: 64px
+
+.form__fieldset--your-info
+  padding-bottom 8px
+
+  +respond-to($medium)
+    padding-bottom 32px
+
+  +respond-to($small)
+    padding-bottom 24px
+
+.form__fieldset--full
+  width 100%
+
+.form__fieldset--offers
+  padding 24px 32px 32px 32px
+
+  +respond-to($xsmall)
+    padding-bottom 64px
+
+  .form__fieldset-input-wrapper
+    margin-bottom 0
+
+    +respond-to($xsmall)
+      margin-bottom 32px
+      &:last-child
+        margin-bottom 0
+
+  .form__fieldset-label
+    font-size 14px
+    line-height 24px
+
+.form__fieldset--partnership
+  padding-bottom 48px
+
+  +respond-to($small)
+    padding-bottom 32px
+    width 100%
+
+  +respond-to($xsmall)
+    padding-bottom 24px
+
+.form__fieldset--affiliate
+  padding-bottom 48px
+
+  +respond-to($small)
+    padding-bottom 32px
+    width 100%
+
+  +respond-to($xsmall)
+    padding-bottom 24px
+
+.form__fieldset--lender
+  padding-bottom 48px
+
+  +respond-to($small)
+    padding-bottom 32px
+    width 100%
+
+  +respond-to($xsmall)
+    padding-bottom 24px
+
+.form__fieldset--contact
+  padding-bottom 48px
+
+  +respond-to($small)
+    padding-bottom 32px
+    width 100%
+
+  +respond-to($xsmall)
+    padding-bottom 24px
+
+.form__fieldset--login
+  padding: 48px 64px 64px 64px
+  display flex
+  flex-direction column
+  align-items center
+  width 100%
+
+  +respond-to($medium)
+    padding: 48px 64px 64px 64px
+
+  +respond-to($small)
+    padding: 48px 64px 64px 64px
+
+  +respond-to($xsmall)
+    padding: 24px 16px
+
+.form__login-icon
+  width 44px
+  height 44px
+  margin-bottom 32px
+
+  +respond-to($xsmall)
+    margin-bottom 24px
+
+.form__fieldset-wrapper
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+
+.form__fieldset-input-wrapper
+  position relative
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin-bottom: 30px
+  justify-content flex-end
+  &:last-child
+    margin-bottom: 0
+
+.form__fieldset-input-wrapper--full
+  width: 100%
+
+.form__fieldset-input-wrapper--half
+  width: calc(50% - 16px)
+
+  +respond-to($medium)
+    width: 100%
+
+    .form__fieldset--partnership &,
+    .form__fieldset--affiliate &,
+    .form__fieldset--lender &,
+    .form__fieldset--contact &
+      +respond-to($medium)
+        width: calc(50% - 12px)
+
+      +respond-to($xsmall)
+        width: 100%
+
+.form__fieldset-input-wrapper--offers-loan
+  width calc(35% - 21px)
+  box-sizing border-box
+
+  +respond-to($small)
+    width calc(35% - 16px)
+
+  +respond-to($xsmall)
+    width 100%
+
+.form__fieldset-input-wrapper--offers-income
+  width calc(35% - 21px)
+  box-sizing border-box
+
+  +respond-to($small)
+    width calc(35% - 16px)
+
+  +respond-to($xsmall)
+    width 100%
+
+.form__fieldset-input-wrapper--offers-score
+  width calc(30% - 21px)
+  box-sizing border-box
+
+  +respond-to($small)
+    width calc(30% - 16px)
+
+  +respond-to($xsmall)
+    width 100%
+
+.form__fieldset-input-wrapper--checkbox
+  margin-bottom 32px
+
+  +respond-to($small)
+    margin-bottom 24px
+
+  +respond-to($xsmall)
+    margin-bottom 16px
+
+.form__fieldset-ad-btn
+  position: absolute
+  right: 32px
+  top: 32px
+  padding-left: 24px
+  background: none
+  font-size: 12px
+  line-height: 16px
+  font-weight: 400
+  color: #8fa7b3
+  border: none
+  outline: none
+  cursor: pointer
+  &:before
+    content: ''
+    display block
+    width: 16px
+    height: 16px
+    position: absolute
+    left: 0
+    top: 0
+    background: url('images/svg/advertiser.svg') center no-repeat
+
+  +respond-to($small)
+    right 24px
+    top: 24px
+
+  +respond-to($xsmall)
+    width: 288px
+    top auto
+    bottom: 24px
+    right auto
+    left: 50%
+    transform: translateX(-50%)
+
+.form__fieldset-title
+  position: relative
+  font-size: 30px
+  line-height: 48px
+  font-weight: 700
+  color: #282828
+  margin-bottom: 32px
+  padding-left: 59px
+
+  +respond-to($small)
+    font-size: 24px
+    line-height: 32px
+    margin-bottom 24px
+
+.form__fieldset-title--center
+  text-align center
+
+.form__fieldset-upper-text
+  font-weight 400
+  font-size: 18px
+  color: #525F66
+  line-height: 32px
+  margin-bottom 32px
+
+  .form--login &
+    font-size 16px
+    line-height 28px
+
+  +respond-to($small)
+    margin-bottom 24px
+    line-height 28px
+
+  +respond-to($xsmall)
+    margin-bottom 32px
+    line-height 24px
+
+.form__fieldset-upper-text--center
+  text-align center
+
+.form__fieldset-title--small
+  padding-left 0
+  font-size 18px
+  line-height 24px
+  font-weight 500
+  color #293033
+  margin-bottom 16px
+
+.form__fieldset-title--no-icon
+  padding-left 0
+
+  +respond-to($small)
+    margin-bottom 24px
+
+  +respond-to($xsmall)
+    margin-bottom 16px
+
+.form__fieldset-title-icon
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+
+.form__fieldset-input
+  position: relative
+  width: 100%
+  padding: 10px 16px 12px 16px
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+  color: #293033
+  border: 1px solid #dde4e8
+  border-radius: 3px
+  box-sizing: border-box
+  &:focus
+    border: 1px solid #a8d5ff
+
+  &:placeholder
+    color: #d2dbe0
+
+.form__fieldset-input-warning
+  display: none
+  position: absolute
+  max-width: 100%
+  align-self: center
+  padding: 2px 16px
+  background: #fae2e2
+  border-radius: 3px
+  font-size: 12px
+  color: #de4b4b
+  line-height: 16px
+  bottom: -26px
+  width: 100%
+  box-sizing: border-box
+  text-align: center
+  &:before
+    content: ''
+    position: absolute
+    top: -5px
+    width: 0
+    height: 0
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    border-bottom: 10px solid #fae2e2
+    left: 50%
+    transform: translateX(-50%)
+
+
+.form__fieldset-input--invalid
+  border: 1px solid #de4b4b
+  margin-bottom: 0
+  &:focus
+    border: 1px solid #de4b4b
+
+  & + .form__fieldset-input-warning
+    display: block
+
+.form__fieldset-input-range
+  width: 100%
+  padding: 10px 16px 12px 16px
+  font-size: 18px
+  font-weight: 500
+  line-height: 24px
+  color: #293033
+  border: 1px solid #dde4e8
+  border-radius: 3px 3px 0 0
+  border-bottom: none
+  box-sizing: border-box
+
+.form__fieldset-select
+  width: 100%
+
+.form__fieldset-label
+  position relative
+  font-size: 16px
+  line-height: 24px
+  font-weight: 400
+  color: #293033
+  margin-bottom: 8px
+
+.form__fieldset-label--with-hint
+  position relative
+  padding-right 19px
+
+.form__fieldset-label-hint-btn
+  display inline-block
+  width 12px
+  height 12px
+  position relative
+  margin-left 4px
+  background url('images/svg/ic_question.svg') center no-repeat
+  cursor pointer
+  top -1px
+
+.form__fieldset-hint
+  position absolute
+  width 160px
+  display none
+  padding 16px
+  color #616e75
+  border-radius 6px
+  background #fff
+  font-size 12px
+  line-height 20px
+  font-weight 400
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.10)
+  border-radius: 5px
+  cursor: pointer
+  z-index: 2
+  bottom: calc(100% + 16px)
+  right: -89px
+  &:after
+    content: ''
+    position: absolute
+    bottom: -7px
+    left: 50%
+    transform: translate(-50%)
+    width: 0
+    height: 0
+    border-left: 7px solid transparent
+    border-right: 7px solid transparent
+    border-top: 7px solid $color-white
+
+.form__fieldset-hint--open
+    display block
+
+.form__fieldset-label--checkbox
+  position: relative
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  color: #293033
+  padding-left: 34px
+  margin-bottom: 0
+  cursor: pointer
+
+.form__fieldset-checkmark
+  position: absolute
+  left: 0
+  top: -1px
+  width 24px
+  height 24px
+  border: 1px solid #dce3e7
+  border-radius: 3px
+  &:hover
+    background-color #f5fcf5
+    border: 1px solid rgba(#68ba62, .5)
+
+.form__fieldset-label-link
+  @extend .link
+
+.form__fieldset-checkbox
+  position: absolute
+  width: 0
+  height: 0
+  visibility: hidden
+  opacity: 0
+  cursor: pointer
+
+.form__fieldset-checkbox:checked + .form__fieldset-checkmark
+  background-color #f5fcf5
+  background-image: url('images/svg/checkmark_green.svg')
+  background-position center
+  background-repeat no-repeat
+  border: 1px solid #17b548
+
+.form__submit-btn
+  outline: none
+  @extend .btn-with-lock
+  width: 100%
+  border: none
+  font-family: inherit
+
+  +respond-to($xsmall)
+    padding 16px 20px
+
+  .form--login &
+    padding 16px
+    margin-top 32px
+
+    +respond-to($xsmall)
+      margin-top 24px
+
+.form__terms-of-use
+  font-size: 12px
+  line-height: 20px
+  font-weight: 400
+  color: #8A9499
+  margin-top: 16px
+
+.form__terms-of-use-link
+  @extend .link
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 1px
+    background: transparent
+    width: 100%
+    transition: .25s
+
+  &:hover
+    &:after
+      background: #8CC6FE
+
+.form__under-text
+  font-size 14px
+  line-height 22px
+  color #525F66
+  font-weight 400
+  padding-left 24px
+  position relative
+  margin-top: 24px
+  &:before
+    content: ''
+    position absolute
+    left 0
+    top 2px
+    width 16px
+    height 16px
+    background url('images/svg/ic_lock_under_text.svg') center no-repeat
+
+.form__under-text-link
+  @extend .link
+
+.form__fieldset-input--textarea
+  height 144px
+
+.form__upper-icon-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.form__fieldset-btn-file
+  @extend .green-btn-filled
+  padding 10px
+  border-radius 0 3px 3px 0
+  width 45%
+  +respond-to(375px)
+    width 57%
+
+.form__file-wrapper
+  display flex
+  margin-top 8px
+  width 100%
+
+.form__fieldset-input--file
+  display none
+
+.form__fieldset-input--file-path
+  border-radius 3px 0 0 3px
+  width 55%
+
+  +respond-to(375px)
+    width 43%

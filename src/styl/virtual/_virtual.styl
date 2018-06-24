@@ -31,7 +31,8 @@
     border: 1px solid transparent
     color: #ffffff
 
-  &:active
+  &:active,
+  &--active
     background: #17B548
     border: 1px solid transparent
     color: #ffffff
@@ -40,6 +41,12 @@
     color: #B8C5CC
     border: 1px solid #B8C5CC
     background: #F5FAFC
+    &:active,
+    &--active,
+    &:hover
+      color: #B8C5CC
+      border: 1px solid #B8C5CC
+      background: #F5FAFC
 
 .green-btn-filled
   border: 1px solid #AEDAAB
@@ -59,13 +66,23 @@
     border: 1px solid #089936
     background: #E8F5F2
 
+  &--active
+    border: 1px solid #089936
+    background: #E8F5F2
+
   &--disabled
     color: #F1F7F9
     border: 1px solid #B8C5CC
     background: #F5FAFC
+    &:hover
+      border: 1px solid #B8C5CC
+
+    &:active
+      border: 1px solid #B8C5CC
+      background: #F5FAFC
 
 .btn-with-lock
-  width: 376px
+  width: auto
   box-sizing: border-box
   position: relative
   background: #17B548
@@ -73,7 +90,7 @@
   font-size: 18px
   line-height: 32px
   font-weight: 700
-  padding: 16px 128px
+  padding: 16px 64px
   border-radius: 4px
   cursor: pointer
   text-align: center
@@ -89,11 +106,9 @@
   &:active
     background: #17B548
 
-  &--disabled
-    color: #DAE2E6
-    background: #B8C5CC
-    #lock-svg-main
-      fill: #CED8DD
+  &--active
+    background: #17B548
+
   img
     position: absolute
     right: -150px
@@ -107,6 +122,21 @@
       left: 0
       top: 75px
 
+  &--disabled
+    color: #DAE2E6
+    background: #B8C5CC
+    #lock-svg-main
+      fill: #CED8DD
+    &:hover,
+    &:active,
+    &--active
+      background: #B8C5CC
+
+.btn-medium
+  @extend .btn-with-lock
+  padding-top 12px
+  padding-bottom 12px
+
 .main-text
   font-size: 16px
   line-height: 28px
@@ -115,3 +145,180 @@
 .equalize
   position: relative
   top -1px
+
+text-custom(color1, color2)
+  padding 12px 24px
+  color: #fff
+  font-size: 18px
+  line-height: 28px
+  background-image: color1
+  border-radius: 6px
+  a
+    background: color2
+    color: #fff
+    padding: 2px 4px
+    border-radius: 4px
+    font-weight: 500
+
+  +respond-to($small)
+    padding: 12px 16px
+
+  +respond-to($xsmall)
+    font-size: 16px
+    line-height: 24px
+
+.btn-custom
+  padding 16px 60px
+  display inline-block
+  font-weight 700
+  font-size: 14px
+  color: #fff
+  line-height: 16px
+  border 1px solid rgba(#fff, .5)
+  border-radius 3px
+  transition .25s
+  &:hover
+    background-color #fff
+    color #359fea
+    #btn-arrow-right
+      fill #359fea
+
+  .btn-right-arrow
+    display inline-block
+    margin-left 8px
+    position relative
+    top -1px
+
+  #btn-arrow-right
+    transition .25s
+
+.green-btn-filled
+  display inline-block
+  font-weight 700
+  font-size: 14px
+  color: #17B548
+  line-height: 24px
+  padding 16px 48px
+  background-color #f5fcf5
+  border 1px solid rgba(#68BA62, .5)
+  text-align center
+  &:hover
+    border 1px solid #17B548
+
+  &:active
+    background-color: #E8F5F2
+    border 1px solid #17B548
+
+  &--active
+    background-color: #E8F5F2
+    border 1px solid #17B548
+
+  &--disabled
+    color: #B8C5CC
+    border: 1px solid #B8C5CC
+    background: #F5FAFC
+    &:hover,
+    &:active,
+    &--active
+      color: #B8C5CC
+      border: 1px solid #B8C5CC
+      background: #F5FAFC
+
+  +respond-to($xsmall)
+    padding 8px 51px
+
+.popup
+  display none
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background-color rgba(0, 0, 0, .5)
+  z-index 4
+
+  .popup__wrapper
+    position fixed
+    width 720px
+    height 536px
+    box-sizing border-box
+    display flex
+    position relative
+    flex-direction column
+    left 50%
+    top 50%
+    transform translate(-50%, -50%)
+    border-radius 6px
+
+  .popup__close-btn
+    position: absolute
+    display: block
+    top: 16px
+    right: 16px
+    z-index: 3
+    &:before
+      position: absolute
+      left: 0
+      top: 7px
+      content: ''
+      height: 2px
+      width: 18px
+      background: #fff
+      transform: rotate(45deg)
+      box-shadow: none
+      transition: transform .25s
+      opacity: 1
+
+    &:after
+      position: absolute
+      left: 0
+      top: 7px
+      content: ''
+      height: 2px
+      width: 18px
+      background: #fff
+      transform: rotate(-45deg)
+      box-shadow: none
+      transition: transform .25s
+
+  .popup__congrats
+    padding 48px 64px
+    background-image: linear-gradient(-90deg, #17B548 0%, #06CF46 99%)
+    border-radius: 6px 6px 0 0
+
+  .popup__congrats-title
+    font-weight 700
+    font-size: 48px
+    color: #fff
+    letter-spacing: 0
+    text-align: center
+    line-height: 64px
+    text-shadow: 0 1px 2px rgba(15,85,150,0.10)
+    margin-bottom 16px
+
+  .popup__congrats-text
+    font-weight 400
+    font-size: 18px
+    color: #fff
+    text-align: center
+    line-height: 32px
+    text-shadow: 0 1px 2px rgba(15,85,150,0.10)
+
+  .popup__content
+    background-color #fff
+    padding 32px 48px 48px 48px
+    display flex
+    flex-direction column
+    align-items center
+    border-radius: 0 0 6px 6px
+
+  .popup__content-text
+    font-weight 400
+    font-size: 18px
+    color: #525F66
+    line-height: 32px
+    margin-bottom 32px
+
+  .popup__btn
+    @extend .green-btn-filled
+    padding 15px 47px

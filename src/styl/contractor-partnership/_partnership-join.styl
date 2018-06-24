@@ -1,0 +1,129 @@
+.partnership-join
+  width: 100%
+
+.partnership-join__item-icon
+  width: 64px
+  height: 64px
+
+  +respond-to($xsmall)
+    width: 48px
+    height: 48px
+
+.partnership-join__wrapper
+  @extend .container
+  padding: 80px 0 150px 0
+  display flex
+  flex-direction column
+  align-items center
+  +respond-to($medium)
+    padding: 80px 0 150px 0
+
+  +respond-to($small)
+    width: 696px
+    padding: 48px 0 84px 0
+
+  +respond-to($xsmall)
+    width: calc(100% - 32px)
+    padding: 40px 0 86px 0
+
+.partnership-join__list
+  display: flex
+  width 100%
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 48px
+  margin-bottom 80px
+  align-items: flex-start
+  box-sizing border-box
+
+  +respond-to($small)
+    flex-direction: column
+    margin-top: 32px
+    margin-bottom 32px
+
+  +respond-to($xsmall)
+    margin-top: 24px
+
+.partnership-join__item
+  position: relative
+  width: 360px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+  +respond-to($medium)
+    width: 286px
+
+  +respond-to($small)
+    width: 100%
+    padding-left: 84px
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 32px
+    &:last-child
+      margin-bottom: 0
+
+  +respond-to($xsmall)
+    padding-left: 0
+
+.partnership-join__item-icon
+  margin-bottom: 24px
+
+  +respond-to($small)
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+
+  +respond-to($xsmall)
+    top: -6px
+    transform: none
+
+.partnership-join__item-subtitle
+  font-size: 20px
+  color: #293033
+  text-align: center
+  line-height: 32px
+  font-weight: 700
+  margin-bottom: 16px
+  +respond-to($small)
+    text-align: left
+    margin-bottom: 8px
+
+  +respond-to($xsmall)
+    font-size: 18px
+    line-height:24px
+    padding-left: 64px
+    margin-bottom: 28px
+
+.partnership-join__item-text
+  font-size: 16px
+  color: #525F66
+  text-align: center
+  line-height: 28px
+  font-weight: 400
+  +respond-to($small)
+    text-align: left
+
+.partnership-join__btn
+  @extend .btn-with-lock
+  display inline-block
+  padding 12px 62px
+  margin 0 auto
+  +respond-to($small)
+    padding 12px 32px
+  +respond-to($xsmall)
+    padding 12px
+    width 100%
+    text-align center
+    box-sizing border-box
+
+  img
+    right -180px
+    top 15px
+    +respond-to($xsmall)
+      left 50%
+      transform translateX(-50%)
+      top 65px
+

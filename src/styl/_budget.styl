@@ -5,6 +5,9 @@
   +respond-to($small)
     padding: 64px 0 116px 0
 
+  +respond-to($xsmall)
+    padding: 32px 0 86px 0
+
 .budget__wrapper
   @extend .container
   display: flex
@@ -21,6 +24,11 @@
   +respond-to($small)
     flex-direction: column
     margin-bottom: 32px
+    margin-top: 32px
+
+  +respond-to($xsmall)
+    margin-top: 24px
+    margin-bottom: 24px
 
 .budget__list-item
   position: relative

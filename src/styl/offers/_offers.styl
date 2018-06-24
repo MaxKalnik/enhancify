@@ -1,0 +1,110 @@
+.offers__items
+  +respond-to($small)
+    display flex
+    justify-content space-between
+    flex-direction row
+    flex-wrap wrap
+
+.offers__item
+  display flex
+  position relative
+  padding 32px
+  background #fff
+  border-radius 6px
+  border 1px solid #E1EBF0
+  box-shadow: 0 2px 6px 0 rgba(177,185,189,0.20)
+  justify-content space-between
+  align-items center
+  box-sizing border-box
+
+  +respond-to($medium)
+    padding 32px 16px 32px 32px
+
+  +respond-to($small)
+    width calc(50% - 12px)
+    flex-direction column
+    padding 24px 16px 16px 16px
+    margin-bottom 24px
+
+  +respond-to($xsmall)
+    width 100%
+    &:last-child
+      margin-bottom 0
+
+.offers__item-logo
+  +respond-to($small)
+    width 100%
+    margin-bottom 24px
+    display flex
+    flex-direction column
+    align-items center
+
+.offers__item-text-container
+  position: relative
+  +respond-to($small)
+    width 100%
+    padding-bottom 16px
+    margin-bottom 15px
+    display flex
+    flex-direction column
+    align-items center
+    &:after
+      content: ''
+      height 1px
+      width calc(100% + 32px)
+      position: absolute
+      bottom 0
+      left -16px
+      background #dde4e8
+
+.offers__item-text-main
+  font-size: 24px
+  color: #293033
+  line-height: 48px
+  font-weight 600
+  margin-bottom 8px
+
+  +respond-to($small)
+    font-size 18px
+    line-height 24px
+
+.offers__item-text-under
+  font-size: 12px
+  color: #8fa7b3
+  line-height: 16px
+  font-weight 400
+
+.offers__item-btn-container
+  display flex
+  flex-direction column
+  align-items center
+
+.offers__item-btn
+  @extend .btn-with-lock
+  display block
+  width 250px
+  padding 14px 66px
+  font-size 14px
+  line-height 16px
+  margin-bottom 8px
+  box-sizing border-box
+
+  +respond-to($medium)
+    padding 14px 30px
+    width 176px
+
+  +respond-to($small)
+    width 100%
+
+.offers__item-number
+  position: absolute
+  padding 8px 12px 9px 8px
+  left 0
+  top 12px
+  color: #fff
+  font-size: 18px
+  color: #fff
+  line-height: 16px
+  font-weight 700
+  background #66B5FF
+  border-radius 0 22px 22px 0

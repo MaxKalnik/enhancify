@@ -1,0 +1,107 @@
+.irs {
+    height: 55px;
+}
+.irs-with-grid {
+    height: 75px;
+}
+.irs-line {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ddd -50%, #fff 150%) repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    height: 10px;
+    top: 33px;
+}
+.irs-line-left {
+    height: 8px;
+}
+.irs-line-mid {
+    height: 8px;
+}
+.irs-line-right {
+    height: 8px;
+}
+.irs-bar {
+    background: rgba(0, 0, 0, 0) linear-gradient(to top, rgb(66, 139, 202) 0%, rgb(127, 195, 232) 100%) repeat scroll 0 0;
+    border-bottom: 1px solid #428bca;
+    border-top: 1px solid #428bca;
+    height: 10px;
+    top: 33px;
+}
+.irs-bar-edge {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0, 0, 0, 0) linear-gradient(to top, rgb(66, 139, 202) 0%, rgb(127, 195, 232) 100%) repeat scroll 0 0;
+    border-color: #428bca currentcolor #428bca #428bca;
+    border-image: none;
+    border-radius: 16px 0 0 16px;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    height: 10px;
+    top: 33px;
+    width: 14px;
+}
+.irs-shadow {
+    background: #000 none repeat scroll 0 0;
+    border-radius: 5px;
+    height: 2px;
+    opacity: 0.3;
+    top: 38px;
+}
+.lt-ie9 .irs-shadow {
+}
+.irs-slider {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(220, 220, 220) 20%, rgb(255, 255, 255) 100%) repeat scroll 0 0;
+    border: 1px solid #aaa;
+    border-radius: 27px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    height: 27px;
+    top: 25px;
+    width: 27px;
+}
+.irs-slider.state_hover, .irs-slider:hover {
+    background: #fff none repeat scroll 0 0;
+}
+.irs-min, .irs-max {
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #333;
+    font-size: 12px;
+    line-height: 1.333;
+    padding: 1px 5px;
+    text-shadow: none;
+    top: 0;
+}
+.lt-ie9 .irs-min, .lt-ie9 .irs-max {
+    background: #ccc none repeat scroll 0 0;
+}
+.irs-from, .irs-to, .irs-single {
+    background: #428bca none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.333;
+    padding: 1px 5px;
+    text-shadow: none;
+}
+.lt-ie9 .irs-from, .lt-ie9 .irs-to, .lt-ie9 .irs-single {
+    background: #999 none repeat scroll 0 0;
+}
+.irs-grid {
+    height: 27px;
+}
+.irs-grid-pol {
+    background: #428bca none repeat scroll 0 0;
+    opacity: 0.5;
+}
+.irs-grid-pol.small {
+    background: #999 none repeat scroll 0 0;
+}
+.irs-grid-text {
+    bottom: 5px;
+    color: #99a4ac;
+}
+.irs-disabled {
+}

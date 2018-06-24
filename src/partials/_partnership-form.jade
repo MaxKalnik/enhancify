@@ -1,0 +1,121 @@
+include ./_svg-mixins
+
+form.form.form--partnership(action='', method='POST')
+  fieldset.form__fieldset.form__fieldset--partnership
+    h2.form__fieldset-title.form__fieldset-title--no-icon
+      | Contractor Sign-Up Form
+
+    p.form__fieldset-upper-text
+      | If you need financing for your customers, want to stay ahead of the competition or just want to close more sales, you’ve come to the right place – without having to pay any of those high dealer fees!
+
+    .form__fieldset-wrapper
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='first-name')
+          | First Name
+
+        input.form__fieldset-input(type='text', name='first-name', id='first-name' placeholder='Enter your first name')
+        .form__fieldset-input-warning
+          | Enter first name
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='last-name')
+          | Last Name
+
+        input.form__fieldset-input(type='text', id='last-name' name='last-name', placeholder='Enter your last name')
+        .form__fieldset-input-warning
+          | Enter last name
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='email')
+          | Contact Email Address
+
+        input.form__fieldset-input(type='email', id='email' name='email', placeholder='example@mail.com')
+        .form__fieldset-input-warning
+          | Invalid email
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='phone')
+          | Contact Number
+
+        input.form__fieldset-input(type='tel', id='phone', name='phone', placeholder='+1-800-900-9664')
+        .form__fieldset-input-warning
+          | Invalid phone number
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='company-name')
+          | Company Name
+
+        input.form__fieldset-input(type='text', id='company-name', name='company-name', placeholder='Enter the company name')
+        .form__fieldset-input-warning
+          | Invalid Company Name
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='website-url')
+          | Company Website URL
+
+        input.form__fieldset-input(type='text', id='website-url' name='website-url', placeholder='http://www.example.com')
+        .form__fieldset-input-warning
+          | Invalid value
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+        label.form__fieldset-label(for='company-address')
+          | Company Address
+
+        input.form__fieldset-input(type='text', id='company-address' name='company-address', placeholder='Enter the company address')
+        .form__fieldset-input-warning
+          | Invalid company address
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='currently-financing-option')
+          | Do you currently offer a financing option?
+
+        select.form__fieldset-select(name='currently-financing-option', id='currently-financing-option')
+          option(value='offer' selected) Offer
+          option(value='no-offer') No Offer
+          option(value='3') Another Option
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='price-per-job')
+          | What is average price per job?
+
+        .range
+          input.form__fieldset-input-range.range__input(name='price-per-job')
+          input.range__slider(data-from="20000", data-max="68000", data-min="1000", data-step="100")
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label.form__fieldset-label--with-hint(for='company-logo')
+          | Upload Company Logo for our Portal
+          button.form__fieldset-label-hint-btn(type='button')
+
+            span.form__fieldset-hint
+              | Some useful information
+
+        .form__file-wrapper
+          input.form__fieldset-input.form__fieldset-input--file(type="file", name="company-logo")
+          input.form__fieldset-input.form__fieldset-input--file-path(type="text", placeholder="File localtion…")
+          button.form__fieldset-btn-file(type="button") Browse Files…
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label.form__fieldset-label--with-hint(for='w9')
+          | Upload Signed W9
+          button.form__fieldset-label-hint-btn(type='button')
+
+            span.form__fieldset-hint
+              | Some useful information
+
+        .form__file-wrapper
+          input.form__fieldset-input.form__fieldset-input--file-path(type="text", placeholder="File localtion…")
+          button.form__fieldset-btn-file(type="button") Browse Files…
+          input.form__fieldset-input.form__fieldset-input--file(type="file", name="w9")
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full.form__fieldset-input-wrapper--checkbox
+        label.form__fieldset-label.form__fieldset-label--checkbox(for='agreement')
+          | I have read and agreed to the Enhancify.com 
+          a.form__fieldset-label-link(href='') Contractor Affiliate Agreement
+          |  and by submitting my information to Enhancify, I agree to be bound by the terms and conditions of this agreement as well as the terms and conditions of Enhancify.com.
+
+          input.form__fieldset-checkbox(type='checkbox', id='agreement')
+          span.form__fieldset-checkmark
+
+      button.form__submit-btn
+        | Submit a Request

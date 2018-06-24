@@ -34,28 +34,25 @@ var build_path = {
     svg: 'build/svg/'
 };
 
-
-
 gulp.task('inlineSVG', function () {
     return gulp.src(build_path.html + '*.css')
 
         .pipe(gulp.dest(build_path.html));
 });
 
-
-
 gulp.task('stylus', function () {
     return gulp.src([
-            dev_path.styl + '*.css',
-            dev_path.styl + 'virtual/*.css',
-            dev_path.styl + 'index.styl'
+            // dev_path.styl + '*.css',
+            // dev_path.styl + 'virtual/*.css',
+            dev_path.styl + '*.index.styl'
         ])
         .pipe(stylus({
             use: [autoprefixer({browsers: ['last 2 versions']})],
+            'include css': true,
             compress: true
         }))
         .on('error', console.log)
-        .pipe(concat('style.css'))
+        // .pipe(concat('style.css'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(build_path.html))
@@ -67,7 +64,15 @@ gulp.task('stylus', function () {
 
 gulp.task('js', function () {
     return gulp.src([
-            dev_path.js + '**/*'
+            dev_path.js + 'jquery-1.11.1.min.js',
+            dev_path.js + 'jquery.touchSwipe.min.js',
+            dev_path.js + 'ion.rangeSlider.js',
+            dev_path.js + 'inputmask.js',
+            dev_path.js + 'jquery.inputmask.js',
+            dev_path.js + 'inputmask.numeric.extensions.js',
+            dev_path.js + 'throttle.js',
+            dev_path.js + 'range-slider.js',
+            dev_path.js + 'local.js'
         ])
         .on('error', console.log)
         .pipe(concat('script.js'))
@@ -79,19 +84,8 @@ gulp.task('js', function () {
         }));
 });
 
-// gulp.task('js', function () {
-//     return gulp.src([
-//             dev_path.js + '**/*'
-//         ])
-//         .on('error', console.log)
-//         .pipe(gulp.dest(build_path.js))
-//         .pipe(browsersync.reload({
-//             stream: true
-//         }));
-// });
-
 gulp.task('jade', function(){
-    gulp.src([dev_path.html + '*.jade'])
+    gulp.src([dev_path.jade + '**/*.jade', dev_path.jade + '*.jade', dev_path.html + '*.jade'])
       .pipe(jade())
       .pipe(gulp.dest('./build/'))
 });
@@ -143,7 +137,7 @@ gulp.task('watch', function () {
     gulp.watch(dev_path.styl + '**/*.styl', ['stylus']);
     gulp.watch([dev_path.img + '**/*'], ['images']);
     gulp.watch([dev_path.html + '*.html'], ['copyhtml']);
-    gulp.watch([dev_path.jade + '**/*.jade'], ['jade']);
+    gulp.watch([dev_path.jade + '**/*.jade', dev_path.jade + '*.jade', dev_path.html + '*.jade'], ['jade']);
     gulp.watch(dev_path.js + '**/*.js', ['js']);
     livereload.listen();
     gulp.watch(['src/**']).on('change', livereload.changed);

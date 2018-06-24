@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#43E695" offset="0%"></stop>
+            <stop stop-color="#3BB2B8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="About-Us" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About_Us_1440" transform="translate(-704.000000, -3100.000000)">
+            <g id="Map" transform="translate(200.000000, 2852.000000)">
+                <g id="Contact" transform="translate(0.000000, 96.000000)">
+                    <g id="Group-7" transform="translate(504.000000, 152.000000)">
+                        <circle id="Oval" fill="url(#linearGradient-1)" cx="16" cy="16" r="16"></circle>
+                        <text id="E" font-family="Roboto-Black, Roboto" font-size="16" font-weight="700" line-spacing="24" fill="#FFFFFF">
+                            <tspan x="11" y="22">E</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

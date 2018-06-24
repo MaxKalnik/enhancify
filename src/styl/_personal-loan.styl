@@ -4,12 +4,14 @@
 
   +respond-to($medium)
     padding-bottom: 45px
+    padding-top: 64px
 
   +respond-to($small)
     padding-bottom 72px
 
   +respond-to($xsmall)
-    padding-bottom: 44px
+    padding-bottom: 8px
+    padding-top: 32px
 
 .personal-loan__list-link-icon
   width: 64px
@@ -64,10 +66,12 @@
     margin-right: 16px
 
   +respond-range(490px, $xsmall)
+    margin-bottom: 16px
     &:nth-child(3n)
       margin-right: 0
 
   +respond-to(490px)
+    margin-bottom: 16px
     &:nth-child(2n)
       margin-right: 0
 

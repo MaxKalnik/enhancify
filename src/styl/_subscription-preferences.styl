@@ -1,0 +1,196 @@
+.subscription-preferences
+  background: #f5fAfc
+
+.subscription-preferences__wrapper
+  display flex
+  position relative
+  @extend .container
+  padding-bottom: 64px
+  box-sizing: border-box
+  +respond-to($medium)
+    padding-bottom: 48px
+
+  +respond-to($small)
+    padding-bottom: 48px
+
+  +respond-to($xsmall)
+    padding-bottom: 32px
+
+.subscription-preferences__content
+  width: 100%
+  box-shadow: 0 18px 32px 0 rgba(156,173,173,0.20)
+  padding: 48px
+  position relative
+  margin-top: -78px
+  background: #fff
+  box-sizing: border-box
+  border-radius: 6px
+
+  +respond-to($medium)
+    margin-top: -70px
+    padding: 32px
+
+  +respond-to($small)
+    margin-top: -64px
+    padding: 24px
+    padding-bottom 30px
+
+  +respond-to($xsmall)
+    width: 100%
+    padding: 24px 16px 16px 16px
+    margin-top: -73px
+
+.subscription-preferences__upper-text
+  margin-bottom 32px
+  font-size: 20px
+  color: #525F66
+  text-align: center
+  line-height: 32px
+  font-weight 500
+
+.subscription-preferences__inner-wrapper--checkbox
+  background-color #f5fcf5
+  border 1px solid rgba(#68BA62, .5)
+  padding 24px
+  border-radius 3px
+  margin-bottom 32px
+
+.subscription-preferences__form-checkbox-label
+  font-weight 500
+  font-size: 16px
+  color: #525F66
+  line-height: 24px
+  position relative
+  cursor pointer
+  padding-left 40px
+
+.subscription-preferences__form-checkbox
+  position: absolute
+  width: 0
+  height: 0
+  visibility: hidden
+  opacity: 0
+  cursor: pointer
+
+.subscription-preferences__form-checkmark
+  position: absolute
+  left 0
+  top -4px
+  width 24px
+  height 24px
+  border: 1px solid #17b548
+  border-radius: 3px
+  background-color #fff
+
+.subscription-preferences__form-checkbox:checked + .subscription-preferences__form-checkmark
+  background-image: url('images/svg/checkmark_green.svg')
+  background-position center
+  background-repeat no-repeat
+
+.subscription-preferences__under-text
+  font-weight 400
+  font-size: 16px
+  color: #525F66
+  line-height: 24px
+  margin-top 16px
+
+.subscription-preferences__form-email-label
+  width 69%
+  position relative
+  font-weight 500
+  font-size: 18px
+  color: #525F66
+  text-align: center
+  line-height: 32px
+  display flex
+  flex-direction column
+  align-items flex-start
+
+  +respond-to($medium)
+    width 62%
+
+  +respond-to($small)
+    width 52%
+
+  +respond-to($xsmall)
+    width 100%
+    margin-bottom 16px
+
+.subscription-preferences__inner-wrapper--mail
+  display flex
+  align-items flex-end
+  +respond-to($xsmall)
+    flex-direction column
+
+.subscription-preferences__form-email-input
+  position: relative
+  width: 100%
+  padding: 19px 16px
+  font-size: 16px
+  font-weight: 400
+  line-height: 24px
+  color: #293033
+  border: 1px solid #dde4e8
+  border-radius: 3px
+  box-sizing: border-box
+  margin-top 12px
+  &:focus
+    border: 1px solid #a8d5ff
+
+  &:placeholder
+    color: #d2dbe0
+
+.subscription-preferences__form-email-input-warning
+  display: none
+  position: absolute
+  max-width: 100%
+  align-self: center
+  padding: 2px 16px
+  background: #fae2e2
+  border-radius: 3px
+  font-size: 12px
+  color: #de4b4b
+  line-height: 16px
+  bottom: -26px
+  width: 100%
+  box-sizing: border-box
+  text-align: center
+  &:before
+    content: ''
+    position: absolute
+    top: -5px
+    width: 0
+    height: 0
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    border-bottom: 10px solid #fae2e2
+    left: 50%
+    transform: translateX(-50%)
+
+.subscription-preferences__form-email-input--invalid
+  border: 1px solid #de4b4b
+  margin-bottom: 0
+  &:focus
+    border: 1px solid #de4b4b
+
+  & + .subscription-preferences__form-email-input-warning
+    display: block
+
+.subscription-preferences__form-submit-btn
+  @extend .btn-with-lock
+  padding 20px 16px
+  text-align center
+  margin-left 24px
+  font-size 16px
+  line-height 24px
+  width 31%
+  +respond-to($medium)
+    width 38%
+
+  +respond-to($small)
+    width 48%
+    margin-left 32px
+
+  +respond-to($xsmall)
+    width 100%
+    margin-left 0

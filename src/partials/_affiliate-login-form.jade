@@ -1,0 +1,31 @@
+include ./_svg-mixins
+
+form.form.form--login(action='', method='POST')
+  fieldset.form__fieldset.form__fieldset--login
+    .form__upper-icon-wrapper
+      +ic_login_svg
+    h2.form__fieldset-title.form__fieldset-title--no-icon.form__fieldset-title--center
+      | Affiliate Login
+
+    p.form__fieldset-upper-text.form__fieldset-upper-text--center
+      | Already a part of our Affiliate program? Login to your account to view reports, obtain links, and see your commissions in real-time.
+
+    .form__fieldset-wrapper
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+        label.form__fieldset-label(for='username')
+          | Your Username
+
+        input.form__fieldset-input(type='text', name='username', id='username' placeholder='Enter your email address')
+        .form__fieldset-input-warning
+          | Enter your username or email address
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
+        label.form__fieldset-label(for='password')
+          | Your Password
+
+        input.form__fieldset-input(type='password', id='password' name='password', placeholder='*********')
+        .form__fieldset-input-warning
+          | Invalid password
+
+    button.form__submit-btn
+      | Sign into your Account

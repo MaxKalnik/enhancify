@@ -1,0 +1,60 @@
+.privileges
+  display flex
+  flex-direction column
+  align-items center
+
+.privileges__title
+  font-weight 500
+  font-size: 18px
+  color: #525F66
+  text-align: center
+  line-height: 24px
+
+.privileges__items
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content space-between
+  margin 32px 0 0 0
+
+  +respond-to($xsmall)
+    flex-direction column
+    margin 24px 0 0 0
+
+.privileges__item
+  width 30%
+  display flex
+  flex-direction row
+  align-items center
+  margin-bottom 24px
+  &:last-child
+    margin-bottom 0
+
+  +respond-to($xsmall)
+    width 100%
+    margin-bottom 24px
+    &:last-child
+      margin-bottom 0
+
+  .icon-main
+    width 44px
+    height 44px
+    margin-right 16px
+    flex-shrink: 0
+
+.privileges__item-text
+  font-size: 14px
+  color: #4C7B93
+  line-height: 22px
+  font-weight 500
+
+.privileges__button
+  @extend .green-btn-filled
+  margin-top 8px
+
+  +respond-to($xsmall)
+    margin-top 32px
+    min-height 56px
+    box-sizing border-box
+    display flex
+    align-items center

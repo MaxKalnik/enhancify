@@ -1,0 +1,62 @@
+.map
+  background: #fff
+  padding 80px 0 80px 0
+
+  +respond-to($medium)
+    padding 64px 0 64px 0
+
+  +respond-to($xsmall)
+    padding 32px 0 32px 0
+
+.map__wrapper
+  @extend .container
+
+.map__contacts-container
+  display flex
+  justify-content space-between
+  margin-bottom 32px
+
+  +respond-to($xsmall)
+    margin-bottom 22px
+    flex-direction column
+
+.map__contacts-text
+  font-size: 16px
+  color: #293033
+  line-height: 32px
+  font-weight 400
+
+.map__contacts-text--semibold
+  font-size: 18px
+  font-weight 500
+
+.map__contacts-tel
+  @extend .tel-btn
+  font-weight 500
+  font-size: 18px
+  line-height 28px
+  margin-bottom 9px
+  &:before
+    top 7px
+
+.map__contacts-link
+  @extend .link
+  font-size: 16px
+
+.map__contacts-item
+  display flex
+  flex-direction column
+  align-items: flex-start
+  +respond-to($xsmall)
+    margin-bottom 24px
+    &:last-child
+      margin-bottom 0
+
+#map
+  height 366px
+  width 100%
+  +respond-to($medium)
+    height 328px
+
+  +respond-to($small)
+    height 252px

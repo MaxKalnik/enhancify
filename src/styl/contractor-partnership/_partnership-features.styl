@@ -1,0 +1,67 @@
+.partnership-features
+  background #f5fafc
+  border-top: 1px solid rgba(#8fa7b3, .3)
+
+.partnership-features__wrapper
+  @extend .container
+  padding 80px 0 40px 0
+
+  +respond-to($medium)
+    padding 46px 0 40px 0
+
+  +respond-to($small)
+    padding 30px 0 8px 0
+
+  +respond-to($xsmall)
+    padding 30px 0 24px 0
+
+.partnership-features__upper-text
+  font-size: 16px
+  color: #525F66
+  letter-spacing: 0
+  text-align: center
+  line-height: 28px
+  font-weight 400
+  margin-top 24px
+  margin-bottom 48px
+
+  +respond-to($medium)
+    margin-top 24px
+    margin-bottom 48px
+
+  +respond-to($xsmall)
+    margin-bottom 24px
+
+.partnership-features__items
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content space-between
+
+  +respond-to($xsmall)
+    flex-direction column
+
+.partnership-features__item
+  width 30%
+  display flex
+  flex-direction row
+  align-items center
+  margin-bottom 40px
+
+  +respond-to($xsmall)
+    width 100%
+    margin-bottom 24px
+    &:last-child
+      margin-bottom 0
+
+  .icon-main
+    width 56px
+    height auto
+    margin-right 16px
+    flex-shrink: 0
+
+.partnership-features__item-text
+  font-size: 16px
+  color: #4C7B93
+  line-height: 24px
+  font-weight 500

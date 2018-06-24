@@ -1,0 +1,256 @@
+$gradientBlue = linear-gradient(135deg, #026BD4 0%, #47C2FF 100%)
+$darkBlue = #0F66B1
+
+.side
+  width: 262px
+
+  +respond-to($small)
+    width: 216px
+
+  +respond-to($xsmall)
+    width: 100%
+
+  .icon-main
+    width 44px
+    height 44px
+    left: 0
+    margin-right 14px
+    flex-shrink 0
+
+.side--partnership
+  +respond-to($small)
+    width 100%
+
+.side--affiliate
+  +respond-to($small)
+    width 100%
+
+.side--lender
+  +respond-to($small)
+    width 100%
+
+.side--contact
+  +respond-to($small)
+    width 100%
+
+.side__blocks
+  .side--contact &
+    +respond-to($small)
+      width 100%
+      display flex
+      justify-content space-between
+
+    +respond-to($xsmall)
+      flex-direction column
+
+.side__block
+  padding-bottom: 24px
+  border-bottom: 1px solid rgba(#4C7B93, .2)
+  margin-bottom: 46px
+  &:last-child:not(.side__block--custom)
+    padding-bottom 0
+    margin-bottom: 0
+    border-bottom: none
+
+  .side--partnership &,
+  .side--affiliate &,
+  .side--lender &
+    margin-bottom 32px
+    &:last-child
+      margin-bottom 0
+
+    +respond-to($small)
+      margin-bottom 12px
+      border-bottom none
+      &:last-child
+        margin-bottom 0
+
+  .side--contact &
+    +respond-to($small)
+      width calc(50% - 16px)
+      flex-shrink 0
+      flex-grow 1
+      box-sizing border-box
+
+    +respond-to($xsmall)
+      width 100%
+
+.side__block--first
+  .side--contact &
+    padding-bottom 0
+    border-bottom none
+    margin-bottom 32px
+    +respond-to($small)
+      margin-bottom 0
+
+.side__block-title
+  font-size: 18px
+  line-height 24px
+  font-weight: 500
+  color: #525F66
+  margin-bottom: 24px
+  .side--partnership &,
+  .side--affiliate &
+    margin-bottom 16px
+    +respond-to($small)
+      margin-bottom 8px
+
+  .side--affiliate &,
+  .side--lender &
+    +respond-to($small)
+      margin-bottom 32px
+
+    +respond-to($xsmall)
+      margin-bottom 24px
+
+  .side--contact &
+    +respond-to($small)
+      margin-bottom 14px
+
+.side__block-title--close
+  .side--affiliate &,
+  .side--lender &
+    +respond-to($small)
+      margin-bottom 16px
+
+    +respond-to($xsmall)
+      margin-bottom 8px
+
+.side__text-with-icon
+  position: relative
+  display flex
+  font-size: 14px
+  line-height: 22px
+  align-items center
+  justify-content: flex-start
+  color: #4C7B93
+  font-weight: 500
+  margin-bottom: 32px
+  &:last-child
+    margin-bottom: 0
+
+  .side--partnership &,
+  .side--affiliate &,
+  .side--lender &
+    margin-bottom 24px
+    +respond-to($small)
+      margin-bottom 24px
+
+    +respond-to($xsmall)
+      &:last-child
+        margin-bottom: 0
+
+  .side--contact &
+    +respond-to($small)
+      margin-bottom 16px
+
+    +respond-to($xsmall)
+      margin-bottom 32px
+
+.side__text
+  font-size: 14px
+  line-height: 22px
+  font-weight: 500
+  color: #525F66
+
+.side__block__under-text
+  font-size: 12px
+  color: #8fa7b3
+  line-height: 22px
+  font-weight 300
+  font-style italic
+
+.side__text--thin
+  font-weight 400
+
+.side__text-link
+  @extend .link
+
+.side__text-with-check-ic
+  position relative
+  padding-left: 28px
+  font-size: 14px
+  line-height: 22px
+  font-weight: 400
+  color: #525F66
+  margin-bottom: 32px
+  &:last-child
+    margin-bottom: 0
+
+  &:before
+    content: ''
+    position: absolute
+    width: 16px
+    height: 16px
+    left 0
+    top 2px
+    background url('images/svg/checkmark.svg') center no-repeat
+
+.side__block-upper-text
+  font-size: 14px
+  color: #525F66
+  line-height: 22px
+  font-weight 400
+  margin-bottom 24px
+
+.side__text-with-icon-container
+  +respond-to($small)
+    display flex
+    flex-wrap wrap
+    .side__text-with-icon
+      width 50%
+
+  +respond-to($xsmall)
+    flex-direction column
+
+    .side__text-with-icon
+      width 100%
+
+  .side--contact &
+    +respond-to($small)
+      flex-direction column
+      .side__text-with-icon
+        width 100%
+
+.side__block-btn
+  @extend .btn-custom
+
+.side__block--custom
+  text-custom($gradientBlue, $darkBlue)
+  padding 24px
+  padding-bottom 24px
+  cursor pointer
+  +respond-to($small)
+    padding 24px
+
+  +respond-to($xsmall)
+    display flex
+    padding 16px
+    margin-bottom 0
+    flex-direction column
+
+  .side__block-title
+    font-weight 500
+    font-size: 18px
+    color: #fff
+    line-height: 28px
+    margin-bottom 16px
+
+  .side__block-text
+    font-weight 400
+    font-size: 16px
+    color: #fff
+    line-height: 24px
+    margin-bottom 24px
+
+    +respond-to($small)
+      margin-bottom 16px
+
+  .side__block-btn
+    @extend .btn-custom
+    box-sizing border-box
+    background-color transparent
+    +respond-to($xsmall)
+      width 100%
+      text-align center
+      align-self center

@@ -1,0 +1,26 @@
+.subscription-preferences
+  .subscription-preferences__wrapper
+    .subscription-preferences__content
+      .subscription-preferences__upper-text
+        | Just take a moment and tell us how you would like us to communicate with you and we’ll take care of the rest 
+
+      form.subscription-preferences__form
+        .subscription-preferences__inner-wrapper.subscription-preferences__inner-wrapper--checkbox
+          label.subscription-preferences__form-checkbox-label(for="stop")
+            input.subscription-preferences__form-checkbox(type="checkbox", id="stop", name="stop")
+            span.subscription-preferences__form-checkmark
+            | Stop Everything
+
+          p.subscription-preferences__under-text
+            | Please stop all communication: emails, phone calls and text messages too.
+
+        .subscription-preferences__inner-wrapper.subscription-preferences__inner-wrapper--mail
+          label.subscription-preferences__form-email-label
+            | Enter your email address
+
+            input.subscription-preferences__form-email-input(type="email", name="email", placeholder="Enter email address")
+            .subscription-preferences__form-email-input-warning
+              | Enter your email address
+
+          button.subscription-preferences__form-submit-btn(type="submit")
+            | Save Subscription Changes

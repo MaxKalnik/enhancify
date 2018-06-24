@@ -1,0 +1,146 @@
+$green = #27BA54
+$gray = #cbd2d6
+
+.range
+  width: 100%
+  position: relative
+  display: inline-block
+
+.irs
+  position: absolute
+  bottom: 0
+  left: 0
+  height: 2px
+  width: 100%
+
+.irs-line
+  border-radius: 0
+  background: #d4dde0
+  height: 2px
+  border: 0
+  top: 0
+
+  .range &
+    background-color: #cbd2d6
+    height: 2px
+
+.irs-bar,
+.irs-bar-edge
+  height: 2px
+  border: 0
+  top: 0
+  background: $green
+
+  .range--focus &
+    background: $green
+
+  .range--dirty &
+    background: $green
+
+.irs-bar
+  .savings-calculator__range-slider &
+    height: 6px
+    background: $green
+
+    .range--focus &
+      background: $green
+
+    .range--dirty &
+      background: $green
+
+.irs-bar-edge
+  border-radius: 0
+  width: 9px
+
+  .range &
+    border-top-left-radius: 6px
+    border-bottom-left-radius: 6px
+    background-color: $green
+    height: 2px
+    width: 12px
+
+.irs-slider
+  background: $green
+  width: 10px
+  height: 10px
+  top: 50%
+  margin-top: -5px
+  box-shadow: none
+  border-radius: 50%
+  border: 0
+
+  +respond-to($small)
+    &:after
+      content: ''
+      position: absolute
+      top: -10px
+      left: -10px
+      width: 30px
+      height: 30px
+
+  &:hover
+    background: $green
+
+  .range--focus &
+    background: $green
+
+    &:hover
+      background: $green
+
+  .range--dirty &
+    background: $green
+
+    &:hover
+      background: $green
+
+  .range &
+    width: 14px
+    height: 14px
+    position: relative
+    background-color: $green
+    margin-top: -8px
+    z-index: 0 // for fix bug with popup overflow
+
+    &:hover
+      background: $green
+
+      .range--focus &
+        background: $green
+
+        &:hover
+          background: $green
+
+      .range--dirty &
+        background: $green
+
+        &:hover
+          background: $green
+
+    &:before,
+    &:after
+      position: absolute
+      border-radius: 50%
+
+    &:before
+      width: 16px
+      height: 16px
+      top: 4px
+      left: 4px
+      background: #48adee
+      box-shadow: 0 2px 4px 0 rgba(72, 173, 238, .3)
+
+    &:after
+      content: ''
+      width: 6px
+      height: 6px
+      top: calc(50% - 3px)
+      left: calc(50% - 3px)
+      background-color: $green
+
+      .range--focus &
+        background-color: #fff
+
+.range.range--focus
+  .irs-slider
+    &:after
+      background-color: #fff

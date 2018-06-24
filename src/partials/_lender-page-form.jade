@@ -1,0 +1,68 @@
+include ./_svg-mixins
+
+form.form.form--lender(action='', method='POST')
+  fieldset.form__fieldset.form__fieldset--lender
+    h2.form__fieldset-title.form__fieldset-title--no-icon
+      | Let’s Talk Partnership
+
+    .form__fieldset-wrapper
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='company-name')
+          | Company Name
+
+        input.form__fieldset-input(type='text', name='company-name', id='company-name' placeholder='Enter the name of your company')
+        .form__fieldset-input-warning
+          | Enter Company Name
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='company-website')
+          | Company Website
+
+        input.form__fieldset-input(type='text', id='company-website' name='company-website', placeholder='http://www.example.com')
+        .form__fieldset-input-warning
+          | Enter Company Website Url
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='contact-name')
+          | Contact Name
+
+        input.form__fieldset-input(type='text', id='contact-name' name='contact-name', placeholder='Enter the contact name')
+        .form__fieldset-input-warning
+          | Invalid contact Name
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='phone')
+          | Contact Number
+
+        input.form__fieldset-input(type='tel', id='phone', name='phone', placeholder='+1-800-900-9664')
+        .form__fieldset-input-warning
+          | Invalid phone number
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='contact-email')
+          | Contact Email Address
+
+        input.form__fieldset-input(type='email', id='contact-email', name='contact-email', placeholder='example@mail.com')
+        .form__fieldset-input-warning
+          | Invalid Email Address
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+        label.form__fieldset-label(for='loan-type')
+          | Type of Loan Product
+
+        select.form__fieldset-select(name='loan-type')
+          option(value='1' selected) Unsecured
+          option(value='2') Option 2
+          option(value='3') Option 3
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full.form__fieldset-input-wrapper--checkbox
+        label.form__fieldset-label.form__fieldset-label--checkbox(for='agreement')
+          | I have read and agreed to Enhancify’s 
+          a.form__fieldset-label-link(href='') Affiliate Marketing Agreement
+          |  and by submitting my information to Enhancify, I agree to be bound by the terms and conditions of this agreement as well as the terms and conditions of Enhancify.com.
+
+          input.form__fieldset-checkbox(type='checkbox', id='agreement')
+          span.form__fieldset-checkmark
+
+      button.form__submit-btn
+        | Submit a Request

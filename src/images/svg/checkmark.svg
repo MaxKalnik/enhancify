@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_lock copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Fillup-Form" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fillup_Form_1440" transform="translate(-1028.000000, -1002.000000)">
+            <g id="Right_panel" transform="translate(1028.000000, 464.000000)">
+                <g id="Group-11" transform="translate(0.000000, 478.000000)">
+                    <g id="Group-17" transform="translate(0.000000, 56.000000)">
+                        <g id="ic_lock-copy" transform="translate(0.000000, 4.000000)">
+                            <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                            <circle id="Oval" stroke="#68BA62" cx="8" cy="8" r="7.5"></circle>
+                            <path d="M11.8828419,5.11965576 C11.726639,4.96011475 11.4733893,4.96011475 11.3171551,5.11965576 L6.52491098,10.0138692 L4.68285073,8.13263203 C4.52664779,7.97309102 4.2733981,7.97310697 4.11716392,8.13263203 C3.96094536,8.29215709 3.96094536,8.55079289 4.11716392,8.71033391 L6.24206758,10.8803981 C6.39822363,11.0399231 6.65166083,11.0398114 6.80775439,10.8803981 L11.8828419,5.6973736 C12.0390605,5.53784854 12.0390449,5.27919678 11.8828419,5.11965576 Z" id="Shape" stroke="#68BA62" stroke-width="0.5" fill="#68BA62" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
