@@ -10,9 +10,20 @@
 .ui-kit__row
   margin-bottom 32px
 
+.ui-kit__btns
+  .ui-kit__row
+    +respond-to($xsmall)
+      flex-direction column
+
 .btn-big
   @extend .btn-with-lock
   margin-right 24px
+
+  +respond-to($small)
+    padding 16px
+
+  +respond-to($xsmall)
+    margin-bottom 24px
 
 .btn-big--disabled
   @extend .btn-with-lock--disabled
@@ -23,6 +34,8 @@
   padding-top 12px
   padding-bottom 12px
   margin-right 24px
+  +respond-to($xsmall)
+    margin-bottom 24px
 
 .btn-middle--disabled
   @extend .btn-with-lock--disabled
@@ -33,11 +46,16 @@
 .btn-outline
   @extend .green-btn
   margin-right 24px
+  margin-right 24px
+  +respond-to($xsmall)
+    margin-bottom 24px
 
 .btn-filled
   @extend .green-btn-filled
   margin-right 24px
   padding 11px 32px
+  +respond-to($xsmall)
+    margin-bottom 24px
 
 .open-dialog
   border 1px solid #d2dbe0
@@ -47,16 +65,27 @@
   display flex
   flex-direction row
   justify-content space-between
+  +respond-to($xsmall)
+    flex-direction column
 
   .form__fieldset-input-wrapper
     margin-bottom 0
     width calc(50% - 16px)
+    +respond-to($xsmall)
+      margin-bottom 30px
+      width 100%
 
 .ui-kit__row--checkbox
   display flex
   flex-direction row
   justify-content space-between
 
+  +respond-to($xsmall)
+    flex-direction column
+
   .form__fieldset-input-wrapper
     margin-bottom 0
     width calc(50% - 16px)
+    +respond-to($xsmall)
+      margin-bottom 24px
+      width 100%

@@ -9,6 +9,7 @@ function initMap() {
 var body = $('body');
 // custom select elements
 var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+var iOS2 = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 function makeSelectCustom(element) {
   element.each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
@@ -137,6 +138,9 @@ if($('.form__fieldset-select').length && !iOS) {
   $('.form__fieldset-select').each(function() {
     makeSelectCustom($(this));
   })
+}
+if(iOS) {
+  $('.form__fieldset-select').removeClass('select-hidden');
 }
 
 // image slider
@@ -320,6 +324,3 @@ $('.popup__close-btn').click(function(){
 $('.popup__btn').click(function(){
   $('.popup').hide();
 });
-
-// ios detecting
-var iOS2 = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
