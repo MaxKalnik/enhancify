@@ -8,6 +8,7 @@ function initMap() {
 
 var body = $('body');
 // custom select elements
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 function makeSelectCustom(element) {
   element.each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
@@ -132,7 +133,7 @@ if($('#solutions-for').length) {
   makeLinkedSelectCustom($('#solutions-for'));
 }
 
-if($('.form__fieldset-select').length) {
+if($('.form__fieldset-select').length && !iOS) {
   $('.form__fieldset-select').each(function() {
     makeSelectCustom($(this));
   })
@@ -321,5 +322,4 @@ $('.popup__btn').click(function(){
 });
 
 // ios detecting
-var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 var iOS2 = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
