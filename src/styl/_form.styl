@@ -233,6 +233,7 @@
   flex-direction: row
   flex-wrap: wrap
   justify-content: space-between
+  align-items flex-start
 
 .form__fieldset-input-wrapper
   position relative
@@ -363,6 +364,9 @@
   .form--login &
     font-size 16px
     line-height 28px
+    +respond-to($xsmall)
+      font-size 14px
+      line-height 24px
 
   +respond-to($small)
     margin-bottom 24px
@@ -370,6 +374,8 @@
 
   +respond-to($xsmall)
     margin-bottom 32px
+    line-height 24px
+    font-size 16px
     line-height 24px
 
 .form__fieldset-upper-text--center
@@ -416,32 +422,7 @@
     color: #d2dbe0
 
 .form__fieldset-input-warning
-  display: none
-  position: absolute
-  max-width: 100%
-  align-self: center
-  padding: 2px 16px
-  background: #fae2e2
-  border-radius: 3px
-  font-size: 12px
-  color: #de4b4b
-  line-height: 16px
-  bottom: -26px
-  width: 100%
-  box-sizing: border-box
-  text-align: center
-  &:before
-    content: ''
-    position: absolute
-    top: -5px
-    width: 0
-    height: 0
-    border-left: 5px solid transparent
-    border-right: 5px solid transparent
-    border-bottom: 10px solid #fae2e2
-    left: 50%
-    transform: translateX(-50%)
-
+  @extend .input-warning-message
 
 .form__fieldset-input--invalid
   border: 1px solid #de4b4b
@@ -450,7 +431,7 @@
     border: 1px solid #de4b4b
 
   & + .form__fieldset-input-warning
-    display: block
+    display: inline-block
 
 .form__fieldset-input-range
   width: 100%
@@ -622,6 +603,7 @@
   @extend .link
 
 .form__fieldset-input--textarea
+  font-family: 'Fira Sans', sans-serif
   height 144px
 
 .form__upper-icon-wrapper

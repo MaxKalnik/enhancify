@@ -10,21 +10,14 @@
       <change beforePath="$PROJECT_DIR$/build/contractor-partnership.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/contractor-partnership.index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/disclaimer.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/disclaimer.index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/faqs.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/faqs.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/fillup.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/fillup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/fillup.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/fillup.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/how-it-works-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/how-it-works-page.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lender-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/lender-page.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/main.index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/offers.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/offers.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_fillup-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_fillup-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/refer-earn.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/refer-earn.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/subscription-preferences.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/subscription-preferences.index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ui-kit.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/ui-kit.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/local.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/local.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_fillup-form.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_fillup-form.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styl/_disclaimer.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_disclaimer.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styl/_faqs.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_faqs.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styl/_form.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_form.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_global.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_global.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styl/about-us/_our-story.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/about-us/_our-story.styl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />

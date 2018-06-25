@@ -31,12 +31,24 @@
   background: #ffffff
   box-shadow: 0 18px 32px 0 rgba(156,173,173,0.20)
   border-radius: 6px
-  padding: 32px 24px 0 24px
+  padding: 48px 48px 24px 48px
+
+  +respond-to($medium)
+    padding: 48px 48px 24px 48px
+
+  +respond-to($small)
+    padding: 32px 24px 8px 24px
+
+  +respond-to($xsmall)
+    padding: 24px 16px 0 16px
 
 .faqs__item
   border-bottom: 1px solid rgba(#4c7b93, .15)
   margin-bottom: 24px
   position: relative
+  max-height 73px
+  overflow hidden
+  transition .25s
 
   &:last-child
     margin-bottom: 0
@@ -71,22 +83,32 @@
   display: inline
   cursor: pointer
 
+  +respond-to($xsmall)
+    font-size 16px
+    line-height 24px
+
 .faqs__item-text
   font-size: 16px
   line-height: 28px
   font-weight: 400
   color: #525f66
-  max-height: 0
-  opacity: 0
-  transition .35s
+  height auto
+  max-height 0
+  transition .25s
+  overflow hidden
+
   &:after
-    content: ''
     display: block
     min-height: 24px
     max-height: 0
     width: 100%
 
+  +respond-to($xsmall)
+    font-size 14px
+    line-height 24px
+
 .faqs__item--active
+  max-height 1000px
   .faqs__item-header
     &:after
       transform: scale(-1)
@@ -97,6 +119,7 @@
 
   .faqs__item-text
     max-height: 1000px
-    opacity: 1
+    padding-bottom 24px
+
     &:after
       max-height: 24px

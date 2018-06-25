@@ -117,9 +117,9 @@
   +respond-to($xsmall)
     width: 288px
     padding: 16px 68px
-    font-size: 16px
     img
-      left: 0
+      left: 50%
+      transform translateX(-50%)
       top: 75px
 
   &--disabled
@@ -322,3 +322,31 @@ text-custom(color1, color2)
   .popup__btn
     @extend .green-btn-filled
     padding 15px 47px
+
+.input-warning-message
+  display: none
+  position: absolute
+  max-width: 100%
+  align-self: center
+  padding: 2px 16px
+  background: #fae2e2
+  border-radius: 3px
+  font-size: 12px
+  color: #de4b4b
+  line-height: 16px
+  bottom: -26px
+  box-sizing: border-box
+  text-align: center
+  font-weight 400
+  &:before
+    content: ''
+    position: absolute
+    top: -5px
+    width: 0
+    height: 0
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    border-bottom: 10px solid #fae2e2
+    left: 50%
+    transform: translateX(-50%)
+

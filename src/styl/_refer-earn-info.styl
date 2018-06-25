@@ -83,6 +83,10 @@
   color: #525F66
   line-height: 32px
 
+  +respond-to($xsmall)
+    font-size 16px
+    line-height 28px
+
 .refer-earn-info__content-text--italic
   font-weight 300
   font-style italic
@@ -115,31 +119,7 @@
     color: #d2dbe0
 
 .refer-earn-info__form-input-warning
-  display: none
-  position: absolute
-  max-width: 100%
-  align-self: center
-  padding: 2px 16px
-  background: #fae2e2
-  border-radius: 3px
-  font-size: 12px
-  color: #de4b4b
-  line-height: 16px
-  bottom: -26px
-  width: 100%
-  box-sizing: border-box
-  text-align: center
-  &:before
-    content: ''
-    position: absolute
-    top: -5px
-    width: 0
-    height: 0
-    border-left: 5px solid transparent
-    border-right: 5px solid transparent
-    border-bottom: 10px solid #fae2e2
-    left: 50%
-    transform: translateX(-50%)
+  @extend .input-warning-message
 
 .refer-earn-info__form-input--invalid
   border: 1px solid #de4b4b
@@ -148,7 +128,7 @@
     border: 1px solid #de4b4b
 
   & + .refer-earn-info__form-input-warning
-    display: block
+    display: inline-block
 
 .refer-earn-info__form-input-wrapper
   position relative

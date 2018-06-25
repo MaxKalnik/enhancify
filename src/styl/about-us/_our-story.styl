@@ -12,6 +12,8 @@
 
 .our-story__wrapper
   @extend .container
+  display flex
+  flex-direction column
 
 .our-story__people
   display flex
@@ -115,6 +117,10 @@
   &:last-child
     margin-bottom 0
 
+  +respond-to($xsmall)
+    font-size 16px
+    line-height 28px
+
 .our-story__text--title
   margin-bottom 16px
   font-weight 500
@@ -143,9 +149,17 @@
 
 .our-story__btn
   @extend .btn-with-lock
-  display block
+  width 488px
+  display inline-block
   margin-left auto
   margin-right auto
+  box-sizing border-box
+  +respond-to($small)
+    width 360px
+
+  +respond-to($xsmall)
+    width 100%
+
   img
     +respond-to($xsmall)
       left: 50%

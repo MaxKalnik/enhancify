@@ -263,12 +263,18 @@
   &:last-child
     margin-bottom 0
 
+  +respond-to($xsmall)
+    font-size 14px
+    line-height 24px
+
 .main-steps__item-link
   @extend .link
 
 .main-steps__btn
   @extend .btn-with-lock
+  width 294px
   +respond-to($xsmall)
+    width 100%
     img
       left 50%
       transform translateX(-50%)

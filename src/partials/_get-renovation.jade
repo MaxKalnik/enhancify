@@ -8,6 +8,11 @@
       | Get the latest updates and financing tidbits, so you can make informed financial decisions, without having to break the bank.
 
     .get-renovation__expert-user
-      input.get-renovation__email-input(type="email", placeholder="Enter your email address")
-      a.get-renovation__btn
-        | Keep me Posted
+      form.get-renovation__expert-user-form
+        .get-renovation__email-input-wrapper
+          input.get-renovation__email-input(name="renovation-mail",type="email", placeholder="Enter your email address")
+          .get-renovation__email-input-warning
+            | Enter your email address
+
+        a.get-renovation__btn
+          | Keep me Posted

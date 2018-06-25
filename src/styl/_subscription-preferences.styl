@@ -48,6 +48,10 @@
   line-height: 32px
   font-weight 500
 
+  +respond-to($xsmall)
+    font-size 16px
+    line-height 24px
+
 .subscription-preferences__inner-wrapper--checkbox
   background-color #f5fcf5
   border 1px solid rgba(#68BA62, .5)
@@ -78,7 +82,7 @@
   top -4px
   width 24px
   height 24px
-  border: 1px solid #17b548
+  border: 1px solid rgba(#17b548, 0.4)
   border-radius: 3px
   background-color #fff
 
@@ -86,6 +90,7 @@
   background-image: url('images/svg/checkmark_green.svg')
   background-position center
   background-repeat no-repeat
+  border: 1px solid #17b548
 
 .subscription-preferences__under-text
   font-weight 400
@@ -141,31 +146,7 @@
     color: #d2dbe0
 
 .subscription-preferences__form-email-input-warning
-  display: none
-  position: absolute
-  max-width: 100%
-  align-self: center
-  padding: 2px 16px
-  background: #fae2e2
-  border-radius: 3px
-  font-size: 12px
-  color: #de4b4b
-  line-height: 16px
-  bottom: -26px
-  width: 100%
-  box-sizing: border-box
-  text-align: center
-  &:before
-    content: ''
-    position: absolute
-    top: -5px
-    width: 0
-    height: 0
-    border-left: 5px solid transparent
-    border-right: 5px solid transparent
-    border-bottom: 10px solid #fae2e2
-    left: 50%
-    transform: translateX(-50%)
+  @extend .input-warning-message
 
 .subscription-preferences__form-email-input--invalid
   border: 1px solid #de4b4b
@@ -174,10 +155,11 @@
     border: 1px solid #de4b4b
 
   & + .subscription-preferences__form-email-input-warning
-    display: block
+    display: inline-block
 
 .subscription-preferences__form-submit-btn
   @extend .btn-with-lock
+  font-family: 'Fira Sans', sans-serif
   padding 20px 16px
   text-align center
   margin-left 24px
