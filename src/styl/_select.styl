@@ -25,14 +25,14 @@
   border: 1px solid #DBE2E7
   @include transition(all 0.25s)
   background: #fdfdfe
-  overflow hidden
   .form__fieldset-input-wrapper--offers-score &
     font-weight 500
     color #293033
 
   .footer &
     background: #f3f8fa
-  &:after
+
+  &:before
     content:""
     width: 12px
     height: 12px
@@ -42,9 +42,23 @@
     transition: .25s
     background: url('images/icons/ic_expand.svg') center no-repeat
 
+  &:after
+    content: ''
+    width: 10px
+    height: 7px
+    position: absolute
+    bottom: -11px
+    left: 50%
+    transform: translateX(-50%)
+    background: url(images/svg/triangle-dark.svg) center no-repeat
+    display none
+    z-index 2
+
   &:active, &.active
-    &:after
+    &:before
       transform: rotate(-180deg)
+    &:after
+      display block
 
 .select-options
   display: none
@@ -62,16 +76,6 @@
   z-index: 1
   max-height: 400px
   overflow-y: scroll
-
-  &:before
-    content: ''
-    width: 10px
-    height: 7px
-    position: absolute
-    top: -6px
-    left: 50%
-    transform: translateX(-50%)
-    background: url(images/svg/triangle-dark.svg) center no-repeat
 
   .select-item
     display: block

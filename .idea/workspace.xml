@@ -11,13 +11,15 @@
       <change beforePath="$PROJECT_DIR$/build/disclaimer.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/disclaimer.index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/faqs.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/faqs.index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/fillup.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/fillup.index.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/how-it-works-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/how-it-works-page.index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lender-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/lender-page.index.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/main.index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/offers.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/offers.index.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/refer-earn.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/refer-earn.index.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/subscription-preferences.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/subscription-preferences.index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ui-kit.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/ui-kit.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_disclaimer.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_disclaimer.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_faqs.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_faqs.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_form.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_form.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/about-us/_our-story.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/about-us/_our-story.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styl/_select.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_select.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styl/virtual/_virtual.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/virtual/_virtual.styl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
