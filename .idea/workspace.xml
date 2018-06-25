@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6e5c3c7-3ff8-4c60-ae45-6639b21a81b8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/build/about-us.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/about-us.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/affiliate-login.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/affiliate-login.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/affiliate.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/affiliate.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contact-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/contact-page.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contractor-login.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/contractor-login.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contractor-partnership.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/contractor-partnership.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/disclaimer.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/disclaimer.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/faqs.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/faqs.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/fillup.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/fillup.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/how-it-works-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/how-it-works-page.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lender-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/lender-page.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/main.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/offers.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/offers.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/refer-earn.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/refer-earn.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/subscription-preferences.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/subscription-preferences.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ui-kit.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/ui-kit.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_select.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_select.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/virtual/_virtual.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/virtual/_virtual.styl" afterDir="false" />
-    </list>
+    <list default="true" id="e6e5c3c7-3ff8-4c60-ae45-6639b21a81b8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
