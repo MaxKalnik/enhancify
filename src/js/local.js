@@ -301,7 +301,7 @@ $('.form__fieldset-hint').removeClass('form__fieldset-hint--open');
 
 body.on('click', '.form__fieldset-label-hint-btn', function(evt) {
   evt.preventDefault();
-  $(this).find('.form__fieldset-hint').addClass('form__fieldset-hint--open');
+  $(this).siblings('.form__fieldset-hint').addClass('form__fieldset-hint--open');
   body.on('click', hideHint);
 });
 

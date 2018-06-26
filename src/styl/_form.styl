@@ -243,8 +243,15 @@
   align-items: flex-start
   margin-bottom: 30px
   justify-content flex-end
+
   &:last-child
     margin-bottom: 0
+
+  .form__fieldset--your-info &
+    margin-bottom 30px
+    +respond-to($medium)
+      &:last-child
+        margin-bottom 0
 
 .form__fieldset-input-wrapper--full
   width: 100%
@@ -466,7 +473,6 @@
   width 12px
   height 12px
   position relative
-  margin-left 8px
   background url('images/svg/ic_question.svg') center no-repeat
   cursor pointer
   top 1px
@@ -486,7 +492,7 @@
   border-radius: 5px
   cursor: pointer
   z-index: 2
-  bottom: calc(100% + 16px)
+  bottom: calc(100% + 8px)
   right: 50%;
   transform: translate(50%)
   &:after
@@ -506,6 +512,11 @@
 
 .form__fieldset-hint--open
     display block
+
+.form__fieldset-hint-wrapper
+  position relative
+  display inline-block
+  margin-left 8px
 
 .form__fieldset-label--checkbox
   position: relative

@@ -12,7 +12,9 @@ form.form.form--offers(action='', method='POST')
       .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-loan
         label.form__fieldset-label.form__fieldset-label--with-hint(for='loan-amount')
           | Loan Amount Requested
-          button.form__fieldset-label-hint-btn(type='button')
+
+          .form__fieldset-hint-wrapper
+            button.form__fieldset-label-hint-btn(type='button')
 
             span.form__fieldset-hint
               | Some useful information
@@ -24,7 +26,9 @@ form.form.form--offers(action='', method='POST')
       .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-income
         label.form__fieldset-label.form__fieldset-label--with-hint(for='annual-income')
           | Your Annual Income
-          button.form__fieldset-label-hint-btn(type='button')
+
+          .form__fieldset-hint-wrapper
+            button.form__fieldset-label-hint-btn(type='button')
 
             span.form__fieldset-hint
               | Some useful information about annual income
@@ -37,7 +41,9 @@ form.form.form--offers(action='', method='POST')
       .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-score
         label.form__fieldset-label.form__fieldset-label--with-hint(for='credit-score')
           | Credit Score
-          button.form__fieldset-label-hint-btn(type='button')
+
+          .form__fieldset-hint-wrapper
+            button.form__fieldset-label-hint-btn(type='button')
 
             span.form__fieldset-hint
               | Some useful information about credit score
