@@ -311,7 +311,7 @@ body.on('click', '.form__fieldset-hint', function() {
 
 // download file
 body.on('click', '.form__fieldset-btn-file', function() {
-  $('.form__fieldset-input--file').click();
+  $(this).siblings('.form__fieldset-input--file').click();
 });
 
 // popup

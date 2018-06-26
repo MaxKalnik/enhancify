@@ -12,12 +12,15 @@
     padding: 48px 0 46px 0
 
   +respond-to($xsmall)
-    height: 652px
+    height: auto
     display: flex
     flex-direction: column
-    padding: 32px 0 280px 0
+    padding: 32px 0 300px 0
     box-sizing: border-box
     overflow: hidden
+
+  +respond-to(467px)
+    padding: 32px 0 280px 0
 
 .get-renovation__expert
   @extend .container
