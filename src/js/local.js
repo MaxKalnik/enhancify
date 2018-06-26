@@ -143,7 +143,7 @@ if(iOS) {
   $('.form__fieldset-select').removeClass('select-hidden');
 }
 
-// image slider
+// testiomonials slider
 if($('.testimonials__slides-list').length) {
   var index, bullets, $slider, $sliderLength, $left_btn, $right_btn, $sliderWidth, $slideWidth;
   function initVars() {
@@ -306,10 +306,10 @@ body.on('click', '.form__fieldset-label-hint-btn', function(evt) {
 });
 
 body.on('click', '.form__fieldset-hint', function() {
-  evt.preventDefault();
   $(this).removeClass('form__fieldset-hint--open');
 });
 
+// download file
 body.on('click', '.form__fieldset-btn-file', function() {
   $('.form__fieldset-input--file').click();
 });

@@ -82,7 +82,6 @@ $sliderViewportXXsmall = 288px
   display: flex
   flex-direction: row
   align-items: flex-start
-  // height: 330px
   transition: .25s
   overflow: hidden
   +respond-to($medium)
@@ -106,14 +105,6 @@ $sliderViewportXXsmall = 288px
   justify-content: center
   align-items: center
   box-sizing: border-box
-  // position: absolute
-  // top: 0
-  // left: 0
-  // &:nth-child(2)
-  //   left: $sliderViewport
-
-  // &:nth-child(3)
-  //   left: $sliderViewport * 2
 
   +respond-to($medium)
     width: $sliderViewportMedium
@@ -150,16 +141,6 @@ $sliderViewportXXsmall = 288px
   color: #ffffff
   text-align: center
   margin-bottom: 24px
-  // max-height: 112px
-  // overflow: hidden
-  // +respond-to($medium)
-  //   max-height: 112px
-
-  // +respond-to($small)
-  //   max-height: 168px
-
-  // +respond-to($xsmall)
-  //   max-height: 312px
 
 .testimonials__list-item-author
   font-size: 16px
@@ -191,8 +172,6 @@ $sliderViewportXXsmall = 288px
 
 .testimonials__list-controls
   position: absolute
-  width: 32px
-  height: 18px
   background: none
   border: none
   outline: none
@@ -206,9 +185,10 @@ $sliderViewportXXsmall = 288px
 
 .testimonials__list-controls--left
   top: 50%
-  left: -73px
+  left: -81px
   transform: rotate(180deg)
+
 
 .testimonials__list-controls--right
   top: 50%
-  right: -73px
+  right: -81px
