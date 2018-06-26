@@ -23,7 +23,7 @@
   +respond-to($small)
     width calc(50% - 12px)
     flex-direction column
-    padding 24px 16px 16px 16px
+    padding 32px 16px 16px 16px
     margin-bottom 24px
 
   +respond-to($xsmall)
@@ -78,6 +78,9 @@
   display flex
   flex-direction column
   align-items center
+
+  +respond-to($small)
+    width 100%
 
 .offers__item-btn
   @extend .btn-with-lock
