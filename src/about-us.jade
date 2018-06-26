@@ -9,7 +9,7 @@ html
     title Enhancify Abouts Us
 
   body
-    .header__content.header__content--short
+    header.header.header--short
       include ./partials/_header-top.jade
 
     .section
@@ -27,8 +27,7 @@ html
     .section
       include ./partials/_map.jade
 
-    footer
-      include ./partials/_footer.jade
+    include ./partials/_footer.jade
 
     script(type='text/javascript', src='js/script.min.js')
     script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAv2l5KdFwcp5pqwd5SzuoJNwjcGCnkI88&callback=initMap')

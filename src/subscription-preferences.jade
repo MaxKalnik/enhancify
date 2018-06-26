@@ -9,7 +9,7 @@ html
     title Enhancify Subscription & Preferences
 
   body
-    .header__content.header__content--short
+    header.header.header--short
       include ./partials/_header-top.jade
 
     .section
@@ -18,8 +18,6 @@ html
     .section
       include ./partials/_subscription-preferences.jade
 
-    footer
-      include ./partials/_footer.jade
-
+    include ./partials/_footer.jade
 
     script(type='text/javascript', src='js/script.min.js')

@@ -235,7 +235,7 @@ body.on('click', '.main-nav__toggle', function(){
   $(this).toggleClass('main-nav__toggle--opened');
   $('.main-nav').toggleClass('main-nav--opened');
   $('.header__contacts').toggleClass('header__contacts--menu-active');
-  $('.header__content').toggleClass('header__content--active');
+  $('.header').toggleClass('header--active');
 });
 body.on('click','.main-nav__list-item--hovered', function () {
   $(this).children('.main-nav__sub-list').toggleClass('main-nav__sub-list--active');

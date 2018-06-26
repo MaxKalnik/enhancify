@@ -13,209 +13,93 @@
 
 .upper--about-us
   min-height: 432px
-  .upper__page-title
-    margin-bottom: 32px
-    margin-right: 0
 
   +respond-to($medium)
     min-height: 408px
 
   +respond-to($small)
     min-height: 328px
-    .upper__page-title
-      margin-bottom: 24px
 
   +respond-to($xsmall)
     min-height: 384px
-    .upper__page-title
-      margin-bottom: 16px
 
 .upper--offers
   min-height: 430px
-  .upper__page-title
-    margin-bottom: 32px
-    margin-right: 0
-
-  .upper__text
-    margin-right 64px
 
   +respond-to($medium)
     min-height: 520px
 
-    .upper__text
-      margin-right 44px
-
   +respond-to($small)
     min-height: 428px
-    .upper__page-title
-      margin-bottom: 24px
-
-    .upper__text
-      margin-right 24px
 
   +respond-to($xsmall)
     min-height auto
-    .upper__page-title
-      margin-bottom: 16px
-      font-size 26px
-      line-height 32px
-
-    .upper__page-text
-      font-size 14px
-      line-height 24px
-
-    .upper__text
-      margin-right 0
 
 .upper--partnership
   min-height: 360px
-  .upper__page-title
-    margin-bottom: 32px
-    margin-right: 0
 
   +respond-to($medium)
     min-height: 370px
 
   +respond-to($small)
     min-height: 344px
-    .upper__page-title
-      margin-bottom: 24px
 
   +respond-to($xsmall)
     min-height auto
     height auto
-    .upper__page-title
-      margin-bottom: 16px
 
 .upper--affiliate
   min-height: 402px
-  .upper__page-title
-    margin-bottom: 32px
-    margin-right: 0
-
-  .upper__text
-    margin-right 64px
 
   +respond-to($medium)
     min-height: 498px
 
-    .upper__text
-      margin-right 44px
-
   +respond-to($small)
     min-height: 456px
-    .upper__page-title
-      margin-bottom: 24px
-      margin-right: 0
-
-    .upper__text
-      margin-right 24px
 
   +respond-to($xsmall)
     min-height auto
     height auto
-    .upper__page-title
-      margin-bottom: 16px
-
-    .upper__text
-      margin-right 0
 
 .upper--lender-page
   min-height: 418px
-  .upper__page-title
-    margin-bottom: 32px
-    margin-right: 0
-
-  .upper__text
-    margin-right 64px
 
   +respond-to($medium)
     min-height: 450px
 
-    .upper__text
-      margin-right 44px
-
   +respond-to($small)
     min-height: 450px
-    .upper__page-title
-      margin-bottom: 24px
-      margin-right: 0
-
-    .upper__text
-      margin-right 24px
 
   +respond-to($xsmall)
     min-height auto
     height auto
-    .upper__page-title
-      margin-bottom: 16px
-
-    .upper__text
-      margin-right 0
 
 .upper--contact
   min-height: 404px
-  .upper__page-title
-    margin-bottom: 32px
-    margin-right: 0
-
-  .upper__text
-    margin-right 64px
 
   +respond-to($medium)
     min-height: 404px
 
-    .upper__text
-      margin-right 44px
-
   +respond-to($small)
     min-height: 392px
-    .upper__page-title
-      margin-bottom: 24px
-
-    .upper__text
-      margin-right 24px
 
   +respond-to($xsmall)
     min-height auto
     height auto
-    .upper__page-title
-      margin-bottom: 16px
-
-    .upper__text
-      margin-right 0
 
 .upper.upper--refer-earn,
 .upper--subscription
   min-height: 432px
-  .upper__page-title
-    margin-bottom: 32px
-
-  .upper__text
-    margin-right 64px
 
   +respond-to($medium)
     min-height: 408px
 
-    .upper__text
-      margin-right 44px
-
   +respond-to($small)
     min-height: 328px
-    .upper__page-title
-      margin-bottom: 24px
-
-    .upper__text
-      margin-right 24px
 
   +respond-to($xsmall)
     min-height auto
     height auto
-    .upper__page-title
-      margin-bottom: 16px
-
-    .upper__text
-      margin-right 0
 
 .upper__wrapper
   @extend .container
@@ -230,6 +114,19 @@
     padding: 32px 0 104px 0
     flex-direction: column
     align-items: center
+
+.upper__text
+  margin-right 64px
+
+  +respond-to($medium)
+    margin-right 44px
+
+  +respond-to($small)
+    margin-right 24px
+
+  +respond-to($xsmall)
+    margin-right 0
+    order 2
 
 .upper__page-title
   margin-right: 38px
@@ -250,9 +147,15 @@
     order 2
     text-align center
 
-.upper__text
-  +respond-to($xsmall)
-    order 2
+  .upper__text &
+    margin-bottom 32px
+    margin-right 0
+
+    +respond-to($small)
+      margin-bottom 24px
+
+    +respond-to($xsmall)
+      margin-bottom 16px
 
 .upper__page-text
   color: #ffffff

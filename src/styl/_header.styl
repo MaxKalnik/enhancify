@@ -1,6 +1,6 @@
 $headerNavHeight = 80px
 
-.header__content
+.header
   position: relative
   background: url('images/pic_main.png') center no-repeat
   height: 885px
@@ -41,13 +41,13 @@ $headerNavHeight = 80px
       background: url('images/pic_main_320@2x.png') center no-repeat
       background-size: cover
 
-.header__content--active
+.header--active
   +respond-to($small)
     .header__content-top-wrapper
       position: absolute
       top: -($headerNavHeight)
 
-.header__content--short
+.header--short
   background: none
   height: 0
   @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
