@@ -51,9 +51,11 @@ include ./_svg-mixins
     p.our-story__under-text
       | Whether you need money to payoff your debt or just take a vacation, Enhancify.com can help Regardless of your credit situation!
 
-     a.our-story__btn
-      +ic_lock_svg
-      | Get Started
+    .our-story__btn-wrapper
+      a.our-story__btn
+        +ic_lock_svg
+        | Get Started
+
       picture
-        source(media='(max-width: 767px)', srcset="images/svg/wont_affect_320_2.svg")
-        img(src="images/svg/wont_affect.svg")
+        source(media='(max-width: 767px)', srcset="images/wont_affect_320_2.png, images/wont_affect_320_2@2x.png 2x")
+        img(src="images/wont_affect.png", srcset="images/wont_affect@2x.png 2x")

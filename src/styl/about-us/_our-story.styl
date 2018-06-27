@@ -147,13 +147,13 @@
   +respond-to($xsmall)
     margin-bottom 24px
 
-.our-story__btn
-  @extend .btn-with-lock
-  width 488px
+.our-story__btn-wrapper
   display inline-block
+  position relative
+  width 488px
   margin-left auto
   margin-right auto
-  box-sizing border-box
+
   +respond-to($small)
     width 360px
 
@@ -161,6 +161,13 @@
     width 100%
 
   img
+    @extend .btn-with-lock-img
     +respond-to($xsmall)
       left: 50%
       transform translateX(-50%)
+
+.our-story__btn
+  @extend .btn-with-lock
+  width 100%
+  display inline-block
+  box-sizing border-box

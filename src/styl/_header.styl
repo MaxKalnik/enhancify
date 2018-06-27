@@ -9,6 +9,7 @@ $headerNavHeight = 80px
   align-items: center
   flex-direction: column
   margin-top: $headerNavHeight
+  background-size cover
   @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
     background: url('images/pic_main@2x.png') center no-repeat
     background-size: cover
@@ -16,6 +17,7 @@ $headerNavHeight = 80px
   +respond-to($medium)
     background: url('images/pic_main_1024.png') center no-repeat
     height: 868px
+    background-size cover
     @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
       background: url('images/pic_main_1024@2x.png') center no-repeat
       background-size: cover
@@ -23,6 +25,7 @@ $headerNavHeight = 80px
   +respond-to($small)
     background: url('images/pic_main_768.png') center no-repeat
     height: 648px
+    background-size cover
     @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
       background: url('images/pic_main_768@2x.png') center no-repeat
       background-size: cover
@@ -30,6 +33,7 @@ $headerNavHeight = 80px
   +respond-to($xsmall)
     background: url('images/pic_main_768.png') center no-repeat
     height: 648px
+    background-size cover
     @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
       background: url('images/pic_main_768@2x.png') center no-repeat
       background-size: cover
@@ -37,6 +41,7 @@ $headerNavHeight = 80px
   +respond-to($xxsmall)
     background: url('images/pic_main_320.png') center no-repeat
     height: 592px
+    background-size cover
     @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
       background: url('images/pic_main_320@2x.png') center no-repeat
       background-size: cover
@@ -156,13 +161,21 @@ $headerNavHeight = 80px
   +respond-to($medium)
     margin-right: 24px
 
+.header__btn-wrapper
+  width 376px
+  position relative
+  +respond-to($xsmall)
+    width 100%
+
+  img
+    @extend .btn-with-lock-img
+
+  +respond-to($xsmall)
+    width 100%
+
 .header__btn
   @extend .btn-with-lock
   display: inline-block
-  width 376px
-
-  +respond-to($xsmall)
-    width 288px
 
 .header__features
   @extend .container

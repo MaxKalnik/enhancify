@@ -4,6 +4,9 @@ $darkBlue = #0F66B1
 .side
   width: 262px
 
+  +respond-from($large)
+    width calc(100% - 948px)
+
   +respond-to($small)
     width: 216px
 

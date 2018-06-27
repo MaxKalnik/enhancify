@@ -94,7 +94,7 @@ form.form.form--partnership(action='', method='POST')
 
         .form__file-wrapper
           input.form__fieldset-input.form__fieldset-input--file(type="file", name="company-logo")
-          input.form__fieldset-input.form__fieldset-input--file-path(type="text", placeholder="File location…")
+          input.form__fieldset-input.form__fieldset-input--file-path(type="text", name="company-logo-location" placeholder="File location…")
           button.form__fieldset-btn-file(type="button") Browse Files…
 
       .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
@@ -108,9 +108,9 @@ form.form.form--partnership(action='', method='POST')
               | Some useful information
 
         .form__file-wrapper
-          input.form__fieldset-input.form__fieldset-input--file-path(type="text", placeholder="File location…")
-          button.form__fieldset-btn-file(type="button") Browse Files…
           input.form__fieldset-input.form__fieldset-input--file(type="file", name="w9")
+          input.form__fieldset-input.form__fieldset-input--file-path(type="text", name="w9-location" placeholder="File location…")
+          button.form__fieldset-btn-file(type="button") Browse Files…
 
       .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full.form__fieldset-input-wrapper--checkbox
         label.form__fieldset-label.form__fieldset-label--checkbox(for='agreement')

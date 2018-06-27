@@ -106,24 +106,32 @@
   +respond-to($small)
     text-align: left
 
-.partnership-join__btn
-  @extend .btn-with-lock
-  display inline-block
-  padding 12px 62px
-  margin 0 auto
-  +respond-to($small)
-    padding 12px 32px
+.partnership-join__btn-wrapper
+  position relative
+  width 380px
   +respond-to($xsmall)
-    padding 12px
     width 100%
-    text-align center
-    box-sizing border-box
 
   img
+    @extend .btn-with-lock-img
     right -180px
     top 15px
     +respond-to($xsmall)
       left 50%
       transform translateX(-50%)
       top 65px
+
+.partnership-join__btn
+  @extend .btn-with-lock
+  display inline-block
+  padding 12px 62px
+  margin 0 auto
+
+  +respond-to($small)
+    padding 12px 32px
+
+  +respond-to($xsmall)
+    padding 12px
+    text-align center
+    box-sizing border-box
 

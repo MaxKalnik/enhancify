@@ -62,6 +62,9 @@
   width: 716px
   height: auto
 
+  +respond-from($large)
+    left: calc((100% - 1600px)/2);
+
   +respond-to($medium)
     width: 676px
     left: -70px

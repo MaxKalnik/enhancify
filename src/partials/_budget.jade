@@ -30,10 +30,11 @@ include ./_svg-mixins
         .budget__list-item-text
           | Apply to the lender, lock in your rate & terms and receive the funds in a week or less.
 
-    a.budget__btn
-      +ic_lock_svg
-      | Get Matched
+    .budget__btn-wrapper
+      a.budget__btn
+        +ic_lock_svg
+        | Get Matched
 
       picture
-        source(media='(max-width: 767px)', srcset="images/svg/wont_affect_320_2.svg")
-        img(src="images/svg/wont_affect.svg")
+        source(media='(max-width: 767px)', srcset="images/wont_affect_320_2.png, images/wont_affect_320_2@2x.png 2x")
+        img(src="images/wont_affect.png", srcset="images/wont_affect@2x.png 2x")

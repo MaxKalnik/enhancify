@@ -55,9 +55,11 @@ include ./_svg-mixins
         p.main-steps__item-text
           | We realize your time is valuable and want to get money as quickly as possible. Our network of lenders can usually get the money wired directly into your bank account within 1 to 5 business days once you’ve been approved. Keep in mind, every lender’s funding process is different, so be sure to check with each lender on their funding time.
 
-    a.main-steps__btn
-      +ic_lock_svg
-      | Get Started
+    .main-steps__btn-wrapper
+      a.main-steps__btn
+        +ic_lock_svg
+        | Get Started
+
       picture
-        source(media='(max-width: 767px)', srcset="images/svg/wont_affect_320_2.svg")
-        img(src="images/svg/wont_affect.svg")
+        source(media='(max-width: 767px)', srcset="images/wont_affect_320_2.png, images/wont_affect_320_2@2x.png 2x")
+        img(src="images/wont_affect.png", srcset="images/wont_affect@2x.png 2x")

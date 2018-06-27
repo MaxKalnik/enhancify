@@ -270,11 +270,17 @@
 .main-steps__item-link
   @extend .link
 
-.main-steps__btn
-  @extend .btn-with-lock
-  width 294px
+.main-steps__btn-wrapper
+  position relative
+  width 354px
   +respond-to($xsmall)
     width 100%
-    img
+
+  img
+    @extend .btn-with-lock-img
+    +respond-to($xsmall)
       left 50%
       transform translateX(-50%)
+
+.main-steps__btn
+  @extend .btn-with-lock

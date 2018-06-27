@@ -2,71 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6e5c3c7-3ff8-4c60-ae45-6639b21a81b8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/build/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/about-us.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/about-us.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/affiliate-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/affiliate-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/affiliate-login.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/affiliate-login.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/affiliate.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/affiliate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/affiliate.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/affiliate.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contact-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/contact-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contact-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/contact-page.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contractor-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/contractor-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contractor-login.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/contractor-login.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contractor-partnership.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/contractor-partnership.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contractor-partnership.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/contractor-partnership.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/disclaimer.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/disclaimer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/disclaimer.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/disclaimer.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/faqs.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/faqs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/faqs.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/faqs.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/fillup.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/fillup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/fillup.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/fillup.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/how-it-works-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/how-it-works-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/how-it-works-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/how-it-works-page.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lender-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/lender-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lender-page.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/lender-page.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/main.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/offers.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/offers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/offers.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/offers.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_analytics.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_analytics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_contact-page-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_contact-page-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_get-renovation.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_get-renovation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_header-top.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_header-top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_main-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_main-steps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_offers.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_offers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_our-story.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_our-story.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/partials/_refer-earn-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/partials/_refer-earn-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/refer-earn.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/refer-earn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/refer-earn.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/refer-earn.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/subscription-preferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/subscription-preferences.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/subscription-preferences.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/subscription-preferences.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ui-kit.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/ui-kit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ui-kit.index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/ui-kit.index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/local.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/local.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_analytics.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_analytics.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_contact-page-form.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_contact-page-form.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_fillup-side.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_fillup-side.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_footer.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_footer.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_get-renovation.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_get-renovation.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_header-top.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_header-top.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_main-steps.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_main-steps.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_offers.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_offers.jade" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/partials/_our-story.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_our-story.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_refer-earn-info.jade" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_refer-earn-info.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_budget.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_budget.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_disclaimer.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_disclaimer.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_form.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_form.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_get-renovation.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_get-renovation.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_global.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_global.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_personal-loan.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_personal-loan.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_refer-earn-info.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_refer-earn-info.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_select.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_select.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/_testimonials.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/_testimonials.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/offers/_offers.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/offers/_offers.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/virtual/_virtual.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/virtual/_virtual.styl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,8 +21,8 @@
       <file leaf-file-name="_our-story.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/partials/_our-story.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="915">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -252,8 +190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/partials/_our-story.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="915">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>

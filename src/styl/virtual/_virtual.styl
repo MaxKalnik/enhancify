@@ -82,7 +82,8 @@
       background: #F5FAFC
 
 .btn-with-lock
-  width: auto
+  width: 100%
+  display inline-block
   box-sizing: border-box
   position: relative
   background: #17B548
@@ -95,6 +96,11 @@
   cursor: pointer
   text-align: center
   transition: .25s
+
+  +respond-to($xsmall)
+    width: 100%
+    padding: 16px 68px
+
   svg
     margin-right: 10px
     position: relative
@@ -109,19 +115,6 @@
   &--active
     background: #17B548
 
-  img
-    position: absolute
-    right: -150px
-    top: 25px
-
-  +respond-to($xsmall)
-    width: 288px
-    padding: 16px 68px
-    img
-      left: 50%
-      transform translateX(-50%)
-      top: 75px
-
   &--disabled
     color: #DAE2E6
     background: #B8C5CC
@@ -131,6 +124,16 @@
     &:active,
     &--active
       background: #B8C5CC
+
+.btn-with-lock-img
+  position: absolute
+  right: -170px
+  top: 25px
+
+  +respond-to($xsmall)
+    left: 50%
+    transform translateX(-50%)
+    top: 75px
 
 .btn-medium
   @extend .btn-with-lock

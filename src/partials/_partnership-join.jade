@@ -30,8 +30,10 @@ include ./_svg-mixins
         p.partnership-join__item-text
           | Once approved, either you or the customer can have the funds wired into a bank account as soon as the next business day.
 
-    a.partnership-join__btn
-      | Get Set up in 5 minutes or Less
+    .partnership-join__btn-wrapper
+      a.partnership-join__btn
+        | Get Set up in 5 minutes or Less
+
       picture
-        source(media='(max-width: 767px)', srcset="images/svg/our_process_320.svg")
-        img(src="images/svg/our_process.svg")
+        source(media='(max-width: 767px)', srcset="images/our_process_320.png, images/our_process_320@2x.png 2x")
+        img(src="images/our_process.png", srcset="images/our_process@2x.png 2x")

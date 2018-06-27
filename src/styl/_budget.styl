@@ -102,19 +102,25 @@
   +respond-to($small)
     text-align: left
 
+.budget__btn-wrapper
+  position relative
+  width: 294px
+  margin: 0 auto
+
+  +respond-to($xsmall)
+    width 100%
+
+  img
+    @extend .btn-with-lock-img
+    top 15px
+
+    +respond-to($medium)
+      top: 25px
+
+    +respond-to($xsmall)
+      top: 65px
+
 .budget__btn
   @extend .btn-with-lock
   display: inline-block
   padding: 12px 84px
-  width: 294px
-  margin: 0 auto
-  img
-    top: 15px
-
-  +respond-to($medium)
-    img
-      top: 25px
-
-  +respond-to($xsmall)
-    img
-      top: 65px
