@@ -313,6 +313,10 @@ body.on('click', '.form__fieldset-hint', function() {
 body.on('click', '.form__fieldset-btn-file', function() {
   $(this).siblings('.form__fieldset-input--file').click();
 });
+body.on('change', '.form__fieldset-input--file', function(){
+  var $fileName = $(this).prop('files')[0].name;
+  $(this).siblings('.form__fieldset-input--file-path').val($fileName);
+});
 
 // popup
 $('.open-dialog').click(function(){
