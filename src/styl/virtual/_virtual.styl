@@ -253,6 +253,10 @@ text-custom(color1, color2)
     transform translate(-50%, -50%)
     border-radius 6px
 
+    +respond-to($xsmall)
+      width calc(100% - 32px)
+      box-sizing border-box
+
   .popup__close-btn
     position: absolute
     display: block
@@ -291,6 +295,9 @@ text-custom(color1, color2)
     background-image: linear-gradient(-90deg, #17B548 0%, #06CF46 99%)
     border-radius: 6px 6px 0 0
 
+    +respond-to($xsmall)
+      padding 32px 24px 24px 24px
+
   .popup__congrats-title
     font-weight 700
     font-size: 48px
@@ -301,6 +308,11 @@ text-custom(color1, color2)
     text-shadow: 0 1px 2px rgba(15,85,150,0.10)
     margin-bottom 16px
 
+    +respond-to($xsmall)
+      font-size 34px
+      line-height 44px
+      margin-bottom 8px
+
   .popup__congrats-text
     font-weight 400
     font-size: 18px
@@ -308,6 +320,10 @@ text-custom(color1, color2)
     text-align: center
     line-height: 32px
     text-shadow: 0 1px 2px rgba(15,85,150,0.10)
+
+    +respond-to($xsmall)
+      font-size 16px
+      line-height 28px
 
   .popup__content
     background-color #fff
@@ -317,6 +333,9 @@ text-custom(color1, color2)
     align-items center
     border-radius: 0 0 6px 6px
 
+    +respond-to($xsmall)
+      padding 24px
+
   .popup__content-text
     font-weight 400
     font-size: 18px
@@ -324,9 +343,18 @@ text-custom(color1, color2)
     line-height: 32px
     margin-bottom 32px
 
+    +respond-to($xsmall)
+      font-size 16px
+      line-height 28px
+
   .popup__btn
     @extend .green-btn-filled
     padding 15px 47px
+    text-align center
+
+    +respond-to($xsmall)
+      padding 15px
+      width 100%
 
 .input-warning-message
   display: none
