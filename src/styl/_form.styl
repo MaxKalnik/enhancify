@@ -365,11 +365,13 @@
   text-align center
 
 .form__fieldset-upper-text
+  width 100%
   font-weight 400
   font-size: 18px
   color: #525F66
   line-height: 32px
   margin-bottom 32px
+  box-sizing border-box
 
   .form--login &
     font-size 16px
@@ -417,6 +419,7 @@
 .form__fieldset-input
   position: relative
   width: 100%
+  min-height 48px
   padding: 10px 16px 12px 16px
   font-size: 14px
   font-weight: 400
@@ -429,7 +432,7 @@
     border: 1px solid #a8d5ff
 
 ::placeholder
-  color: #d2dbe0
+  color: #BCBFC1
 
 .form__fieldset-input-warning
   @extend .input-warning-message
@@ -521,6 +524,7 @@
   margin-left 8px
 
 .form__fieldset-label--checkbox
+  width 100%
   position: relative
   font-size: 14px
   line-height: 24px
@@ -529,6 +533,7 @@
   padding-left: 34px
   margin-bottom: 0
   cursor: pointer
+  box-sizing border-box
 
 .form__fieldset-checkmark
   position: absolute
@@ -541,6 +546,20 @@
   &:hover
     background-color #f5fcf5
     border: 1px solid rgba(#68ba62, .5)
+
+  &:focus
+    border: 1px solid rgba(#68ba62, .5)
+
+  &--disabled
+    border: 1px solid #dce3e7
+
+    &:hover
+      background-color #fff
+      border: 1px solid #dce3e7
+
+    &:focus
+      background-color #fff
+      border: 1px solid #dce3e7
 
 .form__fieldset-label-link
   @extend .link
@@ -560,12 +579,22 @@
   background-repeat no-repeat
   border: 1px solid #17b548
 
+.form__fieldset-checkbox:checked + .form__fieldset-checkmark--disabled
+  background-color #fff
+  background-image: none
+  background-position center
+  background-repeat no-repeat
+  border: 1px solid #dce3e7
+
 .form__submit-btn
   outline: none
   @extend .btn-with-lock
   width: 100%
   border: none
   font-family: inherit
+
+  // &:focus
+  //   outline 2px solid #83BFFC
 
   +respond-to($xsmall)
     padding 16px 20px
@@ -639,6 +668,9 @@
   +respond-to(375px)
     width 57%
 
+  &:focus
+    border: 1px solid #089936
+
 .form__file-wrapper
   display flex
   width 100%
@@ -653,3 +685,64 @@
 
   +respond-to(375px)
     width 55%
+
+.form__fieldset-label--radio
+  position: relative
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  color: #293033
+  padding-left: 34px
+  margin-bottom: 0
+  cursor: pointer
+
+.form__fieldset-checkmark-radio
+  position: absolute
+  left: 0
+  top: -1px
+  width 24px
+  height 24px
+  border: 1px solid #dce3e7
+  border-radius: 50%
+  &:hover
+    background-color #f5fcf5
+    border: 1px solid rgba(#68ba62, .5)
+
+  &:focus
+    border: 1px solid rgba(#68ba62, .5)
+
+  &--disabled
+    border: 1px solid #dce3e7
+
+    &:hover
+      background-color #fff
+      border: 1px solid #dce3e7
+
+    &:focus
+      background-color #fff
+      border: 1px solid #dce3e7
+
+.form__fieldset-radio
+  position: absolute
+  width: 0
+  height: 0
+  visibility: hidden
+  opacity: 0
+  cursor: pointer
+
+.form__fieldset-radio:checked + .form__fieldset-checkmark-radio
+  border: 1px solid #17b548
+  &:after
+    content ''
+    position absolute
+    top 6px
+    left 6px
+    width 12px
+    height 12px
+    background #17B548
+    border-radius 50%
+
+.form__fieldset-radio:checked + .form__fieldset-checkmark-radio--disabled
+  border: 1px solid #dce3e7
+  &:after
+    display none

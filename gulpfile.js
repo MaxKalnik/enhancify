@@ -48,12 +48,12 @@ gulp.task('stylus', function () {
         ])
         .pipe(stylus({
             use: [autoprefixer({browsers: ['last 2 versions']})],
-            'include css': true,
-            compress: true
+            'include css': true
+            // compress: true
         }))
         .on('error', console.log)
         // .pipe(concat('style.css'))
-        .pipe(cssmin())
+        // .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(build_path.html))
         .pipe(browsersync.reload({

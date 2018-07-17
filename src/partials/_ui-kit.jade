@@ -77,14 +77,29 @@ include ./_svg-mixins
             | What is average price per job?
 
             input.form__fieldset-checkbox(type='checkbox', id='agreement')
-            span.form__fieldset-checkmark
+            span.form__fieldset-checkmark(tabindex="")
 
         .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full
           label.form__fieldset-label.form__fieldset-label--checkbox(for='custom')
             | What is average price per job?
 
             input.form__fieldset-checkbox(type='checkbox', id='custom')
-            span.form__fieldset-checkmark.form__fieldset-checkmark--green
+            span.form__fieldset-checkmark.form__fieldset-checkmark--disabled(tabindex="0")
+
+      .ui-kit__row.ui-kit__row--radio
+        .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+          label.form__fieldset-label.form__fieldset-label--radio(for='radio-btn')
+            | What is average price per job?
+
+            input.form__fieldset-radio(type='radio', id='radio-btn')
+            span.form__fieldset-checkmark-radio(tabindex="0")
+
+        .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
+          label.form__fieldset-label.form__fieldset-label--radio(for='radio-btn-disabled')
+            | What is average price per job?
+
+            input.form__fieldset-radio(type='radio', id='radio-btn-disabled')
+            span.form__fieldset-checkmark-radio.form__fieldset-checkmark-radio--disabled(tabindex="0")
 
       .ui-kit__row
         button.open-dialog

@@ -18,11 +18,14 @@
 .btn-big
   @extend .btn-with-lock
   margin-right 24px
+  width 294px
+  padding 16px 60px
 
   +respond-to($small)
     padding 16px
 
   +respond-to($xsmall)
+    width 100%
     margin-bottom 24px
 
 .btn-big--disabled
@@ -34,7 +37,10 @@
   padding-top 12px
   padding-bottom 12px
   margin-right 24px
+  width 294px
+
   +respond-to($xsmall)
+    width 100%
     margin-bottom 24px
 
 .btn-middle--disabled
@@ -60,6 +66,11 @@
 .open-dialog
   border 1px solid #d2dbe0
   border-radius 3px
+  padding 16px 24px
+  font-size 14px
+  line-height 28px
+  &:hover
+    background rgba(#D1D1D1, .1)
 
 .ui-kit__row--inputs
   display flex
@@ -76,6 +87,21 @@
       width 100%
 
 .ui-kit__row--checkbox
+  display flex
+  flex-direction row
+  justify-content space-between
+
+  +respond-to($xsmall)
+    flex-direction column
+
+  .form__fieldset-input-wrapper
+    margin-bottom 0
+    width calc(50% - 16px)
+    +respond-to($xsmall)
+      margin-bottom 24px
+      width 100%
+
+.ui-kit__row--radio
   display flex
   flex-direction row
   justify-content space-between

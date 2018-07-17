@@ -2,7 +2,7 @@ $headerNavHeight = 80px
 
 .header
   position: relative
-  background: url('images/pic_main.png') center no-repeat
+  background: url('images/pic_main.png') bottom no-repeat
   height: 885px
   box-sizing: border-box
   display: flex
@@ -11,39 +11,39 @@ $headerNavHeight = 80px
   margin-top: $headerNavHeight
   background-size cover
   @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
-    background: url('images/pic_main@2x.png') center no-repeat
+    background: url('images/pic_main@2x.png') bottom no-repeat
     background-size: cover
 
   +respond-to($medium)
-    background: url('images/pic_main_1024.png') center no-repeat
+    background: url('images/pic_main_1024.png') bottom no-repeat
     height: 868px
     background-size cover
     @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
-      background: url('images/pic_main_1024@2x.png') center no-repeat
+      background: url('images/pic_main_1024@2x.png') bottom no-repeat
       background-size: cover
 
   +respond-to($small)
-    background: url('images/pic_main_768.png') center no-repeat
+    background: url('images/pic_main_768.png') bottom no-repeat
     height: 648px
     background-size cover
     @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
-      background: url('images/pic_main_768@2x.png') center no-repeat
+      background: url('images/pic_main_768@2x.png') bottom no-repeat
       background-size: cover
 
   +respond-to($xsmall)
-    background: url('images/pic_main_768.png') center no-repeat
+    background: url('images/pic_main_768.png') bottom no-repeat
     height: 648px
     background-size cover
     @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
-      background: url('images/pic_main_768@2x.png') center no-repeat
+      background: url('images/pic_main_768@2x.png') bottom no-repeat
       background-size: cover
 
   +respond-to($xxsmall)
-    background: url('images/pic_main_320.png') center no-repeat
+    background: url('images/pic_main_320.png') bottom no-repeat
     height: 592px
     background-size cover
     @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
-      background: url('images/pic_main_320@2x.png') center no-repeat
+      background: url('images/pic_main_320@2x.png') bottom no-repeat
       background-size: cover
 
 .header--active
@@ -87,6 +87,7 @@ $headerNavHeight = 80px
   box-shadow: 0 1px 8px 0 rgba(82,95,102,0.10)
   position: fixed
   top: 0
+  left 0
   background: rgba(255,255,255, 0.95)
   z-index: 3
   +respond-to($small)
@@ -146,6 +147,7 @@ $headerNavHeight = 80px
   font-size: 32px
   line-height: 32px
   font-weight: 900
+  color #282828
   background: -webkit-linear-gradient(-45deg, #4d4d4d, #000000)
   -webkit-text-fill-color: transparent
   -webkit-background-clip: text
@@ -270,10 +272,14 @@ $headerNavHeight = 80px
 .header__mask
   position: absolute
   bottom: 0
+  left: 0
   height: 430px
   width: 100%
   opacity: 0.51
   background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 53%, rgba(0,0,0,0.62) 63%, rgba(0,0,0,0.67) 77%, rgba(0,0,0,0.72) 89%, #000000 100%)
+
+  +respond-to($small)
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 33%, rgba(0,0,0,0.62) 63%, rgba(0,0,0,0.67) 77%, rgba(0,0,0,0.72) 89%, #000000 100%)
 
 .header__contacts-btn-get-started--scroll
   background: #17B548
