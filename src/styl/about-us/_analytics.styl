@@ -49,6 +49,8 @@ $darkBlue = #0F66B1
     transition max-height 1.25s
 
 .analytics__item-title
+  font-family: 'Fira Sans', sans-serif
+  text-align left
   display: block
   position: relative
   cursor: pointer
@@ -105,7 +107,8 @@ $darkBlue = #0F66B1
     height 355px
 
   +respond-to($xsmall)
-    width 288px
+    width 100%
+    max-width 440px
     height auto
     opacity: 0
     transform: scale(0)
@@ -122,6 +125,7 @@ $darkBlue = #0F66B1
   opacity: 0
   font-size: 16px
   line-height: 28px
+  display none
   a
     font-size: 16px
     line-height: 28px
@@ -154,6 +158,7 @@ $darkBlue = #0F66B1
       transform: scale(1)
 
   .analytics__item-text
+    display block
     max-height: 56px
     opacity: 1
     +respond-to($xsmall)

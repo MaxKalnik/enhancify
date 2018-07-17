@@ -7,7 +7,7 @@
       ul.analytics__items
         li.analytics__item.analytics__item--active
           .analytics__item-content
-            a.analytics__item-title
+            button.analytics__item-title(type="button")
               span.analytics__item-title-text
                 | The numbers don’t lie
 
@@ -17,14 +17,14 @@
               | , consumers are paying their debts in a timely fashion.
 
           picture
-            source(media='(max-width: 767px)', srcset="images/graph1_320.png, images/graph1_320@2x.png 2x")
-            source(media='(max-width: 1023px)', srcset="images/graph1_768.png, images/graph1_768@2x.png 2x")
-            source(media='(max-width: 1439px)', srcset="images/graph1_1024.png, images/graph1_1024@2x.png 2x")
-            img.analytics__item-img(src='images/graph1.png', srcset='images/graph1@2x.png 2x', draggable="false", alt="Garph")
+            source(media='(max-width: 767px)', srcset="images/graph_1.png, images/graph_1@2x.png 2x")
+            source(media='(max-width: 1023px)', srcset="images/graph_1_768.png, images/graph_1_768@2x.png 2x")
+            source(media='(max-width: 1439px)', srcset="images/graph_1_1024.png, images/graph_1_1024@2x.png 2x")
+            img.analytics__item-img(src='images/graph_1.png', srcset='images/graph_1@2x.png 2x', draggable="false", alt="Garph")
 
         li.analytics__item
           .analytics__item-content
-            a.analytics__item-title
+            button.analytics__item-title(type="button")
               span.analytics__item-title-text
                 | Change In Serious Delinquency Rates (BPS)
 
@@ -41,7 +41,7 @@
 
         li.analytics__item
           .analytics__item-content
-            a.analytics__item-title
+            button.analytics__item-title(type="button")
               span.analytics__item-title-text
                 | Change In Average Balance Per Consumer (%)
 
@@ -58,7 +58,7 @@
 
         li.analytics__item
           .analytics__item-content
-            a.analytics__item-title
+            button.analytics__item-title(type="button")
               span.analytics__item-title-text
                 | Change In Subprime Borrowers With A Balance (%)
 

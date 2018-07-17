@@ -112,21 +112,21 @@
     padding: 64px 0 24px 0
 
 .main-nav__list-item
-  margin-right: 24px
   &:last-child
     margin-right: 0
 
   +respond-to($medium)
-    margin-right: 16px
     &:last-child
       margin-right: 0
 
   +respond-to($small)
     margin-right: 0
+    &:last-of-type
+      .main-nav__list-link
+        border-bottom none
 
 .main-nav__list-item--hovered
   position: relative
-  padding-right: 20px
   +respond-from($small)
     &:hover > .main-nav__sub-list
       opacity: 1
@@ -137,6 +137,7 @@
 
 .main-nav__list-item--hovered
   .main-nav__list-link
+    padding-right: 20px
     &:after
       content: ''
       position: absolute
@@ -159,8 +160,9 @@
   line-height: 24px
   font-weight: 400
   color: #293033
-  padding: 20px 0
+  padding: 20px
   cursor: pointer
+  padding-right 0
 
   &:hover
     color #8FA7B3
@@ -183,7 +185,7 @@
   left: 50%
   transform: translateX(-50%)
   transition: .25s
-  width: 192px
+  width: 242px
   border: 1px solid #C6D3D9
   border-radius: 3px
   box-sizing: border-box
@@ -239,6 +241,12 @@
       border-bottom: 1px solid #dbe5e9
       opacity: 1
       max-height: 1000px
+
+.main-nav__sub-list--desktop-visible
+  width: 100%
+  position: static
+  display: block
+  opacity: 1
 
 .main-nav__sub-list--first-hover
   &:after

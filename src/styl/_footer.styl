@@ -40,11 +40,11 @@
   color: #7A8F99
   line-height: 48px
   font-weight: 900
-  margin-bottom: 32px
+  margin-bottom: 8px
 
   +respond-to($xsmall)
     // margin-bottom: 96px
-    margin-bottom: 52px
+    margin-bottom: 8px
 
 .footer__columns-list-item--title
   font-size: 14px
@@ -60,6 +60,8 @@
 
 .footer__columns-list-link--tel
   @extend .tel-btn
+  display block
+  margin-bottom 32px
 
 .footer__columns-list-link
   font-size: 14px
@@ -82,15 +84,17 @@
     margin-bottom: 24px
 
 .footer__columns-list
-  margin-right: 32px
+  margin-right: 44px
   &:last-child
     margin-right: 0
 
   +respond-to($xsmall)
     width: 50%
     margin-bottom: 16px
+    margin-right 32px
     &:last-child
       margin-bottom: 0
+      margin-right 32px
 
 .footer__links
   display: flex
@@ -115,6 +119,13 @@
 
 .footer__columns-list
   width: 25%
+
+  +respond-to($medium)
+    width: 25%
+
+  +respond-to($small)
+    width 15%
+
   +respond-to($xsmall)
     width auto
 
