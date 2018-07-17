@@ -14,5 +14,23 @@
           .get-renovation__email-input-warning
             | Enter your email address
 
-        a.get-renovation__btn
+        button.get-renovation__btn(tabindex="0", type="button")
           | Keep me Posted
+
+  .popup
+    .popup__wrapper
+      button.popup__close-btn(type="button", tabindex="0")
+
+      .popup__congrats
+        .popup__congrats-title
+          | Thank You!
+
+        .popup__congrats-text
+          | We’ve sent you a confirmation letter to your e-mail.
+
+      .popup__content
+        .popup__content-text
+          | During this time frame, not only has more consumers been able to successfully pay down their debt, but there has also been a 8.5% decrease in personal loan delinquency rates with an 11.6% increase in credit card delinquency rates.
+
+        .popup__btn
+          | Good. Close the window

@@ -509,4 +509,32 @@ $subListFirstItems = $('.main-nav__sub-list-item:first-child');
 $subListFirstItems.on('mouseenter', addNavHover);
 $subListFirstItems.on('mouseleave', removeNavHover);
 
-
+// advertiser disclosure
+function toggleAdPopup(e) {
+  $(e.target).siblings('.form__fieldset-ad-btn-text-container').toggleClass('form__fieldset-ad-btn-text-container--hidden');
+}
+function closeAdPopup(e) {
+  $(e.target).closest('.form__fieldset-ad-btn-text-container').addClass('form__fieldset-ad-btn-text-container--hidden');
+};
+if($('.form__fieldset-ad-btn').length > 0) {
+  body.on('keydown', '.form__fieldset-ad-btn', function(e) {
+    if(e.which === ENTER_KEYCODE) {
+      toggleAdPopup(e);
+    }
+  });
+  $('.form__fieldset-ad-btn').swipe({
+    tap: function(event, target) {
+      toggleAdPopup(event);
+    }
+  });
+  body.on('keydown', '.form__fieldset-ad-btn-close', function(e) {
+    if(e.which === ENTER_KEYCODE) {
+      closeAdPopupe(e);
+    }
+  });
+  $('.form__fieldset-ad-btn-close').swipe({
+    tap: function(event, target) {
+      closeAdPopup(event);
+    }
+  });
+}

@@ -21,14 +21,14 @@
 .footer__columns
   display: flex
   flex-direction: row
-  justify-content: space-between
+  justify-content: flex-start
   margin-right 152px
 
   +respond-to($medium)
     margin-right: 36px
 
   +respond-to($small)
-    justify-content: space-between
+    justify-content: flex-start
     margin-right 0
 
   +respond-to($xsmall)
@@ -43,7 +43,8 @@
   margin-bottom: 32px
 
   +respond-to($xsmall)
-    margin-bottom: 96px
+    // margin-bottom: 96px
+    margin-bottom: 52px
 
 .footer__columns-list-item--title
   font-size: 14px
@@ -66,6 +67,9 @@
   line-height: 24px
   font-weight: 300
 
+  &:hover
+    color #8FA7B3
+
 .footer__main
   position: relative
   display: flex
@@ -84,7 +88,6 @@
 
   +respond-to($xsmall)
     width: 50%
-    margin-right: 0
     margin-bottom: 16px
     &:last-child
       margin-bottom: 0
@@ -93,6 +96,7 @@
   display: flex
   flex-direction: column
   align-items: center
+  display none
 
   +respond-to($small)
     position absolute
@@ -109,14 +113,17 @@
     width: 130px
     order: 1
 
+.footer__columns-list
+  width: 25%
+  +respond-to($xsmall)
+    width auto
+
 .footer__columns-list--second
   +respond-to($xsmall)
-    width: 170px
     order: 3
 
 .footer__columns-list--third
   +respond-to($xsmall)
-    width: 130px
     order: 2
 
 .footer__columns-list--last
@@ -127,6 +134,9 @@
   +respond-to($xsmall)
     width: 100%
     order: 4
+
+    .footer__columns-list-item--title
+      display none
 
 .footer__columns-list-item--tel
   +respond-to($xsmall)
@@ -164,6 +174,7 @@
   top: 78px
   right: 12px
   justify-content flex-end
+  display none
 
   +respond-to($small)
     position: static

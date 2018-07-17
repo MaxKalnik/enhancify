@@ -312,28 +312,11 @@
   +respond-to($xsmall)
     margin-bottom 16px
 
-.form__fieldset-ad-btn
+.form__fieldset-ad-btn-wrapper
   position: absolute
   right: 32px
   top: 32px
-  padding-left: 24px
-  background: none
-  font-size: 12px
-  line-height: 16px
-  font-weight: 400
-  color: #8fa7b3
-  border: none
-  outline: none
-  cursor: pointer
-  &:before
-    content: ''
-    display block
-    width: 16px
-    height: 16px
-    position: absolute
-    left: 0
-    top: 0
-    background: url('images/svg/squares.svg') center no-repeat
+  z-index 1
 
   +respond-to($small)
     right 24px
@@ -346,6 +329,94 @@
     left: 50%
     transform: translateX(-50%)
     min-width 155px
+
+#ad-icon
+  transition .25s
+
+.form__fieldset-ad-btn
+  padding-left: 24px
+  background: none
+  font-size: 12px
+  line-height: 16px
+  font-weight: 400
+  color: #8fa7b3
+  border: none
+  outline: none
+  cursor: pointer
+  transition .25s
+
+  +respond-to($xsmall)
+    min-width 155px
+
+  &:hover
+    color: #E2E8EB
+
+    #ad-icon
+      fill #E2E8EB
+
+.form__fieldset-ad-icon
+  width: 16px
+  height: 16px
+  position: absolute
+  left: 0
+  top: 2px
+
+.form__fieldset-ad-btn-text-container
+  position absolute
+  top 28px
+  right 0
+  width 294px
+  background: #ffffff
+  border: 1px solid rgba(143,167,179,0.30)
+  box-shadow: 0 4px 10px 0 rgba(143,167,179,0.10)
+  border-radius: 4px
+  padding 32px 24px
+  box-sizing border-box
+
+  +respond-to($xsmall)
+    width 288px
+    padding 16px
+
+.form__fieldset-ad-btn-close
+  position absolute
+  right 12px
+  top 12px
+  width 16px
+  height 16px
+  &:before
+    position: absolute
+    left: 0
+    top: 7px
+    content: ''
+    height: 2px
+    width: 16px
+    background: #d8d8d8
+    transform: rotate(45deg)
+    box-shadow: none
+    transition: transform .25s
+    opacity: 1
+
+  &:after
+    position: absolute
+    left: 0
+    top: 7px
+    content: ''
+    height: 2px
+    width: 16px
+    background: #d8d8d8
+    transform: rotate(-45deg)
+    box-shadow: none
+    transition: transform .25s
+
+.form__fieldset-ad-btn-text
+  font-size: 14px
+  color: #525F66
+  letter-spacing: 0
+  line-height: 24px
+  font-weight 400
+
+.form__fieldset-ad-btn-text-container--hidden
+  display none
 
 .form__fieldset-title
   position: relative
@@ -462,12 +533,14 @@
   width: 100%
 
 .form__fieldset-label
+  width 100%
   position relative
   font-size: 16px
   line-height: 24px
   font-weight: 400
   color: #293033
   margin-bottom: 8px
+  box-sizing border-box
 
 .form__fieldset-label--with-hint
   position relative
@@ -685,6 +758,9 @@
 
   +respond-to(375px)
     width 55%
+
+  &:focus
+    border: 1px solid #dde4e8
 
 .form__fieldset-label--radio
   position: relative

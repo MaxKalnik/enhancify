@@ -162,6 +162,9 @@
   padding: 20px 0
   cursor: pointer
 
+  &:hover
+    color #8FA7B3
+
   +respond-to($small)
     display: block
     padding: 16px
@@ -205,6 +208,9 @@
     border-bottom: 6px solid #ffffff
     z-index 2
     transition border .25s
+
+    +respond-to($small)
+      display none
 
   &:before
     border-bottom: 6px solid #dbe2e7

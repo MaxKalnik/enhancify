@@ -6,8 +6,15 @@ form.form(action='', method='POST')
       +loan_info_svg
       | Loan Information
 
-    button.form__fieldset-ad-btn(type='button')
-      | Advertiser Disclosure
+    .form__fieldset-ad-btn-wrapper
+      button.form__fieldset-ad-btn(type='button', tabindex="0")
+        +ad_btn_icon
+        | Advertiser Disclosure
+
+      .form__fieldset-ad-btn-text-container.form__fieldset-ad-btn-text-container--hidden
+        button.form__fieldset-ad-btn-close(type='button', tabindex="0")
+        p.form__fieldset-ad-btn-text
+          | Enhancify.com is an independent website that is supported by advertising. Enhancify.com may be compensated by bank issuers whose offers appear on the site. Because we are paid by our advertising partners it may impact placement of products on the site, including the order in which they appear. Not all available credit card issuers or card offers are included on the site.
 
     .form__fieldset-wrapper
       .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full

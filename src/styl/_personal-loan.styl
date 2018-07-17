@@ -58,26 +58,6 @@
     width: 100%
 
 .personal-loan__list-item
-  margin-right: 28px
-  margin-bottom: 32px
-  +respond-from($small)
-    &:nth-child(4n)
-      margin-right: 0
-
-  +respond-to($medium)
-    margin-right: 16px
-
-  +respond-range(490px, $xsmall)
-    margin-bottom: 16px
-    &:nth-child(3n)
-      margin-right: 0
-
-  +respond-to(490px)
-    margin-bottom: 16px
-    &:nth-child(2n)
-      margin-right: 0
-
-.personal-loan__list-link
   display: flex
   width: 264px
   height: 178px
@@ -89,26 +69,35 @@
   border-radius: 3px
   transition: .25s
   box-sizing: border-box
-  &:hover
-    background: #F5FCF5
-    color: #68BA62
-    border: 1px solid #B3DCB0
-
-  &:active
-    transform: scale(0.98)
+  margin-right: 28px
+  margin-bottom: 32px
 
   +respond-from($large)
     width 318px
 
+  +respond-from($small)
+    &:nth-child(4n)
+      margin-right: 0
+
   +respond-to($medium)
     width: 222px
+    margin-right: 16px
 
   +respond-to($small)
     width: 164px
     padding 24px 16px
 
-  +respond-to($xsmall)
+  +respond-range(490px, $xsmall)
+    margin-bottom: 16px
     width: 136px
+    &:nth-child(3n)
+      margin-right: 0
+
+  +respond-to(490px)
+    margin-bottom: 16px
+    width: 136px
+    &:nth-child(2n)
+      margin-right: 0
 
 .personal-loan__list-link-icon
   width: 64px

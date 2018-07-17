@@ -1,5 +1,5 @@
 var ENTER_KEYCODE = 13;
-var ESC_KEYCODE = 13;
+var ESC_KEYCODE = 27;
 var body = $('body');
 
 // google map api
@@ -61,17 +61,45 @@ function makeSelectCustom(element) {
             $(this).removeClass('active').next('ul.select-options').hide();
         });
         $(this).toggleClass('active').next('ul.select-options').toggle();
+        $(this).parents('.select').toggleClass('select--active');
     });
 
     $styledSelect.keydown(function(e){
-      if(e.keycode === ENTER_KEYCODE) {
+      if(e.which === ENTER_KEYCODE) {
         e.stopPropagation();
         $('div.select-styled.active').not(this).each(function(){
             $(this).removeClass('active').next('ul.select-options').hide();
         });
         $(this).toggleClass('active').next('ul.select-options').toggle();
+        $(this).parents('.select').toggleClass('select--active');
       }
-    })
+    });
+
+    $listItems.attr('tabindex', 0);
+
+    function addHover() {
+      $(this).parents('.select').addClass('select--first-hover');
+    }
+
+    function removeHover() {
+      $(this).parents('.select').removeClass('select--first-hover');
+    }
+
+    function hoverHander() {
+      var firstItem = $listItems.eq(0);
+      if(firstItem.css("display") === 'none') {
+        $listItems.eq(1).on('mouseenter', addHover);
+        $listItems.eq(1).on('mouseleave', removeHover);
+        $listItems.eq(0).off('mouseenter', addHover);
+        $listItems.eq(0).off('mouseleave', removeHover);
+      } else {
+        $listItems.eq(0).on('mouseenter', addHover);
+        $listItems.eq(0).on('mouseleave', removeHover);
+        $listItems.eq(1).off('mouseenter', addHover);
+        $listItems.eq(1).off('mouseleave', removeHover);
+      }
+    }
+    hoverHander();
 
     $listItems.click(function(e) {
         $listItems.show();
@@ -80,91 +108,39 @@ function makeSelectCustom(element) {
         $this.val($(this).attr('rel'));
         $(this).hide();
         $list.hide();
+        $(this).parents('.select').removeClass('select--active');
+        $('.select').removeClass('select--first-hover');
+        hoverHander();
     });
 
-    $(document).keydown(function(e){
-      if(e.keycode === ENTER_KEYCODE) {
+    $listItems.keydown(function(e){
+      if(e.which === ENTER_KEYCODE) {
         $listItems.show();
         e.stopPropagation();
         $styledSelect.text($(this).text()).removeClass('active');
         $this.val($(this).attr('rel'));
         $(this).hide();
         $list.hide();
+        $(this).parents('.select').removeClass('select--active');
+        $('.select').removeClass('select--first-hover');
+        hoverHander();
       }
     });
 
     $(document).click(function() {
         $styledSelect.removeClass('active');
         $list.hide();
+        $('.select').removeClass('select--active');
     });
     $(document).keydown(function(e) {
-      if(e.keycode === ESC_KEYCODE) {
+      if(e.which === ESC_KEYCODE) {
         $styledSelect.removeClass('active');
         $list.hide();
+        $('.select').removeClass('select--active');
       }
     });
   });
 };
-
-function makeLinkedSelectCustom(element) {
-  element.each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('.option').length;
-
-    $this.addClass('select-hidden');
-    $this.wrap('<div class="select"></div>');
-    $this.after('<div class="select-styled"></div>');
-
-    var $styledSelect = $this.next('div.select-styled');
-    $styledSelect.text($this.children('.option').eq(0).text());
-
-    var $list = $('<ul />', {
-        'class': 'select-options'
-    });
-
-    for (var i = 0; i < numberOfOptions; i++) {
-      var $linkItem = $(document.createElement('li'))
-      $('<a />', {
-          class: 'select-item-link',
-          text: $this.children('.option').eq(i).text(),
-          href: $this.children('.option').eq(i).attr('href')
-      }).appendTo($linkItem);
-      $linkItem.appendTo($list);
-    }
-
-    $list.insertAfter($styledSelect);
-
-    var $listItems = $list.children('li').children('a');
-    $listItems.eq(0).hide();
-
-    $styledSelect.attr('tabindex', 0);
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.select-styled.active').not(this).each(function(){
-            $(this).removeClass('active').next('ul.select-options').hide();
-        });
-        $(this).toggleClass('active').next('ul.select-options').toggle();
-    });
-
-    $listItems.click(function(e) {
-        $listItems.show();
-        e.preventDefault();
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        $this.attr('href', (($(this).attr('href'))));
-        $(location).attr('href', $this.attr('href'));
-        $(this).hide();
-        $list.hide();
-    });
-
-    $(document).click(function() {
-        $styledSelect.removeClass('active');
-        $list.hide();
-    });
-  });
-}
-if($('#solutions-for').length) {
-  makeLinkedSelectCustom($('#solutions-for'));
-}
 
 if($('.form__fieldset-select').length && !iOS) {
   $('.form__fieldset-select').each(function() {
@@ -269,8 +245,15 @@ body.on('click', '.main-nav__toggle', function(){
   $('.header__contacts').toggleClass('header__contacts--menu-active');
   $('.header').toggleClass('header--active');
 });
+
 body.on('click','.main-nav__list-item--hovered', function () {
-  $(this).children('.main-nav__sub-list').toggleClass('main-nav__sub-list--active');
+  $(this).children('.main-nav__list-link').toggleClass('main-nav__list-link--active');
+});
+
+$('.main-nav__list-item--hovered').swipe({
+  tap: function(event, target) {
+    $(this).children('.main-nav__list-link').toggleClass('main-nav__list-link--active');
+  }
 });
 
 $(".testimonials__slides-list-wrapper").swipe( {
@@ -341,22 +324,128 @@ body.on('click', '.form__fieldset-hint', function() {
   $(this).removeClass('form__fieldset-hint--open');
 });
 
+body.on('keydown', function(e) {
+  if(e.which === ESC_KEYCODE) {
+    $('.form__fieldset-hint').removeClass('form__fieldset-hint--open');
+  }
+});
+
 // download file
 body.on('click', '.form__fieldset-btn-file', function() {
   $(this).siblings('.form__fieldset-input--file').click();
+});
+body.on('keydown', '.form__fieldset-btn-file', function(e) {
+  if(e.which === ENTER_KEYCODE) {
+    $(this).siblings('.form__fieldset-input--file').click();
+  }
 });
 body.on('change', '.form__fieldset-input--file', function(){
   var $fileName = $(this).prop('files')[0].name;
   $(this).siblings('.form__fieldset-input--file-path').val($fileName);
 });
 
+// checkbox
+body.on('keydown', '.form__fieldset-checkmark', function(e) {
+  if(e.which === ENTER_KEYCODE) {
+    if(!$(this).siblings('.form__fieldset-checkbox').prop('checked')) {
+      $(this).siblings('.form__fieldset-checkbox').prop('checked', true);
+    } else {
+      $(this).siblings('.form__fieldset-checkbox').prop('checked', false);
+    }
+  }
+});
+
 // popup
 $('.open-dialog').click(function(){
   $('.popup').show();
 });
+$('.open-dialog').keydown(function(e) {
+  if(e.which === ENTER_KEYCODE) {
+    $('.popup').show();
+  }
+});
 $('.popup__close-btn').click(function(){
   $('.popup').hide();
 });
+$(document).keydown(function(e){
+  if(e.which === ESC_KEYCODE) {
+    $('.popup').hide();
+  }
+});
 $('.popup__btn').click(function(){
   $('.popup').hide();
+});
+$('.popup__btn').keydown(function(e){
+  if(e.which === ENTER_KEYCODE) {
+    $('.popup').hide();
+  }
+});
+
+// upper nav
+function addNavHover() {
+  $(this).parents('.main-nav__sub-list').addClass('main-nav__sub-list--first-hover');
+};
+function removeNavHover() {
+  $(this).parents('.main-nav__sub-list').removeClass('main-nav__sub-list--first-hover');
+};
+$subListFirstItems = $('.main-nav__sub-list-item:first-child');
+$subListFirstItems.on('mouseenter', addNavHover);
+$subListFirstItems.on('mouseleave', removeNavHover);
+
+// advertiser disclosure
+function toggleAdPopup(e) {
+  $(e.target).siblings('.form__fieldset-ad-btn-text-container').toggleClass('form__fieldset-ad-btn-text-container--hidden');
+}
+function closeAdPopup(e) {
+  $(e.target).closest('.form__fieldset-ad-btn-text-container').addClass('form__fieldset-ad-btn-text-container--hidden');
+};
+if($('.form__fieldset-ad-btn').length > 0) {
+  body.on('keydown', '.form__fieldset-ad-btn', function(e) {
+    if(e.which === ENTER_KEYCODE) {
+      toggleAdPopup(e);
+    }
+  });
+  $('.form__fieldset-ad-btn').swipe({
+    tap: function(event, target) {
+      toggleAdPopup(event);
+    }
+  });
+  body.on('keydown', '.form__fieldset-ad-btn-close', function(e) {
+    if(e.which === ENTER_KEYCODE) {
+      closeAdPopupe(e);
+    }
+  });
+  $('.form__fieldset-ad-btn-close').swipe({
+    tap: function(event, target) {
+      closeAdPopup(event);
+    }
+  });
+}
+
+// thank you popup
+$('.get-renovation__btn').click(function(e) {
+  e.preventDefault();
+  $('.popup').show();
+});
+$('.get-renovation__btn').keydown(function(e) {
+  if(e.which === ENTER_KEYCODE) {
+    e.preventDefault();
+    $('.popup').show();
+  }
+});
+$('.popup__close-btn').click(function(){
+  $('.popup').hide();
+});
+$(document).keydown(function(e){
+  if(e.which === ESC_KEYCODE) {
+    $('.popup').hide();
+  }
+});
+$('.popup__btn').click(function(){
+  $('.popup').hide();
+});
+$('.popup__btn').keydown(function(e){
+  if(e.which === ENTER_KEYCODE) {
+    $('.popup').hide();
+  }
 });
