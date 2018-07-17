@@ -246,10 +246,6 @@ body.on('click', '.main-nav__toggle', function(){
   $('.header').toggleClass('header--active');
 });
 
-body.on('click','.main-nav__list-item--hovered', function () {
-  $(this).children('.main-nav__list-link').toggleClass('main-nav__list-link--active');
-});
-
 $('.main-nav__list-item--hovered').swipe({
   tap: function(event, target) {
     $(this).children('.main-nav__list-link').toggleClass('main-nav__list-link--active');
