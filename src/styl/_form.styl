@@ -771,6 +771,9 @@
   padding-left: 34px
   margin-bottom: 0
   cursor: pointer
+  margin-bottom 24px
+  &:last-child
+    margin-bottom 0
 
 .form__fieldset-checkmark-radio
   position: absolute
@@ -798,6 +801,10 @@
       background-color #fff
       border: 1px solid #dce3e7
 
+  .form__fieldset-label--radio-contractor &
+    left 16px
+    top 16px
+
 .form__fieldset-radio
   position: absolute
   width: 0
@@ -822,3 +829,32 @@
   border: 1px solid #dce3e7
   &:after
     display none
+
+.form__fieldset-sub-title
+  @extend .form__fieldset-label
+  font-weight 600
+  margin-top 10px
+
+.form__fieldset-text
+  @extend .form__fieldset-label
+  font-size 14px
+  line-height 24px
+  margin-bottom 24px
+
+.form__fieldset-label--radio-contractor
+  background: #ffffff
+  border: 1px solid #AEDAAB
+  box-shadow: 0 10px 31px 0 rgba(156,173,173,0.20)
+  border-radius: 4px
+  padding 16px 16px 16px 58px
+
+  +respond-to($small)
+    padding 16px 16px 16px 58px
+
+  +respond-to($xsmall)
+    padding 16px 16px 16px 58px
+
+  a
+    @extend .link
+    line-height 16px
+    border-bottom: 1px solid #8cc6fe

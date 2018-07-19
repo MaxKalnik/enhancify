@@ -351,6 +351,13 @@ body.on('keydown', '.form__fieldset-checkmark', function(e) {
   }
 });
 
+// radio
+body.on('keydown', '.form__fieldset-checkmark-radio', function (e) {
+  if(e.which === ENTER_KEYCODE) {
+    $(this).siblings('.form__fieldset-radio').click();
+  }
+});
+
 // popup
 $('.open-dialog').click(function(){
   $('.popup').show();

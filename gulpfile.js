@@ -86,7 +86,7 @@ gulp.task('js', function () {
 
 gulp.task('jade', function(){
     gulp.src([dev_path.jade + '**/*.jade', dev_path.jade + '*.jade', dev_path.html + '*.jade'])
-      .pipe(jade())
+      .pipe(jade({pretty: true}))
       .pipe(gulp.dest('./build/'))
 });
 

@@ -1,6 +1,6 @@
 .get-renovation
   position: relative
-  padding: 80px 0
+  padding: 72px 0
   background-image: linear-gradient(90deg, #295aa3 0%, #1c418c 100%), radial-gradient(48% 50%, #2390f6 52%, #1386f2 100%)
 
   height: 344px
@@ -25,14 +25,16 @@
 .get-renovation__expert
   @extend .container
   position: relative
-  padding-left: 400px
+  display: flex
+  flex-direction: column
+  padding-left: 300px
   box-sizing: border-box
 
   +respond-to($medium)
-    padding-left: 360px
+    padding-left: 300px
 
   +respond-to($small)
-    padding-left: 300px
+    padding-left: 210px
 
   +respond-to($xsmall)
     padding-left: 0
@@ -49,31 +51,35 @@
 .get-renovation__upper-text
   @extend .main-text
   color: #ffffff
-  margin-top: 8px
-  margin-bottom: 24px
+  margin-top: 24px
+  margin-left auto
 
   +respond-to($xsmall)
     margin: 16px 0
+    width: 70%
+    margin-left: auto
+    text-align: right
 
 .get-renovation__expert-img
   position: absolute
   bottom: 0
-  left: 0
-  width: 606px
+  left: 23px
+  width: 370px
   height: auto
 
   +respond-from($large)
     left: calc((100% - 1600px)/2);
 
   +respond-to($medium)
-    width: 596px
-    left: -70px
+    width: 350px
+    left: 23px
 
   +respond-to($small)
-    width: 480px
+    width: 290px
+    left 0
 
   +respond-to($xsmall)
-    width: 396px
+    width: 240px
     left: 50%
     bottom: 0
     transform: translate(-50%)
@@ -164,3 +170,4 @@
     font-size: 14px
     line-height: 24px
     text-align: center
+

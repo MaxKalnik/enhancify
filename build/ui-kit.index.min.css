@@ -896,9 +896,6 @@ fieldset {
 a {
   cursor: pointer;
 }
-a:focus {
-  outline: 2px solid #83bffc;
-}
 input {
   outline: none;
   box-shadow: none;
@@ -981,30 +978,21 @@ button {
 .link,
 .form__fieldset-label-link,
 .form__terms-of-use-link,
-.form__under-text-link {
+.form__under-text-link,
+.form__fieldset-label--radio-contractor a {
   position: relative;
   color: #188dfc;
   cursor: pointer;
-  line-height: 20px;
-}
-.link:after,
-.form__fieldset-label-link:after,
-.form__terms-of-use-link:after,
-.form__under-text-link:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  background: #8cc6fe;
-  width: 100%;
+  line-height: 16px;
+  border-bottom: 1px solid #8cc6fe;
   transition: 0.25s;
 }
-.link:hover:after,
-.form__fieldset-label-link:hover:after,
-.form__terms-of-use-link:hover:after,
-.form__under-text-link:hover:after {
-  background: transparent;
+.link:hover,
+.form__fieldset-label-link:hover,
+.form__terms-of-use-link:hover,
+.form__under-text-link:hover,
+.form__fieldset-label--radio-contractor a:hover {
+  border-bottom: 1px solid transparent;
 }
 .semibold {
   font-weight: 600;
@@ -1970,8 +1958,17 @@ button {
 .section__title--white {
   color: #fff;
 }
-.section__title--left-align {
+.section__title--expert {
   text-align: left;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 40px;
+}
+@media only screen and (max-width: 1023px) {
+  .section__title--expert {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 .section--main {
   background: #f5fafc;
@@ -2771,7 +2768,9 @@ button {
 .form__fieldset-select {
   width: 100%;
 }
-.form__fieldset-label {
+.form__fieldset-label,
+.form__fieldset-sub-title,
+.form__fieldset-text {
   width: 100%;
   position: relative;
   font-size: 16px;
@@ -3014,6 +3013,10 @@ button {
   padding-left: 34px;
   margin-bottom: 0;
   cursor: pointer;
+  margin-bottom: 24px;
+}
+.form__fieldset-label--radio:last-child {
+  margin-bottom: 0;
 }
 .form__fieldset-checkmark-radio {
   position: absolute;
@@ -3042,6 +3045,10 @@ button {
   background-color: #fff;
   border: 1px solid #dce3e7;
 }
+.form__fieldset-label--radio-contractor .form__fieldset-checkmark-radio {
+  left: 16px;
+  top: 16px;
+}
 .form__fieldset-radio {
   position: absolute;
   width: 0;
@@ -3068,6 +3075,36 @@ button {
 }
 .form__fieldset-radio:checked + .form__fieldset-checkmark-radio--disabled:after {
   display: none;
+}
+.form__fieldset-sub-title {
+  font-weight: 600;
+  margin-top: 10px;
+}
+.form__fieldset-text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.form__fieldset-label--radio-contractor {
+  background: #fff;
+  border: 1px solid #aedaab;
+  box-shadow: 0 10px 31px 0 rgba(156,173,173,0.2);
+  border-radius: 4px;
+  padding: 16px 16px 16px 58px;
+}
+@media only screen and (max-width: 1023px) {
+  .form__fieldset-label--radio-contractor {
+    padding: 16px 16px 16px 58px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .form__fieldset-label--radio-contractor {
+    padding: 16px 16px 16px 58px;
+  }
+}
+.form__fieldset-label--radio-contractor a {
+  line-height: 16px;
+  border-bottom: 1px solid #8cc6fe;
 }
 .ui-kit__wrapper {
   padding: 80px 0;
@@ -3479,11 +3516,29 @@ button {
   display: block;
   margin-bottom: 32px;
 }
+.footer__columns-list-link--tel:before {
+  display: none;
+}
+.footer__columns-list-link--tel:hover #ic_phone_svg {
+  fill: #8fa7b3;
+  opacity: 0.5;
+}
+#ic_phone_svg {
+  transition: 0.25s;
+}
+.footer__phone-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
 .footer__columns-list-link {
   font-size: 14px;
   color: #525f66;
   line-height: 24px;
   font-weight: 300;
+  transition: 0.25s;
 }
 .footer__columns-list-link:hover {
   color: #8fa7b3;

@@ -14,8 +14,8 @@ fieldset
 
 a
   cursor pointer
-  &:focus
-    outline 2px solid #83bffc
+  // &:focus
+  //   outline 2px solid #83bffc
 
 input
   outline none
@@ -52,20 +52,12 @@ button
   position: relative
   color: #188DFC
   cursor pointer
-  line-height 20px
-  &:after
-    content: ''
-    position: absolute
-    bottom: 0
-    left: 0
-    height: 1px
-    background: #8CC6FE
-    width: 100%
-    transition: .25s
+  line-height 16px
+  border-bottom 1px solid #8CC6FE
+  transition: .25s
 
   &:hover
-    &:after
-      background: transparent
+    border-bottom 1px solid transparent
 
 .semibold
   font-weight: 600

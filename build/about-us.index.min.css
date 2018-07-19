@@ -836,9 +836,6 @@ fieldset {
 a {
   cursor: pointer;
 }
-a:focus {
-  outline: 2px solid #83bffc;
-}
 input {
   outline: none;
   box-shadow: none;
@@ -938,22 +935,13 @@ button {
   position: relative;
   color: #188dfc;
   cursor: pointer;
-  line-height: 20px;
-}
-.link:after,
-.map__contacts-link:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  background: #8cc6fe;
-  width: 100%;
+  line-height: 16px;
+  border-bottom: 1px solid #8cc6fe;
   transition: 0.25s;
 }
-.link:hover:after,
-.map__contacts-link:hover:after {
-  background: transparent;
+.link:hover,
+.map__contacts-link:hover {
+  border-bottom: 1px solid transparent;
 }
 .semibold {
   font-weight: 600;
@@ -1874,8 +1862,17 @@ button {
 .section__title--white {
   color: #fff;
 }
-.section__title--left-align {
+.section__title--expert {
   text-align: left;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 40px;
+}
+@media only screen and (max-width: 1023px) {
+  .section__title--expert {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 .section--main {
   background: #f5fafc;
@@ -2996,11 +2993,29 @@ button {
   display: block;
   margin-bottom: 32px;
 }
+.footer__columns-list-link--tel:before {
+  display: none;
+}
+.footer__columns-list-link--tel:hover #ic_phone_svg {
+  fill: #8fa7b3;
+  opacity: 0.5;
+}
+#ic_phone_svg {
+  transition: 0.25s;
+}
+.footer__phone-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
 .footer__columns-list-link {
   font-size: 14px;
   color: #525f66;
   line-height: 24px;
   font-weight: 300;
+  transition: 0.25s;
 }
 .footer__columns-list-link:hover {
   color: #8fa7b3;

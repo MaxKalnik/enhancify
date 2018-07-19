@@ -62,12 +62,30 @@
   @extend .tel-btn
   display block
   margin-bottom 32px
+  &:before
+    display none
+
+  &:hover
+    #ic_phone_svg
+      fill #8fa7b3
+      opacity .5
+
+#ic_phone_svg
+  transition .25s
+
+.footer__phone-icon
+  width: 16px
+  height: 16px
+  position: absolute
+  top: 2px
+  left: 0
 
 .footer__columns-list-link
   font-size: 14px
   color: #525F66
   line-height: 24px
   font-weight: 300
+  transition .25s
 
   &:hover
     color #8FA7B3

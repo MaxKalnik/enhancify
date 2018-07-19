@@ -82,6 +82,33 @@ form.form.form--partnership(action='', method='POST')
           input.form__fieldset-input-range.range__input(name='price-per-job')
           input.range__slider(data-from="20000", data-max="68000", data-min="1000", data-step="100")
 
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--full.form__fieldset-input-wrapper--radio
+        h3.form__fieldset-sub-title
+          | Choose a Membership Plan
+
+        p.form__fieldset-text
+          | Our most popular option is the Enhancify Gold Plan. By choosing a yearly plan, 
+          span.semibold you can save 54% compared 
+          | to the monthly plan. The Enhancify Gold Plan can be used whether you have one location or multiple locations.
+
+        label.form__fieldset-label.form__fieldset-label--radio.form__fieldset-label--radio-contractor(for='gold')
+          span.semibold Enhancify Gold Yearly Plan
+          |  — $299 one time each year from the date of setup once a year (
+          a(href="")
+            | Save 59% over monthly rate
+          | ) — Receive full features of the Enhancify services which includes a co-branded landing page, custom marketing materials, training materials, dedicated customer service for assistance & more.
+
+          input.form__fieldset-radio(type='radio', name="plan", id='gold')
+          span.form__fieldset-checkmark-radio(tabindex="0")
+
+        label.form__fieldset-label.form__fieldset-label--radio.form__fieldset-label--radio-contractor(for='silver')
+          span.semibold Enhancify Silver Monthly Plan 
+          | — $39 per month plus an $89 one time setup fee — Receive all the features and services of the yearly plan, which includes a co-branded landing page, custom marketing materials, training materials, dedicated customer service for assistance & more.
+
+          input.form__fieldset-radio(type='radio', name="plan", id='silver')
+          span.form__fieldset-checkmark-radio(tabindex="0")
+
+
       .form__fieldset-input-wrapper.form__fieldset-input-wrapper--half
         label.form__fieldset-label.form__fieldset-label--with-hint(for='company-logo')
           | Upload Company Logo for our Portal
