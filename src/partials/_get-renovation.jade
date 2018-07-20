@@ -1,13 +1,21 @@
 .get-renovation
   img.get-renovation__expert-img(src='images/expert.png' srcset='images/expert@2x.png 2x', alt="Expert")
   .get-renovation__expert
-    h2.section__title.section__title--white.section__title--expert
-      | “Partenirng with Enhancify was a no brainer. We were able to get up and running in a few minutes, the product is really simple for us and for customers, and best of all, Enhancify doesn’t charge a dime in dealer fees.”
+    h2.section__title.section__title--white.section__title--left-align
+      | Hear what our experts have to say!
 
     p.get-renovation__upper-text
-      | Cody K.
-      br
-      | Contractor, BCAA Roofing and Skylights
+      | Get the latest updates and financing tidbits, so you can make informed financial decisions, without having to break the bank.
+
+    .get-renovation__expert-user
+      form.get-renovation__expert-user-form
+        .get-renovation__email-input-wrapper
+          input.get-renovation__email-input(name="renovation-mail",type="email", placeholder="Enter your email address")
+          .get-renovation__email-input-warning
+            | Enter your email address
+
+        button.get-renovation__btn(tabindex="0", type="button")
+          | Keep me Posted
 
   .popup
     .popup__wrapper

@@ -93,10 +93,11 @@ $darkBlue = #0F66B1
   height 352px
   position: absolute
   right: 0
-  top: 50%
-  transform: translateY(-50%)
+  top 40px
+  // top: 50%
+  // transform: translateY(-50%)
   opacity: 0
-  transition: .25s
+  transition: opacity .55s
 
   +respond-to($medium)
     width 443px
@@ -105,6 +106,7 @@ $darkBlue = #0F66B1
   +respond-to($small)
     width 338px
     height 355px
+    top 50px
 
   +respond-to($xsmall)
     width 100%
@@ -126,12 +128,15 @@ $darkBlue = #0F66B1
   font-size: 16px
   line-height: 28px
   display none
+  transition max-height .25s
   a
+    display inline-block
     font-size: 16px
     line-height: 28px
-    padding: 4px 8px
+    padding: 0 8px
 
 .analytics__item--active
+  border-bottom none
   +respond-to($xsmall)
     max-height: 1000px
 
@@ -159,10 +164,13 @@ $darkBlue = #0F66B1
 
   .analytics__item-text
     display block
-    max-height: 56px
+    max-height: 256px
     opacity: 1
     +respond-to($xsmall)
-      max-height: 84px
+      max-height: 500px
+
+    a
+      padding 0 4px
 
   +respond-to($xsmall)
     .analytics__item-title

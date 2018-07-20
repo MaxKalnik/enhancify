@@ -355,6 +355,14 @@ body.on('keydown', '.form__fieldset-checkmark', function(e) {
 body.on('keydown', '.form__fieldset-checkmark-radio', function (e) {
   if(e.which === ENTER_KEYCODE) {
     $(this).siblings('.form__fieldset-radio').click();
+    $('.form__fieldset-label--radio-contractor').removeClass('form__fieldset-label--radio-contractor-active')
+    $(this).parents('.form__fieldset-label--radio').toggleClass('form__fieldset-label--radio-contractor-active');
+  }
+});
+$('.form__fieldset-label--radio-contractor').swipe({
+  tap: function(event, target) {
+    $('.form__fieldset-label--radio-contractor').removeClass('form__fieldset-label--radio-contractor-active')
+    $(this).toggleClass('form__fieldset-label--radio-contractor-active');
   }
 });
 

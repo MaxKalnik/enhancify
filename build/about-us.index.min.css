@@ -1862,6 +1862,9 @@ button {
 .section__title--white {
   color: #fff;
 }
+.section__title--left-align {
+  text-align: left;
+}
 .section__title--expert {
   text-align: left;
   font-style: italic;
@@ -2492,10 +2495,9 @@ button {
   height: 352px;
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40px;
   opacity: 0;
-  transition: 0.25s;
+  transition: opacity 0.55s;
 }
 @media only screen and (max-width: 1439px) {
   .analytics__item-img {
@@ -2507,6 +2509,7 @@ button {
   .analytics__item-img {
     width: 338px;
     height: 355px;
+    top: 50px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -2531,11 +2534,16 @@ button {
   font-size: 16px;
   line-height: 28px;
   display: none;
+  transition: max-height 0.25s;
 }
 .analytics__item-text a {
+  display: inline-block;
   font-size: 16px;
   line-height: 28px;
-  padding: 4px 8px;
+  padding: 0 8px;
+}
+.analytics__item--active {
+  border-bottom: none;
 }
 @media only screen and (max-width: 767px) {
   .analytics__item--active {
@@ -2596,13 +2604,16 @@ button {
 }
 .analytics__item--active .analytics__item-text {
   display: block;
-  max-height: 56px;
+  max-height: 256px;
   opacity: 1;
 }
 @media only screen and (max-width: 767px) {
   .analytics__item--active .analytics__item-text {
-    max-height: 84px;
+    max-height: 500px;
   }
+}
+.analytics__item--active .analytics__item-text a {
+  padding: 0 4px;
 }
 @media only screen and (max-width: 767px) {
   .analytics__item--active .analytics__item-title {
@@ -2927,6 +2938,13 @@ button {
     padding: 24px 0;
   }
 }
+.footer__columns-wrapper {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
 @media only screen and (max-width: 1023px) {
   .footer__columns-wrapper {
     margin-bottom: 32px;
@@ -2934,6 +2952,7 @@ button {
 }
 @media only screen and (max-width: 767px) {
   .footer__columns-wrapper {
+    display: block;
     margin-bottom: 24px;
   }
 }
@@ -2944,6 +2963,8 @@ button {
       flex-direction: row;
   -ms-flex-pack: start;
       justify-content: flex-start;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
   margin-right: 152px;
 }
 @media only screen and (max-width: 1439px) {
@@ -2971,6 +2992,8 @@ button {
   line-height: 48px;
   font-weight: 900;
   margin-bottom: 8px;
+  -ms-flex-order: 1;
+      order: 1;
 }
 @media only screen and (max-width: 767px) {
   .footer__columns-title {
@@ -2992,6 +3015,16 @@ button {
 .footer__columns-list-link--tel {
   display: block;
   margin-bottom: 32px;
+  position: absolute;
+  right: 6px;
+  top: 56px;
+}
+@media only screen and (max-width: 767px) {
+  .footer__columns-list-link--tel {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }
 .footer__columns-list-link--tel:before {
   display: none;

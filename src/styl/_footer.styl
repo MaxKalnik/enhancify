@@ -12,16 +12,21 @@
   @extend .container
 
 .footer__columns-wrapper
+  width 100%
+  display flex
+  justify-content space-between
   +respond-to($small)
     margin-bottom: 32px
 
   +respond-to($xsmall)
+    display block
     margin-bottom: 24px
 
 .footer__columns
   display: flex
   flex-direction: row
   justify-content: flex-start
+  flex-grow 1
   margin-right 152px
 
   +respond-to($medium)
@@ -41,6 +46,7 @@
   line-height: 48px
   font-weight: 900
   margin-bottom: 8px
+  order 1
 
   +respond-to($xsmall)
     // margin-bottom: 96px
@@ -62,6 +68,15 @@
   @extend .tel-btn
   display block
   margin-bottom 32px
+  position absolute
+  right 6px
+  top 56px
+
+  +respond-to($xsmall)
+    position: relative
+    top 0
+    right 0
+
   &:before
     display none
 

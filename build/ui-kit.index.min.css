@@ -1958,6 +1958,9 @@ button {
 .section__title--white {
   color: #fff;
 }
+.section__title--left-align {
+  text-align: left;
+}
 .section__title--expert {
   text-align: left;
   font-style: italic;
@@ -3087,7 +3090,7 @@ button {
 }
 .form__fieldset-label--radio-contractor {
   background: #fff;
-  border: 1px solid #aedaab;
+  border: 1px solid #dde4e8;
   box-shadow: 0 10px 31px 0 rgba(156,173,173,0.2);
   border-radius: 4px;
   padding: 16px 16px 16px 58px;
@@ -3105,6 +3108,9 @@ button {
 .form__fieldset-label--radio-contractor a {
   line-height: 16px;
   border-bottom: 1px solid #8cc6fe;
+}
+.form__fieldset-label--radio-contractor-active {
+  border: 1px solid #aedaab;
 }
 .ui-kit__wrapper {
   padding: 80px 0;
@@ -3450,6 +3456,13 @@ button {
     padding: 24px 0;
   }
 }
+.footer__columns-wrapper {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
 @media only screen and (max-width: 1023px) {
   .footer__columns-wrapper {
     margin-bottom: 32px;
@@ -3457,6 +3470,7 @@ button {
 }
 @media only screen and (max-width: 767px) {
   .footer__columns-wrapper {
+    display: block;
     margin-bottom: 24px;
   }
 }
@@ -3467,6 +3481,8 @@ button {
       flex-direction: row;
   -ms-flex-pack: start;
       justify-content: flex-start;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
   margin-right: 152px;
 }
 @media only screen and (max-width: 1439px) {
@@ -3494,6 +3510,8 @@ button {
   line-height: 48px;
   font-weight: 900;
   margin-bottom: 8px;
+  -ms-flex-order: 1;
+      order: 1;
 }
 @media only screen and (max-width: 767px) {
   .footer__columns-title {
@@ -3515,6 +3533,16 @@ button {
 .footer__columns-list-link--tel {
   display: block;
   margin-bottom: 32px;
+  position: absolute;
+  right: 6px;
+  top: 56px;
+}
+@media only screen and (max-width: 767px) {
+  .footer__columns-list-link--tel {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }
 .footer__columns-list-link--tel:before {
   display: none;
